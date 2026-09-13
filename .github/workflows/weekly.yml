@@ -1,0 +1,76 @@
+name: Weekly email
+
+on:
+  schedule:
+    # GitHub cron is UTC. Both entries fire; src/schedule.js keeps only the one
+    # that is 6:00am in New York (10:00 UTC during daylight time, 11:00 UTC in winter).
+    - cron: "0 10 * * 1"
+    - cron: "0 11 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build the email but do not send it (download it from the run's artifacts)"
+        type: boolean
+        default: false
+      lanes:
+        description: "Comma-separated subset of research lanes (blank = all)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-email
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build and send
+        id: run
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          EMAIL_TO: ${{ vars.EMAIL_TO }}
+          EMAIL_FROM: ${{ vars.EMAIL_FROM }}
+          RESEARCH_MODEL: ${{ vars.RESEARCH_MODEL }}
+          CURATE_MODEL: ${{ vars.CURATE_MODEL }}
+          VERIFY_MODEL: ${{ vars.VERIFY_MODEL }}
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
+          LANES: ${{ github.event.inputs.lanes }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: node src/index.js
+
+      - name: Upload the built email
+        if: always() && steps.run.outputs.built == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: email-${{ steps.run.outputs.week_of }}
+          path: out/
+          retention-days: 30
+
+      - name: Commit the archive
+        if: steps.run.outputs.sent == 'true'
+        run: |
+          git config user.name "shittodoinnyc-bot"
+          git config user.email "shittodoinnyc-bot@users.noreply.github.com"
+          git add archive
+          git commit -m "archive: ${{ steps.run.outputs.week_of }}" || { echo "nothing to commit"; exit 0; }
+          git pull --rebase origin ${{ github.ref_name }}
+          git push

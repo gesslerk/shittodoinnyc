@@ -1,0 +1,20 @@
+{
+  "name": "shittodoinnyc",
+  "version": "1.0.0",
+  "description": "A Monday 6am email of things worth leaving the house for in NYC, curated against one very specific person's taste.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "send": "node src/index.js",
+    "preview": "DRY_RUN=1 node src/index.js",
+    "render:sample": "node scripts/render-sample.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "nodemailer": "^7.0.0"
+  }
+}
