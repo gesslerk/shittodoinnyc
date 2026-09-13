@@ -97,7 +97,7 @@ function listRow(item, { last = false, lead = "" } = {}) {
   const w = who(item.who);
   return `
 <tr><td style="padding:14px 18px;${last ? "" : `border-bottom:3px solid ${C.ink};`}">
-  <div style="font:800 10px/1.4 ${FONT};letter-spacing:3px;color:${C.red};">${lead ? `${esc(lead)} &nbsp;·&nbsp; ` : ""}<span style="color:${w.color === C.yellow ? C.ink : w.color};">${w.glyph} ${w.label}</span></div>
+  <div style="font:800 10px/1.4 ${FONT};letter-spacing:3px;color:${C.red};">${lead ? `${up(lead)} &nbsp;·&nbsp; ` : ""}<span style="color:${w.color === C.yellow ? C.ink : w.color};">${w.glyph} ${w.label}</span></div>
   <div style="font:900 18px/1.12 ${FONT};color:${C.ink};margin:6px 0 6px;">${esc(item.headline)}</div>
   <div style="font:700 11px/1.6 ${FONT};letter-spacing:1px;text-transform:uppercase;color:${C.ink};">${metaLine(item)}</div>
   <p style="font:400 14px/1.5 ${FONT};color:#222222;margin:8px 0 10px;">${esc(item.why)}</p>

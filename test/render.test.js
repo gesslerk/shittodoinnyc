@@ -11,7 +11,7 @@ test("sample issue renders without holes", () => {
   assert.doesNotMatch(html, /undefined|null<|\[object/);
   assert.match(html, /Paul Kalkbrenner/);
   assert.match(html, /COPY-PASTE TO THE GROUP CHAT/);
-  assert.match(html, /BOOK BY on sale Mon Sep 21/);
+  assert.match(html, /BOOK BY ON SALE MON SEP 21/);
   assert.match(html, /WITH THE KID/);
   assert.match(html, /&lt;script&gt;/.test(html) ? /x/ : /Shit/); // no raw script tags could sneak in
   assert.match(text, /THIS WEEK/);
