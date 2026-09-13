@@ -1,92 +1,82 @@
 import { formatShort, isISODate, weekdayOf } from "./schedule.js";
 
 const UNVERIFIED_NOTE = "Could not re-check the listing page this morning. Confirm the date on the link before you buy.";
+const HAS_DATE = /\b(mon|tue|wed|thu|fri|sat|sun)[a-z]*\b|\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{1,2}\b|\b\d{1,2}\/\d{1,2}\b/i;
 
-function whenText(c, v) {
-  if (v?.when_text) return v.when_text;
-  const date = v?.start_date && isISODate(v.start_date) ? v.start_date : c.start_date;
-  if (c.anytime || !date) return c.time_text || (c.recurring ? "Recurring" : "Anytime");
-  const dayPart = formatShort(date);
-  const range = c.end_date && c.end_date !== date ? ` to ${formatShort(c.end_date)}` : "";
-  return `${dayPart}${range}${c.time_text ? `, ${c.time_text}` : ""}`;
+/** "Thu Sep 17, doors 9pm" without ever repeating a date the time text already carries. */
+export function whenText(c) {
+  const time = String(c.time_text ?? "").trim();
+  const date = c.start_date && isISODate(c.start_date) ? c.start_date : null;
+  if (c.anytime || !date) return time || (c.recurring ? "Recurring" : "Anytime");
+  const range = c.end_date && isISODate(c.end_date) && c.end_date !== date ? ` to ${formatShort(c.end_date)}` : "";
+  if (HAS_DATE.test(time)) return time;
+  return `${formatShort(date)}${range}${time ? `, ${time}` : ""}`;
 }
 
-function hydrate(item, candidate, v, { extraHeadsUp = true } = {}) {
+function hydrate(item, candidate, v) {
   if (!candidate) return null;
   if (v?.status === "contradicted") return null;
-  const headsUpParts = [item.heads_up].filter(Boolean);
-  if (extraHeadsUp && v?.status === "unverifiable") headsUpParts.push(UNVERIFIED_NOTE);
-  if (v?.status === "corrected" && v.note) headsUpParts.push(`Corrected after checking the page: ${v.note}`);
+  const headsUp = [item.heads_up, v?.status === "unverifiable" ? UNVERIFIED_NOTE : null, v?.status === "corrected" ? v.reader_note : null].filter(Boolean);
+  const date = candidate.start_date && isISODate(candidate.start_date) ? candidate.start_date : null;
   return {
     id: candidate.id,
     headline: item.headline || candidate.title,
     title: candidate.title,
     category: candidate.category,
     who: item.who || candidate.who,
-    when: whenText(candidate, v),
-    date: v?.start_date && isISODate(v.start_date) ? v.start_date : candidate.start_date ?? null,
-    weekday: (v?.start_date && isISODate(v.start_date)) || candidate.start_date ? weekdayOf(v?.start_date && isISODate(v.start_date) ? v.start_date : candidate.start_date) : null,
-    venue: v?.venue || candidate.venue,
+    when: whenText(candidate),
+    date,
+    weekday: date ? weekdayOf(date) : null,
+    venue: candidate.venue,
+    address: candidate.address ?? "",
     neighborhood: candidate.neighborhood,
     borough: candidate.borough,
-    price: v?.price_text || candidate.price_text || "",
+    price: candidate.price_text || "",
     url: candidate.url,
     why: item.why,
-    heads_up: headsUpParts.join(" ") || null,
+    heads_up: headsUp.join(" ") || null,
     invite_text: item.invite_text ?? null,
     book_by: item.book_by ?? null,
     splurge: Boolean(item.splurge),
     confidence: candidate.confidence,
-    verification: v ? { status: v.status, note: v.note } : { status: "skipped", note: "verification skipped" },
+    verification: v ? { status: v.status, note: v.note } : { status: "skipped", note: "not fact-checked" },
   };
 }
 
 /**
- * Pure function: join curator choices to research records, apply verification,
- * backfill from the bench, and produce the final issue object the renderer consumes.
+ * Pure function: join curator choices to the (already corrected) candidate pool, apply
+ * verification statuses, backfill from the bench, and produce the issue the renderer consumes.
  */
 export function assemble({ curated, candidates, verification = new Map(), windows, issueNumber = 1, laneReports = [], stats = {} }) {
   const byId = new Map(candidates.map((c) => [c.id, c]));
   const v = (id) => verification.get(id);
   const used = new Set();
-
-  const picks = [];
-  for (const p of curated.picks) {
-    const h = hydrate(p, byId.get(p.candidate_id), v(p.candidate_id));
-    if (h && !used.has(h.id)) {
-      picks.push(h);
-      used.add(h.id);
+  const take = (items, extra = {}) => {
+    const out = [];
+    for (const it of items) {
+      const h = hydrate({ ...it, ...extra }, byId.get(it.candidate_id), v(it.candidate_id));
+      if (h && !used.has(h.id)) {
+        out.push(h);
+        used.add(h.id);
+      }
     }
-  }
+    return out;
+  };
+
+  const picks = take(curated.picks);
   const droppedPicks = curated.picks.length - picks.length;
   let benched = 0;
   for (const b of curated.bench) {
     if (picks.length >= 5) break;
-    const h = hydrate(b, byId.get(b.candidate_id), v(b.candidate_id));
-    if (h && !used.has(h.id)) {
+    const [h] = take([b]);
+    if (h) {
       picks.push(h);
-      used.add(h.id);
       benched += 1;
     }
   }
-
-  const radar = [];
-  for (const r of curated.radar) {
-    const h = hydrate(r, byId.get(r.candidate_id), v(r.candidate_id));
-    if (h && !used.has(h.id)) {
-      radar.push(h);
-      used.add(h.id);
-    }
-  }
-  const anytime = [];
-  for (const a of curated.anytime) {
-    const h = hydrate(a, byId.get(a.candidate_id), v(a.candidate_id));
-    if (h && !used.has(h.id)) {
-      anytime.push(h);
-      used.add(h.id);
-    }
-  }
-  const family = curated.family ? hydrate({ ...curated.family, who: "family" }, byId.get(curated.family.candidate_id), v(curated.family.candidate_id)) : null;
+  const radar = take(curated.radar);
+  const anytime = take(curated.anytime);
+  const family = curated.family ? take([curated.family], { who: "family" })[0] ?? null : null;
 
   const failedLanes = laneReports.filter((r) => !r.ok).map((r) => r.lane);
   const footerNotes = [curated.notes];

@@ -13,7 +13,8 @@ Five to seven picks for the coming Thursday to Sunday, each with the when, where
 ```
 Monday 06:00 New York
   │
-  ├─ 0. Instagram (optional)  Apify pulls the last 14 days of posts from profile/instagram.md
+  ├─ 0. Instagram (optional)  Apify pulls the last 14 days of posts from profile/instagram.md,
+  │                            in parallel with the web lanes; only the Instagram lane waits for it
   │
   ├─ 1. Research               7 parallel Claude calls, one per lane, each with web search + web fetch
   │      music · fights · food · culture · body · scenes · instagram
@@ -26,7 +27,9 @@ Monday 06:00 New York
   │                            so the writer cannot invent a fact
   │
   ├─ 4. Verify                 one Claude call re-fetches every chosen page and confirms date/venue/price;
-  │                            contradicted picks are dropped and the bench fills in
+  │                            corrections are folded into the candidate pool, contradicted items removed,
+  │                            and if anything material moved the curator runs a second pass on the
+  │                            corrected facts (new choices get checked too)
   │
   ├─ 5. Render + send          Bauhaus HTML + plain text, via Resend or Gmail
   │
@@ -125,7 +128,7 @@ GitHub disables scheduled workflows in repos with no commits for 60 days. The we
 
 ## Cost
 
-Per issue, all stages on Claude Opus 5: roughly $10 to $20, dominated by the seven research lanes reading web pages. The run log prints the actual number (`~$` on the "built" line) and it is stored in `archive/<date>/run.json`. Levers, cheapest first: `RESEARCH_MODEL=claude-sonnet-5` (about 60% off research), `LANES=music,fights,food` to run fewer lanes, `MAX_SEARCHES_PER_LANE` / `MAX_FETCHES_PER_LANE`, `SKIP_VERIFY=1`.
+Per issue, all stages on Claude Opus 5: the first dry run cost about $16 and took 40 minutes, dominated by the seven research lanes reading web pages. The run log prints the actual number (`~$` on the "built" line) and it is stored in `archive/<date>/run.json`. Levers, cheapest first: `RESEARCH_MODEL=claude-sonnet-5` (about 60% off research), `LANES=music,fights,food` to run fewer lanes, `MAX_SEARCHES_PER_LANE` / `MAX_FETCHES_PER_LANE`, `SKIP_VERIFY=1`.
 
 ## Archive
 

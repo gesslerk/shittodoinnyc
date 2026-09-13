@@ -126,7 +126,7 @@ function compactCandidate(c) {
   ].join("\n");
 }
 
-export function buildCuratorUser({ candidates, windows, recent, laneReports }) {
+export function buildCuratorUser({ candidates, windows, recent, laneReports, previous = null, corrections = [] }) {
   const inWindow = candidates.filter((c) => !c.anytime && c.start_date && c.start_date >= windows.thisWindow.start && c.start_date <= windows.thisWindow.end);
   const inRadar = candidates.filter((c) => !c.anytime && c.start_date && c.start_date > windows.thisWindow.end);
   const undatedOrRecurring = candidates.filter((c) => c.anytime || !c.start_date);
@@ -138,7 +138,22 @@ export function buildCuratorUser({ candidates, windows, recent, laneReports }) {
         .join("\n")
     : "- (first issue, nothing to avoid)";
 
+  const secondPass = previous
+    ? [
+        "# SECOND PASS AFTER FACT-CHECKING",
+        "Your first draft was fact-checked. The candidate list below already reflects the corrected facts (dates, times, prices, venues), and contradicted items are gone. Keep every choice and every line of copy from the draft that still holds; change only what the corrections force: a pick whose date moved out of the window, an item that turned out to be dated and belongs in picks rather than anytime, a removed item that needs a replacement. Do not reshuffle for its own sake.",
+        "",
+        "Corrections:",
+        corrections.map((c) => `- ${c}`).join("\n") || "- (none)",
+        "",
+        "Previous draft:",
+        JSON.stringify(previous),
+        "",
+      ].join("\n")
+    : "";
+
   return [
+    secondPass,
     "# DATES",
     `Today is ${windows.todayLabel} (${windows.today}).`,
     `THIS WINDOW: ${formatShort(windows.thisWindow.start)} through ${formatShort(windows.thisWindow.end)} (${windows.thisWindow.start} to ${windows.thisWindow.end}). Days: ${windows.days.join(", ")}.`,
@@ -182,9 +197,9 @@ export function sanitizeCuration(curated, candidates) {
   };
 }
 
-export async function curate({ cfg, profile, windows, candidates, recent, laneReports, log = console }) {
+export async function curate({ cfg, profile, windows, candidates, recent, laneReports, previous = null, corrections = [], log = console }) {
   const system = buildCuratorSystem(profile, windows);
-  const user = buildCuratorUser({ candidates, windows, recent, laneReports });
+  const user = buildCuratorUser({ candidates, windows, recent, laneReports, previous, corrections });
   const result = await withRetry(
     () =>
       runClaude({
@@ -194,12 +209,13 @@ export async function curate({ cfg, profile, windows, candidates, recent, laneRe
         outputSchema: CURATION_SCHEMA,
         maxTokens: 16000,
         effort: cfg.effort.curate,
-        label: "curate",
+        timeoutMs: cfg.timeouts.curateMs,
+        label: previous ? "curate:second-pass" : "curate",
         log,
       }),
     { attempts: 2, label: "curate", log },
   );
   const curated = sanitizeCuration(JSON.parse(result.text), candidates);
-  log.info(`[curate] ${curated.picks.length} picks, ${curated.bench.length} bench, ${curated.radar.length} radar, ${curated.anytime.length} anytime, family: ${curated.family ? "yes" : "no"}`);
+  log.info(`[${previous ? "curate:second-pass" : "curate"}] ${curated.picks.length} picks, ${curated.bench.length} bench, ${curated.radar.length} radar, ${curated.anytime.length} anytime, family: ${curated.family ? "yes" : "no"}`);
   return { curated, usage: result.usage, servedBy: result.servedBy };
 }

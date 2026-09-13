@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { assemble } from "../src/assemble.js";
+import { assemble, whenText } from "../src/assemble.js";
+import { applyVerification } from "../src/verify.js";
 import { sanitizeCuration } from "../src/curate.js";
 import { filterCandidates, dedupeCandidates } from "../src/research.js";
 
@@ -39,7 +40,7 @@ const cand = (id, extra = {}) => ({
 
 const pick = (candidate_id, extra = {}) => ({ candidate_id, headline: `H ${candidate_id}`, why: "w", heads_up: null, who: "guys", invite_text: "t", splurge: false, ...extra });
 
-test("contradicted picks are dropped and the bench fills in", () => {
+test("contradicted picks are dropped, corrections are folded in, and the bench fills in", () => {
   const candidates = ["c1", "c2", "c3", "c4", "c5", "c6", "c7"].map((id) => cand(id));
   const curated = {
     subject: "s",
@@ -51,20 +52,46 @@ test("contradicted picks are dropped and the bench fills in", () => {
     family: null,
     notes: "n",
   };
-  const verification = new Map([
+  const results = new Map([
     ["c2", { status: "contradicted", note: "cancelled" }],
     ["c3", { status: "unverifiable", note: "page down" }],
-    ["c4", { status: "corrected", start_date: "2026-09-19", when_text: "Sat Sep 19, 8pm", note: "date was wrong" }],
+    ["c4", { status: "corrected", start_date: "2026-09-19", time_text: "8pm", price_text: null, venue: null, reader_note: "Date corrected: Saturday, not Friday.", note: "date was wrong" }],
   ]);
-  const issue = assemble({ curated, candidates, verification, windows, issueNumber: 3 });
+  const applied = applyVerification(candidates, results);
+  assert.equal(applied.material, true);
+  assert.equal(applied.changes.length, 2);
+  assert.ok(!applied.candidates.some((c) => c.id === "c2"));
+  assert.equal(applied.candidates.find((c) => c.id === "c4").start_date, "2026-09-19");
+
+  const issue = assemble({ curated, candidates: applied.candidates, verification: results, windows, issueNumber: 3 });
   assert.deepEqual(issue.picks.map((p) => p.id), ["c1", "c3", "c4", "c5", "c6"]);
   assert.match(issue.picks[1].heads_up, /Could not re-check/);
   assert.equal(issue.picks[2].when, "Sat Sep 19, 8pm");
-  assert.equal(issue.picks[2].date, "2026-09-19");
+  assert.match(issue.picks[2].heads_up, /Date corrected/);
+  assert.doesNotMatch(issue.picks[2].heads_up, /date was wrong/);
   assert.equal(issue.stats.droppedPicks, 1);
   assert.equal(issue.stats.benched, 1);
   assert.match(issue.notes, /1 pick got cut/);
   assert.equal(issue.issue, 3);
+});
+
+test("a fact-checked date turns an anytime listing into a dated event", () => {
+  const candidates = [cand("c1", { anytime: true, start_date: null, time_text: "" })];
+  const results = new Map([["c1", { status: "corrected", start_date: "2026-09-18", time_text: "7pm", price_text: "$65 to $150", venue: null, reader_note: null, note: "page shows a date" }]]);
+  const { candidates: out, material, changes } = applyVerification(candidates, results);
+  assert.equal(material, true);
+  assert.equal(out[0].anytime, false);
+  assert.equal(out[0].start_date, "2026-09-18");
+  assert.equal(out[0].price_text, "$65 to $150");
+  assert.match(changes[0], /was listed as anytime/);
+});
+
+test("whenText never repeats a date the time text already carries", () => {
+  assert.equal(whenText(cand("a", { time_text: "doors 9pm" })), "Fri Sep 18, doors 9pm");
+  assert.equal(whenText(cand("b", { time_text: "Fri Sep 18, doors 9pm" })), "Fri Sep 18, doors 9pm");
+  assert.equal(whenText(cand("c", { time_text: "Saturday September 19; doors not listed" })), "Saturday September 19; doors not listed");
+  assert.equal(whenText(cand("d", { time_text: "", end_date: "2026-10-31" })), "Fri Sep 18 to Sat Oct 31");
+  assert.equal(whenText(cand("e", { anytime: true, start_date: null, time_text: "Daily 8am to 11pm" })), "Daily 8am to 11pm");
 });
 
 test("the same candidate is never used twice across sections", () => {

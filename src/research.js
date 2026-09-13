@@ -142,6 +142,7 @@ export async function runLane({ lane, cfg, profile, windows, instagramPosts, log
         outputSchema: CANDIDATES_SCHEMA,
         maxTokens: 24000,
         effort: cfg.effort.research,
+        timeoutMs: cfg.timeouts.laneMs,
         label: `research:${lane.id}`,
         log,
       }),
@@ -161,7 +162,16 @@ export async function runLane({ lane, cfg, profile, windows, instagramPosts, log
  */
 export async function runResearch({ cfg, profile, windows, instagramPosts = [], log = console }) {
   const lanes = LANES.filter((l) => !cfg.lanes || cfg.lanes.includes(l.id));
-  const settled = await Promise.allSettled(lanes.map((lane) => runLane({ lane, cfg, profile, windows, instagramPosts, log })));
+  // instagramPosts may be a promise: the six web lanes start immediately and only the
+  // Instagram lane waits for the scrape to finish.
+  const posts = Promise.resolve(instagramPosts).then((p) => (Array.isArray(p) ? p : []));
+  const settled = await Promise.allSettled(
+    lanes.map((lane) =>
+      lane.id === "instagram"
+        ? posts.then((p) => runLane({ lane, cfg, profile, windows, instagramPosts: p, log }))
+        : runLane({ lane, cfg, profile, windows, instagramPosts: [], log }),
+    ),
+  );
 
   const laneReports = [];
   const raw = [];

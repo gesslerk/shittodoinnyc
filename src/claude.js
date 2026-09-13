@@ -15,6 +15,8 @@ const PRICE_PER_M = {
 };
 const SEARCH_PRICE_PER_1000 = 10;
 
+export class TimeoutError extends Error {}
+
 let client;
 export function getClient() {
   if (!client) client = new Anthropic({ timeout: 25 * 60 * 1000, maxRetries: 3 });
@@ -76,16 +78,20 @@ export async function runClaude({
   effort = "high",
   label = "claude",
   maxContinuations = 8,
+  timeoutMs = 30 * 60 * 1000,
   log = console,
 }) {
   const c = getClient();
   const convo = [...messages];
   const usage = emptyUsage();
+  const deadline = Date.now() + timeoutMs;
   let useFallbacks = true;
   let servedBy = model;
   let continuations = 0;
 
   while (true) {
+    const remaining = deadline - Date.now();
+    if (remaining <= 0) throw new TimeoutError(`[${label}] exceeded its ${Math.round(timeoutMs / 60000)} minute budget`);
     const params = {
       model,
       max_tokens: maxTokens,
@@ -102,17 +108,22 @@ export async function runClaude({
       params.fallbacks = "default";
     }
 
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), remaining);
     let msg;
     try {
-      const stream = c.beta.messages.stream(params);
+      const stream = c.beta.messages.stream(params, { signal: controller.signal });
       msg = await stream.finalMessage();
     } catch (err) {
+      if (controller.signal.aborted) throw new TimeoutError(`[${label}] exceeded its ${Math.round(timeoutMs / 60000)} minute budget mid-request`);
       if (useFallbacks && err instanceof Anthropic.BadRequestError && /fallback|beta/i.test(err.message ?? "")) {
         log.warn(`[${label}] API rejected server-side fallbacks; retrying without them`);
         useFallbacks = false;
         continue;
       }
       throw err;
+    } finally {
+      clearTimeout(timer);
     }
 
     addUsage(usage, msg.usage, msg.content);
@@ -162,6 +173,7 @@ export async function withRetry(fn, { attempts = 2, label = "task", log = consol
     } catch (err) {
       lastErr = err;
       const permanent =
+        err instanceof TimeoutError ||
         err instanceof Anthropic.BadRequestError ||
         err instanceof Anthropic.AuthenticationError ||
         err instanceof Anthropic.PermissionDeniedError;

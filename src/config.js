@@ -44,6 +44,11 @@ export function loadConfig(env = process.env) {
       daysBack: int(env.INSTAGRAM_DAYS_BACK, 14),
       timeoutSec: int(env.APIFY_TIMEOUT_SEC, 600),
     },
+    timeouts: {
+      laneMs: int(env.LANE_TIMEOUT_MIN, 30) * 60 * 1000,
+      curateMs: int(env.CURATE_TIMEOUT_MIN, 15) * 60 * 1000,
+      verifyMs: int(env.VERIFY_TIMEOUT_MIN, 20) * 60 * 1000,
+    },
     skipVerify: isTrue(env.SKIP_VERIFY),
     dryRun: isTrue(env.DRY_RUN),
     force: isTrue(env.FORCE),

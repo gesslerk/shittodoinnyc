@@ -24,3 +24,12 @@ test("html escaping", () => {
   const { html } = renderEmail(issue);
   assert.match(html, /&lt;b&gt;bold&lt;\/b&gt; &amp; &quot;quotes&quot;/);
 });
+
+test("the neighborhood is not repeated when the venue already names it", () => {
+  const issue = JSON.parse(fs.readFileSync(path.join(ROOT, "samples", "sample-issue.json"), "utf8"));
+  issue.picks[0].venue = "Public Records, Gowanus";
+  issue.picks[0].neighborhood = "Gowanus";
+  const { html } = renderEmail(issue);
+  assert.doesNotMatch(html, /Gowanus, Gowanus/i);
+  assert.match(html, /Public Records, Gowanus/);
+});

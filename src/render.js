@@ -37,7 +37,9 @@ const who = (k) => WHO[k] ?? WHO.either;
 const pad2 = (n) => String(n).padStart(2, "0");
 
 function metaLine(item) {
-  const where = [item.venue, item.neighborhood].filter(Boolean).join(", ");
+  const venue = String(item.venue ?? "").trim();
+  const hood = String(item.neighborhood ?? "").trim();
+  const where = hood && !venue.toLowerCase().includes(hood.toLowerCase()) ? [venue, hood].filter(Boolean).join(", ") : venue || hood;
   const bits = [item.when, where, item.price].filter(Boolean);
   return bits.map(esc).join(" &nbsp;·&nbsp; ") + (item.splurge ? ` &nbsp;·&nbsp; <span style="color:${C.red};">SPLURGE</span>` : "");
 }
