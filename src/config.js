@@ -21,13 +21,13 @@ export function loadConfig(env = process.env) {
     effort: {
       research: env.RESEARCH_EFFORT || "high",
       curate: env.CURATE_EFFORT || "high",
-      verify: env.VERIFY_EFFORT || "medium",
+      verify: env.VERIFY_EFFORT || "high",
     },
     limits: {
       searchesPerLane: int(env.MAX_SEARCHES_PER_LANE, 12),
       fetchesPerLane: int(env.MAX_FETCHES_PER_LANE, 10),
       verifyFetches: int(env.MAX_VERIFY_FETCHES, 24),
-      verifySearches: int(env.MAX_VERIFY_SEARCHES, 10),
+      verifySearches: int(env.MAX_VERIFY_SEARCHES, 20),
     },
     email: {
       to: env.EMAIL_TO || "gesslerk@gmail.com",

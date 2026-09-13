@@ -117,6 +117,30 @@ export function dedupeCandidates(list) {
   return [...new Set(byKey.values())];
 }
 
+/**
+ * Two lanes reporting the same event (same venue, same opening words of the title) on
+ * different dates means at least one is wrong. Flag both so the curator distrusts the
+ * date and the fact-checker resolves it explicitly.
+ */
+export function flagDateConflicts(list) {
+  const groups = new Map();
+  for (const c of list) {
+    if (c.anytime || !c.start_date) continue;
+    const words = norm(c.title).split(" ").filter((w) => w.length > 2);
+    const key = `${norm(c.venue)}|${words.slice(0, 2).join(" ")}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(c);
+  }
+  let flagged = 0;
+  for (const members of groups.values()) {
+    const dates = [...new Set(members.map((m) => m.start_date))].sort();
+    if (dates.length < 2) continue;
+    for (const m of members) m.date_conflict = dates;
+    flagged += members.length;
+  }
+  return flagged;
+}
+
 export async function runLane({ lane, cfg, profile, windows, instagramPosts, log }) {
   const system = buildResearchSystem(profile);
   const user = buildLaneUser({
@@ -188,7 +212,8 @@ export async function runResearch({ cfg, profile, windows, instagramPosts = [], 
 
   const { kept, dropped } = filterCandidates(raw, windows);
   const deduped = dedupeCandidates(kept).map((c, i) => ({ id: `c${i + 1}`, ...c }));
-  log.info(`[research] ${raw.length} raw, ${dropped.length} dropped, ${deduped.length} usable candidates`);
+  const conflicts = flagDateConflicts(deduped);
+  log.info(`[research] ${raw.length} raw, ${dropped.length} dropped, ${deduped.length} usable candidates${conflicts ? `, ${conflicts} with date conflicts across sources` : ""}`);
   if (dropped.length) log.info(`[research] dropped: ${dropped.map((d) => `${d.title} (${d.reasons.join(", ")})`).join("; ")}`);
 
   return { candidates: deduped, laneReports, dropped, usage: mergeUsage(...laneReports.map((r) => r.usage)) };

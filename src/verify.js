@@ -37,7 +37,15 @@ export const VERIFY_SCHEMA = {
   required: ["results"],
 };
 
-const VERIFY_SYSTEM = `You are the fact-checker for a private weekly events email. You receive a short list of events that are about to be sent to the reader, each with the URL the research desk found. For each one: fetch the URL, read it, and confirm the date, time, venue and price. If the fetch fails, try one web search to find the organizer's page and check there. Report one result per id using the schema. Be strict about "contradicted": it means the reader would waste a trip or money. Be honest about "unverifiable": it means you could not check, not that it is wrong. Never mark something confirmed that you did not actually read. If an item was listed as "anytime" but the page shows a specific date, return that date in start_date and mark it corrected.`;
+const VERIFY_SYSTEM = `You are the fact-checker for a private weekly events email. You receive a short list of events that are about to be sent to the reader, each with the URL the research desk found. For each one: fetch the URL, read it, and confirm the date, time, venue and price. Report one result per id using the schema.
+
+Standards:
+- "confirmed" means you read a page that states this event's date, time and venue and they match what you were given. A page that loads but does not state the date, a venue calendar that does not show this event, or a search snippet is not confirmation; that is "unverifiable" unless another page settles it.
+- If the primary URL will not load (ticket sites often block fetches), search for the organizer's own page. For music events search Resident Advisor too: "site:ra.co <artist> <venue>". The organizer's calendar and RA outrank ticket resellers and aggregators.
+- When the research desk's sources disagree on a date, you must resolve it from a page you read, return the right date in start_date with status "corrected" if it differs, and say in the note which page settled it.
+- If an item was listed as "anytime" but the page shows a specific date, return that date in start_date and mark it corrected. A one-night event is never "anytime".
+- "contradicted" means the reader would waste a trip or money: cancelled, already happened, wrong city, sold out with no resale, or the page is for something else.
+- Never mark something confirmed that you did not actually read.`;
 
 export function buildVerifyUser(items, windows) {
   const lines = items.map((c) =>
@@ -45,6 +53,7 @@ export function buildVerifyUser(items, windows) {
       `[${c.id}] ${c.title}`,
       `  expected: ${c.anytime ? "anytime (a place, not a dated event)" : `${c.start_date ?? "date unknown"}${c.time_text ? `, ${c.time_text}` : ""}`} | ${c.venue}, ${c.neighborhood} | price: ${c.price_text || "unknown"}`,
       `  url: ${c.url}${c.source_url && c.source_url !== c.url ? `\n  also: ${c.source_url}` : ""}`,
+      ...(c.date_conflict ? [`  SOURCES DISAGREE ON THE DATE: ${c.date_conflict.join(" vs ")}. Resolve it.`] : []),
     ].join("\n"),
   );
   return [

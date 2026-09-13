@@ -124,6 +124,7 @@ function compactCandidate(c) {
     `  price: ${c.price_text || "unknown"} | confidence: ${c.confidence} | who: ${c.who} | lane: ${c.lanes?.join("+") ?? c.lane}${c.tags?.length ? ` | tags: ${c.tags.join(", ")}` : ""}`,
     `  summary: ${c.summary}`,
     `  fit: ${c.fit}`,
+    ...(c.date_conflict ? [`  DATE CONFLICT: sources list this on ${c.date_conflict.join(" / ")}. Do not trust the date until the fact-check resolves it.`] : []),
   ].join("\n");
 }
 

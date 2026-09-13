@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { assemble, whenText } from "../src/assemble.js";
 import { applyVerification } from "../src/verify.js";
 import { sanitizeCuration } from "../src/curate.js";
-import { filterCandidates, dedupeCandidates } from "../src/research.js";
+import { filterCandidates, dedupeCandidates, flagDateConflicts } from "../src/research.js";
 
 const windows = {
   today: "2026-09-14",
@@ -145,4 +145,19 @@ test("dedupeCandidates merges by url and by title+date, keeping the best-verifie
   assert.equal(out[0].confidence, "verified");
   assert.deepEqual(out[0].tags.sort(), ["a", "b"]);
   assert.deepEqual(out[0].lanes.sort(), ["body", "food", "music"]);
+});
+
+test("flagDateConflicts marks the same event reported on different dates", () => {
+  const list = [
+    cand("a", { title: "Erol Alkan & Justin Strauss", venue: "Public Records", start_date: "2026-09-17" }),
+    cand("b", { title: "Erol Alkan, Justin Strauss at Public Records", venue: "Public Records", start_date: "2026-09-18" }),
+    cand("c", { title: "Erol Alkan", venue: "Knockdown Center", start_date: "2026-09-18" }),
+    cand("d", { title: "Theo Parrish", venue: "Nowadays", start_date: "2026-09-13" }),
+  ];
+  const flagged = flagDateConflicts(list);
+  assert.equal(flagged, 2);
+  assert.deepEqual(list[0].date_conflict, ["2026-09-17", "2026-09-18"]);
+  assert.deepEqual(list[1].date_conflict, ["2026-09-17", "2026-09-18"]);
+  assert.equal(list[2].date_conflict, undefined);
+  assert.equal(list[3].date_conflict, undefined);
 });
