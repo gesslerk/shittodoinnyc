@@ -125,24 +125,26 @@ const strip = () => `
 function masthead(issue) {
   return `
 <tr><td style="background:${C.ink};padding:0;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td style="padding:28px 24px 24px 28px;vertical-align:bottom;">
-      <div style="font:700 11px/1 ${FONT};letter-spacing:4px;color:${C.yellow};">NO. ${pad2(issue.issue)} &nbsp;·&nbsp; ${up(issue.weekOfLabel)}</div>
-      <div style="font:900 48px/0.92 ${FONT};letter-spacing:-1px;color:${C.paper};margin-top:16px;text-transform:uppercase;">Shit<br>to do<br>in NYC</div>
-    </td>
-    <td width="160" align="right" style="padding:28px 28px 24px 0;vertical-align:bottom;">
-      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right">
-        <tr>
-          <td style="padding:0 6px 6px 0;"><div style="width:64px;height:64px;background:${C.blue};border-radius:50%;font-size:0;line-height:0;">&nbsp;</div></td>
-          <td style="padding:0 0 6px 0;"><div style="width:64px;height:64px;background:${C.red};font-size:0;line-height:0;">&nbsp;</div></td>
-        </tr>
-        <tr>
-          <td style="padding:0 6px 0 0;text-align:center;vertical-align:bottom;"><div style="font:400 58px/64px ${FONT};color:${C.yellow};">▲</div></td>
-          <td style="padding:0;"><div style="width:64px;height:64px;background:${C.paper};font-size:0;line-height:0;">&nbsp;</div></td>
-        </tr>
-      </table>
-    </td>
-  </tr></table>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr><td colspan="2" style="padding:24px 28px 0;font:700 11px/1.4 ${FONT};letter-spacing:4px;color:${C.yellow};">NO. ${pad2(issue.issue)} &nbsp;·&nbsp; ${up(issue.weekOfLabel)}</td></tr>
+    <tr>
+      <td style="padding:14px 16px 24px 28px;vertical-align:bottom;">
+        <div style="font:900 48px/0.92 ${FONT};letter-spacing:-1px;color:${C.paper};text-transform:uppercase;">Shit<br>to do<br>in NYC</div>
+      </td>
+      <td width="132" align="right" style="padding:14px 28px 24px 0;vertical-align:bottom;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right">
+          <tr>
+            <td style="padding:0 6px 6px 0;"><div style="width:56px;height:56px;background:${C.blue};border-radius:50%;font-size:0;line-height:0;">&nbsp;</div></td>
+            <td style="padding:0 0 6px 0;"><div style="width:56px;height:56px;background:${C.red};font-size:0;line-height:0;">&nbsp;</div></td>
+          </tr>
+          <tr>
+            <td style="padding:0 6px 0 0;text-align:center;vertical-align:bottom;"><div style="font:400 50px/56px ${FONT};color:${C.yellow};">▲</div></td>
+            <td style="padding:0;"><div style="width:56px;height:56px;background:${C.paper};font-size:0;line-height:0;">&nbsp;</div></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </td></tr>`;
 }
 
