@@ -1,7 +1,8 @@
 import { formatShort, isISODate, weekdayOf } from "./schedule.js";
 
 const UNVERIFIED_NOTE = "Could not re-check the listing page this morning. Confirm the date on the link before you buy.";
-const HAS_DATE = /\b(mon|tue|wed|thu|fri|sat|sun)[a-z]*\b|\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{1,2}\b|\b\d{1,2}\/\d{1,2}\b/i;
+// A bare weekday ("Saturday 4pm") is not enough to skip the date prefix; a month and day is.
+const HAS_DATE = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{1,2}\b|\b\d{1,2}\/\d{1,2}\b|\b\d{1,2}(st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/i;
 
 /** "Thu Sep 17, doors 9pm" without ever repeating a date the time text already carries. */
 export function whenText(c) {

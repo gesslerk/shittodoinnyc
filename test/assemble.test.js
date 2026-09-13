@@ -90,6 +90,7 @@ test("whenText never repeats a date the time text already carries", () => {
   assert.equal(whenText(cand("a", { time_text: "doors 9pm" })), "Fri Sep 18, doors 9pm");
   assert.equal(whenText(cand("b", { time_text: "Fri Sep 18, doors 9pm" })), "Fri Sep 18, doors 9pm");
   assert.equal(whenText(cand("c", { time_text: "Saturday September 19; doors not listed" })), "Saturday September 19; doors not listed");
+  assert.equal(whenText(cand("c2", { time_text: "Kickoff Saturday: seating 4 to 7pm" })), "Fri Sep 18, Kickoff Saturday: seating 4 to 7pm");
   assert.equal(whenText(cand("d", { time_text: "", end_date: "2026-10-31" })), "Fri Sep 18 to Sat Oct 31");
   assert.equal(whenText(cand("e", { anytime: true, start_date: null, time_text: "Daily 8am to 11pm" })), "Daily 8am to 11pm");
 });

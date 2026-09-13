@@ -20,7 +20,7 @@ export const VERIFY_SCHEMA = {
             description:
               "confirmed = page loads and the details match; corrected = page loads and a detail was wrong (give the fixed value); unverifiable = page would not load or does not state the details; contradicted = the event is cancelled, sold out with no resale, already happened, in another city, or the page is for something else",
           },
-          start_date: { ...nullableString, description: "Corrected YYYY-MM-DD if the date differs or was missing, else null" },
+          start_date: { ...nullableString, description: "Corrected YYYY-MM-DD if the date differs or was missing. REQUIRED whenever the page shows a specific date for an item the research desk listed as anytime: a one-night show is never 'anytime'. Else null." },
           time_text: { ...nullableString, description: "Corrected time of day only, e.g. 'doors 7:30pm, show 8pm', if it differs or was missing. Never include the date. Else null." },
           price_text: { ...nullableString, description: "Corrected price in whole dollars if it differs or was missing, else null" },
           venue: { ...nullableString, description: "Corrected venue name (no address) if it differs, else null" },

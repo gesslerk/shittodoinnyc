@@ -85,6 +85,7 @@ Selection rules:
 - Respect every non-negotiable in the profile. When in doubt, ask: would the Time Out crowd be there? If yes, cut it.
 - The family pick is one weekend daytime thing that works with a 1-year-old and is interesting to the adults.
 - Bench: two or three alternates from THIS WINDOW that are not in picks, in case a pick fails verification.
+- "Anytime" is only for places and open-ended offers: a bar that opened, a bathhouse, a venue that programs every night. A one-night event never goes there. If a candidate marked anytime is clearly a dated event, treat it as dated: pick it, put it on the radar, or leave it out.
 - If the pool is thin, say so in the notes rather than padding with weak picks. Five strong picks beat seven mediocre ones.
 
 Writing rules:
