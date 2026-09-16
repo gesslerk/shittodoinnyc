@@ -91,18 +91,24 @@ export function computeWindows(now = new Date(), timeZone = TZ) {
   };
 }
 
+/** Monday-to-Sunday bounds of the New York week containing a date. */
+export function weekBounds(iso) {
+  const d = fromISO(iso);
+  const monday = addDays(d, -((d.getUTCDay() + 6) % 7));
+  return { start: toISO(monday), end: toISO(addDays(monday, 6)) };
+}
+
 /**
- * Gate for scheduled runs. Manual runs (workflow_dispatch, local) always proceed.
- * Scheduled runs proceed only when it is the 6am hour in New York.
+ * Gate for scheduled runs. GitHub's cron is best-effort and can fire hours late, so the
+ * question is never "is it 6am?" but "has this week's issue gone out yet?". The workflow
+ * fires at many slots on Monday morning; the first one GitHub actually runs sends the
+ * email, and every later slot sees the archive and stands down. Manual runs always proceed.
  */
-export function shouldRunNow({ eventName, force = false, now = new Date(), timeZone = TZ }) {
+export function shouldRunNow({ eventName, force = false, now = new Date(), timeZone = TZ, alreadySentThisWeek = false }) {
   const p = nyParts(now, timeZone);
   const clock = `${p.weekday} ${String(p.hour).padStart(2, "0")}:${String(p.minute).padStart(2, "0")} New York time`;
   if (force) return { run: true, reason: `FORCE is set (${clock})` };
   if (eventName !== "schedule") return { run: true, reason: `manual run: ${eventName} (${clock})` };
-  if (p.hour === 6) return { run: true, reason: `scheduled run in the 6am slot (${clock})` };
-  return {
-    run: false,
-    reason: `scheduled run at ${clock}; this cron entry is the other daylight-saving offset, skipping`,
-  };
+  if (alreadySentThisWeek) return { run: false, reason: `scheduled run at ${clock}; this week's issue already went out, skipping` };
+  return { run: true, reason: `scheduled run at ${clock}; nothing sent yet this week, sending` };
 }

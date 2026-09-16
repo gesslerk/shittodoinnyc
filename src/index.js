@@ -10,7 +10,7 @@ import { verify, applyVerification, itemsToVerify } from "./verify.js";
 import { assemble } from "./assemble.js";
 import { renderEmail } from "./render.js";
 import { sendEmail } from "./send.js";
-import { readRecent, nextIssueNumber, writeIssue } from "./archive.js";
+import { readRecent, nextIssueNumber, writeIssue, hasIssueInWeek } from "./archive.js";
 import { mergeUsage, emptyUsage, estimateCost } from "./claude.js";
 
 const ts = () => new Date().toISOString().slice(11, 19);
@@ -40,7 +40,8 @@ const tally = (results) => {
 async function main() {
   const t0 = Date.now();
   const cfg = loadConfig();
-  const gate = shouldRunNow({ eventName: cfg.eventName, force: cfg.force });
+  const windows = computeWindows();
+  const gate = shouldRunNow({ eventName: cfg.eventName, force: cfg.force, alreadySentThisWeek: hasIssueInWeek(windows.today) });
   log.info(gate.reason);
   setOutput("built", "false");
   setOutput("sent", "false");
@@ -50,7 +51,6 @@ async function main() {
   const hasProvider = cfg.email.resendApiKey || (cfg.email.gmailUser && cfg.email.gmailAppPassword);
   if (!cfg.dryRun && !hasProvider) throw new Error("No email provider configured: set RESEND_API_KEY, or GMAIL_USER and GMAIL_APP_PASSWORD (or DRY_RUN=1)");
 
-  const windows = computeWindows();
   const profile = loadProfile();
   const recent = readRecent(8);
   const issueNumber = nextIssueNumber();

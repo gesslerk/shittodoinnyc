@@ -120,9 +120,11 @@ Most of the small, weird stuff is announced on Instagram and nowhere else, and I
 
 The handle list in `profile/instagram.md` is a starting guess. Fix any handles that are wrong and add the accounts you actually follow for plans.
 
-## Schedule and daylight saving
+## Schedule
 
-GitHub Actions cron runs in UTC. The workflow fires at 10:00 and 11:00 UTC every Monday; `src/schedule.js` runs only the one that is 06:00 in New York and skips the other. Manual runs ignore the gate.
+GitHub Actions cron is best-effort. On the first Monday it fired six hours late, and the original design (run only in the 6am hour) threw the run away. Now the workflow has a slot every 30 minutes from 10:00 to 14:30 UTC on Mondays, which is 6:00 to 10:30am New York in summer and an hour earlier in winter. The first slot GitHub actually honors sends the issue; every later slot finds this week's issue in `archive/` and stops. Whichever slot sends, it is once a week, and a failed attempt leaves no archive entry so the next slot retries.
+
+Manual runs (Actions tab, or `gh workflow run`) always proceed, including a second send in the same week.
 
 GitHub disables scheduled workflows in repos with no commits for 60 days. The weekly archive commit keeps this one alive.
 

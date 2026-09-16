@@ -2,10 +2,11 @@ name: Weekly email
 
 on:
   schedule:
-    # GitHub cron is UTC. Both entries fire; src/schedule.js keeps only the one
-    # that is 6:00am in New York (10:00 UTC during daylight time, 11:00 UTC in winter).
-    - cron: "0 10 * * 1"
-    - cron: "0 11 * * 1"
+    # GitHub cron is UTC and best-effort: it fired six hours late on the first Monday.
+    # So: a slot every 30 minutes from 10:00 to 14:30 UTC on Mondays (6:00 to 10:30am
+    # New York in summer, 5:00 to 9:30am in winter). The first slot GitHub actually runs
+    # sends the email; every later slot finds this week's issue in archive/ and skips.
+    - cron: "0,30 10-14 * * 1"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -30,6 +31,11 @@ jobs:
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
+
+      - name: Sync to the latest main
+        # A slot that queued behind an earlier one checked out an older commit; pull so
+        # the gate sees the archive that run just committed.
+        run: git pull --ff-only origin ${{ github.ref_name }} || true
 
       - uses: actions/setup-node@v4
         with:

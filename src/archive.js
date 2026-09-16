@@ -1,19 +1,26 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ROOT } from "./config.js";
+import { weekBounds } from "./schedule.js";
 
 export const ARCHIVE_DIR = path.join(ROOT, "archive");
 
-function issueDirs() {
-  if (!fs.existsSync(ARCHIVE_DIR)) return [];
+function issueDirs(dir = ARCHIVE_DIR) {
+  if (!fs.existsSync(dir)) return [];
   return fs
-    .readdirSync(ARCHIVE_DIR)
-    .filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d) && fs.existsSync(path.join(ARCHIVE_DIR, d, "issue.json")))
+    .readdirSync(dir)
+    .filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d) && fs.existsSync(path.join(dir, d, "issue.json")))
     .sort();
 }
 
 export function nextIssueNumber() {
   return issueDirs().length + 1;
+}
+
+/** True if an issue was already archived in the Monday-to-Sunday week containing `iso`. */
+export function hasIssueInWeek(iso, dir = ARCHIVE_DIR) {
+  const { start, end } = weekBounds(iso);
+  return issueDirs(dir).some((d) => d >= start && d <= end);
 }
 
 /** Titles from the last N issues, for the curator's do-not-repeat list. */
