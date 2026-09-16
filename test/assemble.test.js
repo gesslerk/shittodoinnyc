@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { assemble, whenText } from "../src/assemble.js";
+import { assemble, whenText, composeSubject } from "../src/assemble.js";
 import { applyVerification } from "../src/verify.js";
 import { sanitizeCuration } from "../src/curate.js";
 import { filterCandidates, dedupeCandidates, flagDateConflicts } from "../src/research.js";
@@ -160,4 +160,11 @@ test("flagDateConflicts marks the same event reported on different dates", () =>
   assert.deepEqual(list[1].date_conflict, ["2026-09-17", "2026-09-18"]);
   assert.equal(list[2].date_conflict, undefined);
   assert.equal(list[3].date_conflict, undefined);
+});
+
+test("the subject's date comes from code, the hook from the curator", () => {
+  const w = { ...windows, today: "2026-09-15" };
+  assert.equal(composeSubject("Shit To Do in NYC (Sep 14): Erol Alkan, Berghain in Ridgewood", w), "Shit To Do in NYC (Sep 15): Erol Alkan, Berghain in Ridgewood");
+  assert.equal(composeSubject("Kalkbrenner, a fight, a banya", w), "Shit To Do in NYC (Sep 15): Kalkbrenner, a fight, a banya");
+  assert.equal(composeSubject("", w), "Shit To Do in NYC (Sep 15)");
 });

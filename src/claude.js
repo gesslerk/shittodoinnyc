@@ -17,6 +17,22 @@ const SEARCH_PRICE_PER_1000 = 10;
 
 export class TimeoutError extends Error {}
 
+/**
+ * Remove unpaired UTF-16 surrogates. A caption cut in the middle of an emoji leaves a lone
+ * half, and the API rejects the whole request body as invalid JSON ("no low surrogate").
+ */
+export const stripLoneSurrogates = (s) =>
+  String(s ?? "")
+    .replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])/g, "")
+    .replace(/(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/g, "");
+
+const cleanContent = (content) =>
+  typeof content === "string"
+    ? stripLoneSurrogates(content)
+    : Array.isArray(content)
+      ? content.map((b) => (b && b.type === "text" && typeof b.text === "string" ? { ...b, text: stripLoneSurrogates(b.text) } : b))
+      : content;
+
 let client;
 export function getClient() {
   if (!client) client = new Anthropic({ timeout: 25 * 60 * 1000, maxRetries: 3 });
@@ -82,7 +98,7 @@ export async function runClaude({
   log = console,
 }) {
   const c = getClient();
-  const convo = [...messages];
+  const convo = messages.map((m) => (m.role === "user" ? { ...m, content: cleanContent(m.content) } : m));
   const usage = emptyUsage();
   const deadline = Date.now() + timeoutMs;
   let useFallbacks = true;
@@ -95,7 +111,7 @@ export async function runClaude({
     const params = {
       model,
       max_tokens: maxTokens,
-      system: [{ type: "text", text: system, cache_control: { type: "ephemeral" } }],
+      system: [{ type: "text", text: stripLoneSurrogates(system), cache_control: { type: "ephemeral" } }],
       messages: convo,
       output_config: {
         effort,

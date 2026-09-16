@@ -1,5 +1,14 @@
 import { formatShort, isISODate, weekdayOf } from "./schedule.js";
 
+/** "Shit To Do in NYC (Sep 15): <hook>". The curator supplies the hook; the date can't drift. */
+export function composeSubject(raw, windows) {
+  const label = formatShort(windows.today).replace(/^[A-Za-z]{3} /, "");
+  let hook = String(raw ?? "").trim();
+  const m = hook.match(/^shit to do in nyc\s*(?:\([^)]*\))?\s*[:|\-–—]\s*(.+)$/i);
+  if (m) hook = m[1].trim();
+  return hook ? `Shit To Do in NYC (${label}): ${hook}` : `Shit To Do in NYC (${label})`;
+}
+
 const UNVERIFIED_NOTE = "Could not re-check the listing page this morning. Confirm the date on the link before you buy.";
 // A bare weekday ("Saturday 4pm") is not enough to skip the date prefix; a month and day is.
 const HAS_DATE = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{1,2}\b|\b\d{1,2}\/\d{1,2}\b|\b\d{1,2}(st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/i;
@@ -90,7 +99,7 @@ export function assemble({ curated, candidates, verification = new Map(), window
     weekOf: windows.today,
     weekOfLabel: windows.weekOfLabel,
     windows: { this: windows.thisWindow, radar: windows.radar },
-    subject: curated.subject,
+    subject: composeSubject(curated.subject, windows),
     opener: curated.opener,
     picks: picks.slice(0, 7),
     radar,

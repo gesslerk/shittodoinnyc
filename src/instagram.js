@@ -15,6 +15,8 @@
  *     it on their infrastructure and you accept that trade-off by setting the token.
  */
 
+import { stripLoneSurrogates } from "./claude.js";
+
 const API = "https://api.apify.com/v2";
 
 export function parseHandles(md) {
@@ -34,7 +36,7 @@ function normalizePost(item) {
   if (typeof tsRaw === "number") timestamp = new Date(tsRaw * (tsRaw < 1e12 ? 1000 : 1)).toISOString();
   else if (typeof tsRaw === "string" && !Number.isNaN(Date.parse(tsRaw))) timestamp = new Date(tsRaw).toISOString();
   const account = item.ownerUsername ?? item.username ?? item.owner?.username ?? (item.inputUrl ? item.inputUrl.replace(/^https?:\/\/(www\.)?instagram\.com\//, "").replace(/\/.*$/, "") : "unknown");
-  const caption = String(item.caption ?? item.text ?? item.title ?? "").replace(/\s+/g, " ").trim();
+  const caption = stripLoneSurrogates(String(item.caption ?? item.text ?? item.title ?? "")).replace(/\s+/g, " ").trim();
   return { account, url, timestamp, caption, location: item.locationName ?? item.location?.name ?? null, type: item.type ?? item.productType ?? null };
 }
 
@@ -108,7 +110,8 @@ export function formatPostsForPrompt(posts, { maxCaption = 700 } = {}) {
   return posts
     .map((p) => {
       const when = p.timestamp ? p.timestamp.slice(0, 10) : "date unknown";
-      const cap = p.caption.length > maxCaption ? `${p.caption.slice(0, maxCaption)}…` : p.caption;
+      const chars = Array.from(p.caption); // code points, so an emoji is never split in half
+      const cap = chars.length > maxCaption ? `${chars.slice(0, maxCaption).join("")}…` : p.caption;
       return `@${p.account} · posted ${when}${p.location ? ` · ${p.location}` : ""} · ${p.url}\n${cap}`;
     })
     .join("\n\n");
