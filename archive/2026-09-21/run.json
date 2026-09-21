@@ -1,0 +1,72 @@
+{
+  "gate": {
+    "run": true,
+    "reason": "scheduled run at Mon 12:03 New York time; nothing sent yet this week, sending"
+  },
+  "windows": {
+    "today": "2026-09-21",
+    "todayLabel": "September 21, 2026",
+    "thisWindow": {
+      "start": "2026-09-21",
+      "end": "2026-09-27"
+    },
+    "radar": {
+      "start": "2026-09-28",
+      "end": "2026-11-08"
+    },
+    "days": [
+      "Mon Sep 21 (2026-09-21)",
+      "Tue Sep 22 (2026-09-22)",
+      "Wed Sep 23 (2026-09-23)",
+      "Thu Sep 24 (2026-09-24)",
+      "Fri Sep 25 (2026-09-25)",
+      "Sat Sep 26 (2026-09-26)",
+      "Sun Sep 27 (2026-09-27)"
+    ],
+    "months": [
+      "September",
+      "October",
+      "November"
+    ],
+    "weekOfLabel": "Week of Sep 21, 2026"
+  },
+  "models": {
+    "research": "claude-opus-5",
+    "curate": "claude-opus-5",
+    "verify": "claude-opus-5"
+  },
+  "effort": {
+    "research": "high",
+    "curate": "high",
+    "verify": "high"
+  },
+  "usage": {
+    "input": 102805,
+    "output": 178409,
+    "cacheRead": 12685092,
+    "cacheWrite": 669313,
+    "searches": 94,
+    "fetches": 86,
+    "requests": 8
+  },
+  "stats": {
+    "searches": 94,
+    "fetches": 86,
+    "requests": 8,
+    "inputTokens": 13457210,
+    "outputTokens": 178409,
+    "estimatedCostUsd": 16.44,
+    "candidates": 82,
+    "instagramPosts": 297,
+    "verification": {
+      "corrected": 8,
+      "confirmed": 10,
+      "unverifiable": 1
+    },
+    "corrections": 8,
+    "secondPass": false,
+    "durationSec": 2468
+  },
+  "sentTo": "gesslerk@gmail.com",
+  "generatedAt": "2026-09-21T16:44:20.518Z"
+}

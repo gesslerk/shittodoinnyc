@@ -1,0 +1,2996 @@
+{
+  "candidates": [
+    {
+      "id": "c1",
+      "title": "Church Street Boxing Presents \"FALL BRAWL\"",
+      "category": "fight",
+      "start_date": "2026-09-24",
+      "end_date": null,
+      "time_text": "6:30pm to 10pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Church Street Boxing Gym",
+      "address": "25 Park Place, New York, NY 10007",
+      "neighborhood": "Tribeca",
+      "borough": "Manhattan",
+      "price_text": "tickets on Eventbrite; the price tier did not render on the page, so check before you commit (water and soda are $2 inside)",
+      "url": "https://www.eventbrite.com/e/church-street-boxing-presents-fall-brawl-tickets-1998273512869",
+      "source_url": "https://www.eventbrite.com/e/church-street-boxing-presents-fall-brawl-tickets-1998273512869",
+      "summary": "A USA Boxing sanctioned fight night inside Church Street Boxing Gym, one of the oldest boxing gyms in the city, on Thursday September 24 from 6:30 to 10pm. It is a basement-gym card with a DJ between rounds, no outside food or alcohol, tickets through the gym's Eventbrite. Address is 25 Park Place in Tribeca.",
+      "fit": "Thursday night, small room, ring a few feet away, and it is a five-minute walk from where he teaches Krav at KMI in Tribeca. These are amateurs, not pros, so go for the room and the crowd rather than the names on the card.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "boxing",
+        "small room",
+        "thursday",
+        "tribeca",
+        "combat sports community"
+      ],
+      "lane": "fights",
+      "lanes": [
+        "fights"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Knicks home opener and championship banner night vs Philadelphia 76ers",
+      "category": "sports",
+      "start_date": "2026-10-20",
+      "end_date": null,
+      "time_text": "evening tip, ring ceremony and banner raising before the game",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Madison Square Garden",
+      "address": "4 Pennsylvania Plaza, New York, NY 10001",
+      "neighborhood": "Penn District / Midtown",
+      "borough": "Manhattan",
+      "price_text": "not verified; opener pricing is the most expensive regular-season night of the year",
+      "url": "https://www.ticketmaster.com/new-york-knicks-tickets/artist/805988?home_away=home",
+      "source_url": "https://abc7ny.com/post/knicks-2026-2027-schedule-released-nba-new-york-open-philadelphia-76ers/19674103/",
+      "summary": "The Knicks open the 2026-27 season at the Garden on Tuesday October 20 against LeBron James and the 76ers, and get their championship rings and raise the banner before tip. CBS Sports, ABC7 and Yahoo all report the date and the ceremony; Ticketmaster lists the game on the Knicks home schedule.",
+      "fit": "He spent the last playoff run in bars with the guys; this is the payoff night, and it is the one regular-season ticket worth buying. It is a Tuesday, which normally means no, but a banner going up at MSG is the definition of exceptional.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "knicks",
+        "msg",
+        "big spectacle",
+        "book now",
+        "championship"
+      ],
+      "lane": "fights",
+      "lanes": [
+        "fights"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "BKFC 95 (Bare Knuckle Fighting Championship)",
+      "category": "fight",
+      "start_date": "2026-10-17",
+      "end_date": null,
+      "time_text": "8pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Prudential Center",
+      "address": "25 Lafayette St, Newark, NJ 07102",
+      "neighborhood": "Downtown Newark",
+      "borough": "Newark",
+      "price_text": "not listed on the arena page; tickets via the arena's ticket link",
+      "url": "https://www.prucenter.com/events/bare-knuckle-fighting-championship",
+      "source_url": "https://www.prucenter.com/events",
+      "summary": "BKFC brings card number 95 to the Prudential Center on Saturday October 17 at 8pm, confirmed on the arena's own events calendar. Bare knuckle boxing, full pro card, no gloves. Newark is a PATH ride from Manhattan.",
+      "fit": "A real pro combat card in the metro area on a Saturday night, and bare knuckle is the kind of card his Muay Thai crew will actually argue about afterward. The fight-specific matchups were not posted on the arena page yet, so check the BKFC card before buying if the names matter to you.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "bare knuckle",
+        "boxing",
+        "newark",
+        "saturday",
+        "pro card"
+      ],
+      "lane": "fights",
+      "lanes": [
+        "fights"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "New York vs Chicago Golden Gloves intercity dual",
+      "category": "fight",
+      "start_date": "2026-09-26",
+      "end_date": null,
+      "time_text": "not confirmed",
+      "recurring": false,
+      "anytime": false,
+      "venue": "DoubleTree by Hilton New York - LaGuardia Airport",
+      "address": "",
+      "neighborhood": "near LaGuardia Airport",
+      "borough": "Queens",
+      "price_text": "not confirmed",
+      "url": "https://www.boxinginsider.com/headlines/new-york-and-chicago-golden-gloves-revive-intercity-rivalry-sept-26/",
+      "source_url": "https://www.boxinginsider.com/headlines/new-york-and-chicago-golden-gloves-revive-intercity-rivalry-sept-26/",
+      "summary": "The nearly century-old New York vs Chicago Golden Gloves rivalry is being revived on Saturday September 26 in Queens, with 2026 Chicago Golden Gloves champions facing New York Metro Ring Masters champions across a 14-bout card, seven men's and seven women's. Reported by BoxingInsider from the promoters' announcement on September 1. Venue is the DoubleTree by Hilton New York-LaGuardia Airport.",
+      "fit": "Amateur, but this is the opposite of a routine smoker: the best Metro Ring Masters champs against Chicago's, in a hotel ballroom in Queens, the kind of card almost nobody in his feed will know is happening. Treat it as unverified until you find the ticket page, because I could not confirm start time or price on an organizer site.",
+      "confidence": "unverified",
+      "who": "guys",
+      "tags": [
+        "boxing",
+        "golden gloves",
+        "queens",
+        "saturday",
+        "deep scene"
+      ],
+      "lane": "fights",
+      "lanes": [
+        "fights"
+      ]
+    },
+    {
+      "id": "c5",
+      "title": "Haymakers for Hope - Hope NYC XIV",
+      "category": "fight",
+      "start_date": "2026-11-05",
+      "end_date": null,
+      "time_text": "7:30pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Manhattan Center Hammerstein Ballroom",
+      "address": "311 W 34th St, New York, NY",
+      "neighborhood": "Midtown West",
+      "borough": "Manhattan",
+      "price_text": "not verified; charity boxing tickets are typically table and GA tiers",
+      "url": "https://haymakersforhope.org/events/boxing/hope-nyc-xi-2026/notify",
+      "source_url": "https://www.ticketmaster.com/Haymakers-for-Hope-tickets/artist/1703588",
+      "summary": "Haymakers for Hope stages its fourteenth New York charity boxing night at the Hammerstein Ballroom on Thursday November 5 at 7:30pm, per the organizer's event page and the Ticketmaster venue listing. Everyday people train for months and fight three rounds in front of a ballroom crowd to raise money for cancer research.",
+      "fit": "Thursday, a proper ring in a 2,000-cap ballroom, and everyone in it has trained for this one night, which is a fight-gym crowd he'll recognize. It is white-collar boxing, not pro, so bring the training partners rather than expecting technical clinics.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "boxing",
+        "charity",
+        "thursday",
+        "hammerstein",
+        "training community"
+      ],
+      "lane": "fights",
+      "lanes": [
+        "fights"
+      ]
+    },
+    {
+      "id": "c6",
+      "title": "New York Liberty vs Atlanta Dream",
+      "category": "sports",
+      "start_date": "2026-09-23",
+      "end_date": null,
+      "time_text": "evening tip",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Barclays Center",
+      "address": "620 Atlantic Ave, Brooklyn, NY 11217",
+      "neighborhood": "Prospect Heights",
+      "borough": "Brooklyn",
+      "price_text": "not verified; via Ticketmaster through the arena page",
+      "url": "https://www.barclayscenter.com/events/detail/new-york-liberty-vs-atlanta-dream-20260923",
+      "source_url": "https://www.barclayscenter.com/events",
+      "summary": "The Liberty host the Atlanta Dream at Barclays Center on Wednesday September 23, the second of two straight home dates against the same opponent (the first is Monday September 21), per the arena's own events calendar. Barclays is a walk from Fort Greene.",
+      "fit": "Back-to-back home games against one team in late September reads like a postseason series, and a big Brooklyn basketball crowd ten minutes from his door is the only reason to burn a Wednesday. I could not confirm on a league page that this is a playoff game, so verify before you sell it to the group chat.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "basketball",
+        "barclays",
+        "walkable",
+        "wednesday"
+      ],
+      "lane": "fights",
+      "lanes": [
+        "fights"
+      ]
+    },
+    {
+      "id": "c7",
+      "title": "Brooklyn Nets vs Philadelphia 76ers (preseason)",
+      "category": "sports",
+      "start_date": "2026-10-08",
+      "end_date": null,
+      "time_text": "evening tip",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Barclays Center",
+      "address": "620 Atlantic Ave, Brooklyn, NY 11217",
+      "neighborhood": "Prospect Heights",
+      "borough": "Brooklyn",
+      "price_text": "not verified; preseason pricing is the cheapest of the year",
+      "url": "https://www.barclayscenter.com/events/detail/brooklyn-nets-vs-philadelphia-76ers-20261008",
+      "source_url": "https://www.barclayscenter.com/events",
+      "summary": "Barclays Center's calendar lists a Nets preseason game against the 76ers on Thursday October 8. It is preseason, so starters often play a half or less, and there is no guarantee LeBron James suits up for the new-look Philadelphia team.",
+      "fit": "Only worth it as a cheap Thursday walk from Fort Greene before the real season starts; if you want the Sixers night that actually matters, buy the October 20 Knicks banner game instead.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "basketball",
+        "barclays",
+        "thursday",
+        "walkable",
+        "preseason"
+      ],
+      "lane": "fights",
+      "lanes": [
+        "fights"
+      ]
+    },
+    {
+      "id": "c8",
+      "title": "Resident Chef's Table: Chef Andrew Sargent",
+      "category": "food",
+      "start_date": "2026-09-25",
+      "end_date": null,
+      "time_text": "7pm to 10pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Brooklyn Point",
+      "address": "138 Willoughby Street, Brooklyn, NY 11201",
+      "neighborhood": "Downtown Brooklyn",
+      "borough": "Brooklyn",
+      "price_text": "about $195 a head at their recent Brooklyn Point dinners, five courses with wine pairings; confirm on the ticket page",
+      "url": "https://www.meetresident.com/reservations/friday-sept-25-2026-at-brooklyn-point",
+      "source_url": "https://www.meetresident.com/reservations",
+      "summary": "Resident runs one-night-only, five-course tasting menus by Michelin-trained chefs in non-restaurant rooms around the city. This Friday it is Andrew Sargent, who cooked at Cafe Boulud and Daniel and spent three years as a sous chef under Thomas Keller at Per Se, then won Netflix's Next Gen Chef in 2025. The room is Brooklyn Point in Downtown Brooklyn, a 15-minute walk from Fort Greene.",
+      "fit": "A date-night version of the thing he actually likes: a one-off menu, a chef standing in front of you explaining it, a room of maybe 20 people, and nobody in the city knows it is happening. Ten minutes from his door.",
+      "confidence": "verified",
+      "who": "wife",
+      "tags": [
+        "chef pop-up",
+        "tasting menu",
+        "one night only",
+        "date night",
+        "downtown brooklyn"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ],
+      "date_conflict": [
+        "2026-09-25",
+        "2026-10-08",
+        "2026-10-09"
+      ]
+    },
+    {
+      "id": "c9",
+      "title": "Radegast Hall Oktoberfest Saturday",
+      "category": "drink",
+      "start_date": "2026-09-26",
+      "end_date": "2026-10-03",
+      "time_text": "3pm to 9pm: brass band first, then women's and men's stein-holding, ceremonial keg tapping around 6, DJ dance party after",
+      "recurring": true,
+      "anytime": false,
+      "venue": "Radegast Hall & Biergarten",
+      "address": "113 N 3rd Street, Brooklyn, NY 11249",
+      "neighborhood": "Williamsburg",
+      "borough": "Brooklyn",
+      "price_text": "no ticket found; beer and wursts a la carte",
+      "url": "https://www.radegasthall.com/",
+      "source_url": "https://www.timeout.com/newyork/things-to-do/the-best-events-for-oktoberfest-in-nyc",
+      "summary": "Radegast runs its Oktoberfest programming on Saturdays September 19 and 26 and October 3, from 3pm to 9pm: brass bands, stein-holding competitions for men and women, a ceremonial keg tapping, and a DJ-led dance party to close it out. The grill is going the whole time. Walk-in, no ticket listed.",
+      "fit": "Interactive in the way he likes: you enter the stein-holding contest, you do not just watch it. It is also a block from where he trains Muay Thai, so it is an easy Saturday afternoon for two or three of the guys that turns into a dance floor by nine.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "german",
+        "oktoberfest",
+        "beer hall",
+        "competition",
+        "williamsburg"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ]
+    },
+    {
+      "id": "c10",
+      "title": "Jerry Pepper's smash burgers plus PK Drumz live music at Strong Rope",
+      "category": "drink",
+      "start_date": "2026-09-25",
+      "end_date": null,
+      "time_text": "food pop-up 12pm-8pm; live music Friday evening",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Strong Rope Brewery, Red Hook taproom (185 Van Dyke St)",
+      "address": "",
+      "neighborhood": "Red Hook / Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "free entry; beer and burgers a la carte",
+      "url": "https://www.strongropebrewery.com/events-calendar/live-music-pk-drumz-2026-sep-25",
+      "source_url": "https://www.strongropebrewery.com/events",
+      "summary": "Strong Rope has two things stacked on Friday night: Jerry Pepper's slinging classic American smash burgers as the food pop-up, and PK Drumz presenting live music. All-New-York-ingredient beer, no cover listed.",
+      "fit": "Strong Rope on a good day is already one of his places. This is the version with a burger guy and a band instead of just a taproom, which makes it a plan he can send to the group chat instead of a 'grab a beer' text.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "brewery",
+        "food pop-up",
+        "live music",
+        "red hook"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ]
+    },
+    {
+      "id": "c11",
+      "title": "Red Hook Lobster Pound truck and Empanada Papa at Strong Rope",
+      "category": "food",
+      "start_date": "2026-09-27",
+      "end_date": null,
+      "time_text": "daytime into evening",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Strong Rope Brewery",
+      "address": "",
+      "neighborhood": "Red Hook / Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "free entry; lobster rolls and empanadas a la carte",
+      "url": "https://www.strongropebrewery.com/events-calendar/food-lobster-pound-2026-sep-27",
+      "source_url": "https://www.strongropebrewery.com/events",
+      "summary": "Sunday at Strong Rope brings both the Red Hook Lobster Pound truck and an Empanada Papa pop-up alongside the taproom's New York-grown beer. Heads up: the Red Hook taproom is closed all day Saturday September 26 for a private event, so Sunday is the day.",
+      "fit": "His Red Hook sunny-day move with a reason to show up: lobster rolls outside, stroller parks fine, and it is done well before the toddler melts down. Easy family Sunday that the adults actually want to be at.",
+      "confidence": "verified",
+      "who": "family",
+      "tags": [
+        "brewery",
+        "food truck",
+        "red hook",
+        "stroller friendly",
+        "sunday"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ]
+    },
+    {
+      "id": "c12",
+      "title": "Meat Asia Asian BBQ pop-up and El Toro Rojo at Strong Rope",
+      "category": "food",
+      "start_date": "2026-10-03",
+      "end_date": null,
+      "time_text": "daytime into evening",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Strong Rope Brewery",
+      "address": "",
+      "neighborhood": "Red Hook / Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "free entry; food a la carte",
+      "url": "https://www.strongropebrewery.com/events-calendar/food-meat-asia-2026-aug-29-n7set",
+      "source_url": "https://www.strongropebrewery.com/events",
+      "summary": "Two food pop-ups at Strong Rope on the same Saturday: Meat Asia doing Asian barbecue and the El Toro Rojo truck doing Mexican. Walk-in, beer a la carte.",
+      "fit": "Asian BBQ eaten standing up in a brewery with two friends is exactly his register, and it is a Saturday in Red Hook rather than a reservation he has to fight for.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "brewery",
+        "bbq",
+        "food pop-up",
+        "red hook"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ]
+    },
+    {
+      "id": "c13",
+      "title": "Resident Chef's Table: Chef Mackenzie Milone",
+      "category": "food",
+      "start_date": "2026-10-08",
+      "end_date": null,
+      "time_text": "evening, typically 7pm to 10pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Brooklyn Point",
+      "address": "138 Willoughby Street, Brooklyn, NY 11201",
+      "neighborhood": "Downtown Brooklyn",
+      "borough": "Brooklyn",
+      "price_text": "about $195 a head based on Resident's other five-course wine-paired dinners; confirm on the ticket page",
+      "url": "https://www.meetresident.com/reservations/thursday-october-8-2026",
+      "source_url": "https://www.meetresident.com/reservations",
+      "summary": "A Thursday-night, one-night-only five-course dinner from Mackenzie Milone, who cooked at Gramercy Tavern, Restaurant Daniel and Ci Siamo and spent a year working as a sommelier. Held at Brooklyn Point in Downtown Brooklyn with wine pairings.",
+      "fit": "Thursday is his night and this is a 10-minute walk from Fort Greene. Book it now because these seats are small in number and go before the week of.",
+      "confidence": "verified",
+      "who": "wife",
+      "tags": [
+        "chef pop-up",
+        "tasting menu",
+        "thursday",
+        "book now"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ],
+      "date_conflict": [
+        "2026-09-25",
+        "2026-10-08",
+        "2026-10-09"
+      ]
+    },
+    {
+      "id": "c14",
+      "title": "Resident Chef's Table: Chef Luis Lising",
+      "category": "food",
+      "start_date": "2026-10-09",
+      "end_date": null,
+      "time_text": "evening, typically 7pm to 10pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Brooklyn Point",
+      "address": "138 Willoughby Street, Brooklyn, NY 11201",
+      "neighborhood": "Downtown Brooklyn",
+      "borough": "Brooklyn",
+      "price_text": "about $195 a head based on Resident's other five-course wine-paired dinners; confirm on the ticket page",
+      "url": "https://www.meetresident.com/reservations/friday-october-9-brooklyn-point",
+      "source_url": "https://www.meetresident.com/reservations",
+      "summary": "Luis Lising, born in Pampanga and raised in Oahu, cooked at Morimoto Honolulu and Al Coro before running the kitchen at Margot in Fort Greene for two years. His one-night menu leans Hawaii Regional and Filipino, produce and umami driven. Five courses with pairings at Brooklyn Point.",
+      "fit": "The chef ran the kitchen at Margot, four blocks from his apartment, so this is his own neighborhood's cooking in a private-room format. Good one to take the wife to, or to book for four.",
+      "confidence": "verified",
+      "who": "either",
+      "tags": [
+        "chef pop-up",
+        "filipino",
+        "hawaiian",
+        "fort greene connection",
+        "book now"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ],
+      "date_conflict": [
+        "2026-09-25",
+        "2026-10-08",
+        "2026-10-09"
+      ]
+    },
+    {
+      "id": "c15",
+      "title": "RAW WINE New York 2026",
+      "category": "drink",
+      "start_date": "2026-11-08",
+      "end_date": "2026-11-09",
+      "time_text": "two-day fair, session times not yet posted",
+      "recurring": false,
+      "anytime": false,
+      "venue": "RAW WINE New York",
+      "address": "",
+      "neighborhood": "",
+      "borough": "Other",
+      "price_text": "not yet published for 2026",
+      "url": "https://www.rawwine.com/fairs",
+      "source_url": "https://www.raisin.digital/en/explore/natural-wine-fairs-tastings-events/",
+      "summary": "RAW WINE, the international low-intervention wine fair, returns to New York on November 8 and 9, 2026. The format is growers pouring their own wine across a big room, hundreds of producers, no distributors in between. Venue and ticket price for this edition were not posted yet when we checked.",
+      "fit": "The natural wine fair he asked for, and the version where you talk to the person who farmed the grapes rather than a brand rep. Put a calendar hold on it now; tickets usually go up a few weeks out.",
+      "confidence": "likely",
+      "who": "either",
+      "tags": [
+        "natural wine",
+        "fair",
+        "book now",
+        "november"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ]
+    },
+    {
+      "id": "c16",
+      "title": "The Lineup Dinner, Season 7",
+      "category": "food",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "single evening seatings, dates announced per season",
+      "recurring": true,
+      "anytime": true,
+      "venue": "Food52 offices, Brooklyn Navy Yard",
+      "address": "",
+      "neighborhood": "Brooklyn Navy Yard",
+      "borough": "Brooklyn",
+      "price_text": "$165 a head including a welcome cocktail, five courses and five wines",
+      "url": "https://www.opentable.com/r/the-lineup-dinner-brooklyn",
+      "source_url": "https://www.opentable.com/r/the-lineup-dinner-brooklyn",
+      "summary": "The Lineup is a pop-up dinner series that hands the kitchen to sous chefs from serious restaurants for one night each, five courses with five wines, staged in the Food52 offices in the Brooklyn Navy Yard. Season 7 features three new chefs and a Hawaiian menu at $165 including a welcome cocktail. Specific 2026 dates were not confirmable on the listing we read.",
+      "fit": "Second-in-commands cooking their own food for one night in an office in the Navy Yard, five minutes from Fort Greene, is precisely the 'you had to know about it' dinner he wants. Check the next seating date before you promise anyone.",
+      "confidence": "unverified",
+      "who": "either",
+      "tags": [
+        "pop-up dinner",
+        "chef series",
+        "navy yard",
+        "tasting menu"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ]
+    },
+    {
+      "id": "c17",
+      "title": "Matches",
+      "category": "bar",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "dinner, then the tables get cleared and it turns into a bar with DJs",
+      "recurring": false,
+      "anytime": true,
+      "venue": "Matches",
+      "address": "560 Manhattan Ave, Brooklyn, NY 11222",
+      "neighborhood": "Greenpoint",
+      "borough": "Brooklyn",
+      "price_text": "a la carte; burgers and steak frites, roughly a $40 to $60 dinner",
+      "url": "https://www.instagram.com/matchesbk",
+      "source_url": "https://ediblebrooklyn.com/new-brooklyn-restaurants-september-2026",
+      "summary": "Matches opened in Greenpoint on August 14, 2026: a loaded cheeseburger, tallow fries, wagyu steak frites, then later in the night the tables come out and the room becomes a bar with DJs and a dance floor. New enough that it is not on anyone's list yet.",
+      "fit": "Dinner that turns into a dance floor in the same room solves his whole problem with nights out: no second venue, no re-convincing anyone at 11pm. Good three-guys Friday.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "new opening",
+        "burger",
+        "dj",
+        "greenpoint",
+        "dinner into party"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ]
+    },
+    {
+      "id": "c18",
+      "title": "Pony's",
+      "category": "food",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "dinner",
+      "recurring": false,
+      "anytime": true,
+      "venue": "Pony's",
+      "address": "424 Van Brunt Street, Brooklyn, NY 11231",
+      "neighborhood": "Red Hook",
+      "borough": "Brooklyn",
+      "price_text": "a la carte, not verified",
+      "url": "https://www.ponysnyc.com",
+      "source_url": "https://ediblebrooklyn.com/new-brooklyn-restaurants-september-2026",
+      "summary": "Pony's opened August 22, 2026 on a cobblestone corner of Van Brunt Street in Red Hook. It is new enough that the room is still quiet on weeknights.",
+      "fit": "A new Red Hook room he can get into without a bot, in the neighborhood he already goes to for Strong Rope. Pair it with a Sunken Harbor Club nightcap and the night plans itself.",
+      "confidence": "likely",
+      "who": "either",
+      "tags": [
+        "new opening",
+        "red hook",
+        "dinner"
+      ],
+      "lane": "food",
+      "lanes": [
+        "food"
+      ]
+    },
+    {
+      "id": "c19",
+      "title": "Petite Rouge",
+      "category": "performance",
+      "start_date": "2026-09-21",
+      "end_date": "2026-10-31",
+      "time_text": "evening showtimes Wed–Sun; pick a slot on the box-office calendar",
+      "recurring": true,
+      "anytime": false,
+      "venue": "Théâtre XIV",
+      "address": "383 Troutman St",
+      "neighborhood": "Bushwick",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://companyxiv.com/tickets/",
+      "source_url": "https://companyxiv.com/about/shows/petite-rouge/",
+      "summary": "Company XIV's world-premiere Baroque Burlesque take on Little Red Riding Hood, now playing at their own Théâtre XIV in Bushwick and extended through Halloween. Aerial work, live singers, opulent costumes, cocktail service by the performers themselves, roughly 150 seats with champagne-couch and single-seat upgrades. Ticket prices are set per seat in the online box office rather than posted as a flat number.",
+      "fit": "This is the company whose Halloween burlesque show was one of his favorite nights in the city, and Petite Rouge is their brand-new mainstage. Small room, no bad seat, and it plays Thursdays — his main weeknight slot — which makes it the easiest great date night on this list.",
+      "confidence": "verified",
+      "who": "wife",
+      "tags": [
+        "burlesque",
+        "company xiv",
+        "date night",
+        "bushwick",
+        "small room"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ],
+      "date_conflict": [
+        "2026-09-21",
+        "2026-09-28"
+      ]
+    },
+    {
+      "id": "c20",
+      "title": "Rocky Horror Picture Show with The Occasionalists — 12th Annual Live Band Karaoke Halloween Extravaganza",
+      "category": "performance",
+      "start_date": "2026-10-30",
+      "end_date": null,
+      "time_text": "doors 6pm, show 7pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Littlefield",
+      "address": "635 Sackett St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "$15 advance, $20 day of",
+      "url": "https://littlefieldnyc.com/event/?wfea_eb_id=2000339654755",
+      "source_url": "https://littlefieldnyc.com/all-shows/",
+      "summary": "The Occasionalists' twelfth annual Rocky Horror night at Littlefield: the film plus a live band doing karaoke, so the audience sings the score. Doors 6pm, show 7pm, 21+, the Friday before Halloween. Ticket price is not listed on the venue page.",
+      "fit": "He dressed up for Rocky Horror in Flatbush and loved it; this is the same idea but you're the one singing, with a live band, ten minutes from Fort Greene. Costume night plus participation plus a room under 200 — it hits almost every box he has.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "halloween",
+        "costume",
+        "rocky horror",
+        "karaoke",
+        "interactive",
+        "gowanus"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c21",
+      "title": "Bushwig Festival 2026",
+      "category": "performance",
+      "start_date": "2026-09-26",
+      "end_date": "2026-09-27",
+      "time_text": "4pm Saturday through 4am",
+      "recurring": false,
+      "anytime": false,
+      "venue": "3 Dollar Bill / 9 Bob Note / The Yard",
+      "address": "260 Meserole St",
+      "neighborhood": "East Williamsburg",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.3dollarbillbk.com/rsvp/2026/9/27/bushwig-festival-2026",
+      "source_url": "https://www.3dollarbillbk.com/rsvp/2026/9/27/bushwig-festival-2026",
+      "summary": "Brooklyn's long-running drag and queer-nightlife festival takes over 3 Dollar Bill, 9 Bob Note and The Yard from 4pm Saturday until 4am, indoor and outdoor stages, dozens of performers and DJs. Ticketing runs through the venue's RSVP page.",
+      "fit": "He goes to drag shows at Phoenix with the guys; Bushwig is that at full scale and it starts in daylight, so he can do the good hours and be home before it turns into a 3am problem. This is the community-run Brooklyn scene version, not a listicle event.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "drag",
+        "festival",
+        "day into night",
+        "brooklyn scene"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c22",
+      "title": "Dancehall Forever",
+      "category": "party",
+      "start_date": "2026-09-26",
+      "end_date": "2026-09-27",
+      "time_text": "11pm to 4am",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Littlefield",
+      "address": "635 Sackett St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "$0 to $24",
+      "url": "https://littlefieldnyc.com/event/?wfea_eb_id=1999810633438",
+      "source_url": "https://littlefieldnyc.com/all-shows/",
+      "summary": "A dedicated dancehall party at Littlefield running 11pm to 4am, 21+, billed by the organizers as ninety percent dancehall and ten percent everything else, with the dances and selectors that come with the movement. Price not posted on the venue page.",
+      "fit": "Dancehall and Afrobeats are his current phase — Popcaan, Shenseea, Sean Paul, Alkaline all live in his library — and this is a real selector party in a 200-cap room rather than a big promoted club night. It's a late one, so file it under the occasional 2am set.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "dancehall",
+        "late night",
+        "small room",
+        "gowanus"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c23",
+      "title": "Don't Tell Comedy — secret location, Chelsea",
+      "category": "comedy",
+      "start_date": "2026-09-26",
+      "end_date": null,
+      "time_text": "doors 8pm, show 8:30pm",
+      "recurring": true,
+      "anytime": false,
+      "venue": "Secret location (revealed by 8am day of show)",
+      "address": "",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "price_text": "$30",
+      "url": "https://www.donttellcomedy.com/shows/nyc-21375/",
+      "source_url": "https://www.donttellcomedy.com/cities/new-york",
+      "summary": "Don't Tell Comedy's Saturday New York show is in a Chelsea performance-arts space, 21+, BYOB, with the address emailed by 8am the morning of. You book without knowing the lineup or the venue; shows run 70 to 90 minutes with five to seven comedians.",
+      "fit": "This is the closest thing to the random Midtown apartment comedy show he still talks about: unmarked room, no lineup announced, bring your own bottle. Perfect small-group Saturday where he's the one who knew about it.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "secret show",
+        "stand-up",
+        "byob",
+        "small room"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c24",
+      "title": "Pizzazz with Gary Gulman",
+      "category": "comedy",
+      "start_date": "2026-09-23",
+      "end_date": null,
+      "time_text": "7:30pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Union Hall",
+      "address": "702 Union St",
+      "neighborhood": "Park Slope",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.eventbrite.com/e/pizzazz-with-gary-gulman-tickets-1999000515353",
+      "source_url": "https://www.unionhallny.com/",
+      "summary": "Gary Gulman brings his Pizzazz show to Union Hall's basement room on Wednesday September 23 at 7:30pm. The Union Hall back room seats well under 200 with bocce and a bar upstairs. Ticket price not shown on the venue listing.",
+      "fit": "A comic who sells out theaters doing a sub-200-seat basement in Park Slope is exactly the room he wants — you can see the guy's face. It's a Wednesday, which is normally off-limits, but this is the kind of booking that earns the exception.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "stand-up",
+        "small room",
+        "union hall",
+        "midweek exception"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c25",
+      "title": "Beth Stelling: Let Me Get Loose",
+      "category": "comedy",
+      "start_date": "2026-09-26",
+      "end_date": null,
+      "time_text": "7pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "The Bell House",
+      "address": "149 7th St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.ticketmaster.com/beth-stelling-let-me-get-loose-brooklyn-new-york-09-26-2026/event/3000645C47A19275",
+      "source_url": "https://www.thebellhouseny.com/",
+      "summary": "Beth Stelling plays The Bell House on Saturday September 26 at 7pm. It's a standing-and-seated Gowanus room, bigger than Union Hall but still a club, not a theater. Price is set on Ticketmaster.",
+      "fit": "An early Saturday show that puts him back on the street by 9, which is the whole trick now that there's a babysitter clock. Strong headliner, Brooklyn room, no arena-comedian energy.",
+      "confidence": "verified",
+      "who": "either",
+      "tags": [
+        "stand-up",
+        "early show",
+        "gowanus"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c26",
+      "title": "Karaoke Tremendous",
+      "category": "party",
+      "start_date": "2026-09-25",
+      "end_date": null,
+      "time_text": "11:59pm",
+      "recurring": true,
+      "anytime": false,
+      "venue": "Union Hall",
+      "address": "702 Union St",
+      "neighborhood": "Park Slope",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.eventbrite.com/e/karaoke-tremendous-tickets-1998651125318",
+      "source_url": "https://www.unionhallny.com/",
+      "summary": "Union Hall's recurring late-night karaoke takes over the basement at 11:59pm on Friday nights, registration through Eventbrite. It repeats on October 2 and October 9. Cover is not listed on the venue page.",
+      "fit": "He sings, and this is karaoke in front of a room of strangers in a basement rather than a private booth — participation, not spectating. Good tail end to a Friday if the earlier plan ends at 10.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "karaoke",
+        "interactive",
+        "late night",
+        "recurring",
+        "union hall"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c27",
+      "title": "The Bell House Stand Up Showcase",
+      "category": "comedy",
+      "start_date": "2026-09-25",
+      "end_date": null,
+      "time_text": "9:45pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "The Bell House",
+      "address": "149 7th St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.ticketmaster.com/the-bell-house-stand-up-showcase-brooklyn-new-york-09-25-2026/event/30006529381D4CD5",
+      "source_url": "https://www.thebellhouseny.com/",
+      "summary": "The Bell House's own late Friday stand-up showcase at 9:45pm on September 25, a multi-comic bill in the Gowanus room. Lineups on these are usually announced close to the date. Price via Ticketmaster.",
+      "fit": "A cheap, low-commitment Friday that starts late enough to eat first and doesn't require knowing the names on the bill. Easy to text three people about on a Thursday.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "stand-up",
+        "late show",
+        "gowanus"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c28",
+      "title": "The Moth StorySLAM",
+      "category": "performance",
+      "start_date": "2026-09-30",
+      "end_date": null,
+      "time_text": "8pm",
+      "recurring": true,
+      "anytime": false,
+      "venue": "The Bell House",
+      "address": "149 7th St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.ticketmaster.com/the-moth-storyslam-brooklyn-new-york-09-30-2026/event/300064BBC792AB0E",
+      "source_url": "https://www.thebellhouseny.com/",
+      "summary": "The Moth's open-draw storytelling competition returns to The Bell House on Wednesday September 30 at 8pm. Names go in a hat at the door and ten people get five minutes each on a theme, scored by audience judges. Tickets through Ticketmaster.",
+      "fit": "It's the interactive format he likes — you can actually put your name in and tell the story, and the crowd votes. Wednesday is a stretch, so treat this as the book-now radar item rather than the main plan.",
+      "confidence": "verified",
+      "who": "either",
+      "tags": [
+        "storytelling",
+        "interactive",
+        "the moth",
+        "gowanus"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c29",
+      "title": "Whiplash",
+      "category": "comedy",
+      "start_date": "2026-10-02",
+      "end_date": null,
+      "time_text": "7:30pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Union Hall",
+      "address": "702 Union St",
+      "neighborhood": "Park Slope",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.eventbrite.com/e/whiplash-tickets-2001703219213",
+      "source_url": "https://www.unionhallny.com/",
+      "summary": "Whiplash, the long-running New York stand-up showcase, plays Union Hall's basement on Friday October 2 at 7:30pm with Shalewa Sharpe on the announced bill and more to be added. Under-200 room. Price not posted on the venue listing.",
+      "fit": "Whiplash is the showcase working comics drop into unannounced, which is how you end up seeing someone huge in a basement for twenty bucks. Exactly the \"you had to know about it\" register he asked for.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "stand-up",
+        "showcase",
+        "small room",
+        "union hall"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c30",
+      "title": "Young Adult Friction: an indie + alt dance party",
+      "category": "party",
+      "start_date": "2026-10-03",
+      "end_date": null,
+      "time_text": "11:59pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Union Hall",
+      "address": "702 Union St",
+      "neighborhood": "Park Slope",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.eventbrite.com/e/young-adult-friction-an-indie-alt-dance-party-tickets-2001066776596",
+      "source_url": "https://www.unionhallny.com/",
+      "summary": "A late-night indie and alt dance party in Union Hall's basement starting at 11:59pm on Saturday October 3. DJ-driven, no live band, 21+. Cover not listed on the venue page.",
+      "fit": "He went to an ABBA-themed night in the West Village and loved it, and his library has a whole 2000s pop-punk and indie streak. Same move, Brooklyn basement, and a short car home to Fort Greene.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "dance party",
+        "2000s",
+        "themed night",
+        "late night"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c31",
+      "title": "Switch n' Play Presents: Slash n' Spray",
+      "category": "performance",
+      "start_date": "2026-10-24",
+      "end_date": null,
+      "time_text": "doors 7pm, show 8pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Littlefield",
+      "address": "635 Sackett St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://littlefieldnyc.com/event/?wfea_eb_id=1997779391940",
+      "source_url": "https://littlefieldnyc.com/all-shows/",
+      "summary": "Brooklyn's Switch n' Play collective brings a horror-flavored night of drag, burlesque and queer performance to Littlefield on Saturday October 24, doors 7pm, show 8pm, 21+. Price not posted on the venue page.",
+      "fit": "Switch n' Play is the community-run, word-of-mouth end of the drag and burlesque scene — no marketing budget, real crowd, done by 10pm. Good pre-Halloween Saturday with the guys or a date night if she liked Company XIV.",
+      "confidence": "verified",
+      "who": "either",
+      "tags": [
+        "drag",
+        "burlesque",
+        "halloween season",
+        "community-run"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c32",
+      "title": "NYC's Halloween Punderdome",
+      "category": "comedy",
+      "start_date": "2026-10-28",
+      "end_date": null,
+      "time_text": "doors 7pm, show 8pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Littlefield",
+      "address": "635 Sackett St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://littlefieldnyc.com/event/?wfea_eb_id=1998749270874",
+      "source_url": "https://littlefieldnyc.com/all-shows/",
+      "summary": "The Halloween edition of Punderdome, Brooklyn's long-running competitive punning contest, hosted by Firestone with returning champions and a pun-costume competition alongside the main bracket. Wednesday October 28, doors 7pm, show 8pm, 21+.",
+      "fit": "Costume night plus a competition you can enter yourself — audience members get pulled up to pun on the spot. It's a Wednesday, so it's a radar item, but it's the kind of weird bar-back-room programming he keeps asking for.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "punderdome",
+        "interactive",
+        "costume",
+        "halloween",
+        "gowanus"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c33",
+      "title": "The George Lucas Talk Show with Special Guests",
+      "category": "comedy",
+      "start_date": "2026-10-08",
+      "end_date": null,
+      "time_text": "doors 6pm, show 7pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Littlefield",
+      "address": "635 Sackett St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://littlefieldnyc.com/event/?wfea_eb_id=1999959468608",
+      "source_url": "https://littlefieldnyc.com/all-shows/",
+      "summary": "The cult live talk show in which a comedian hosts as George Lucas, with real guests, plays Littlefield on Thursday October 8, doors 6pm, show 7pm, 21+. Price not posted on the venue page.",
+      "fit": "A Thursday, in a 200-cap Gowanus room, for a show with a devoted underground following and zero mainstream footprint. This is the variety-show end of his taste, not a stand-up hour.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "live talk show",
+        "cult",
+        "thursday",
+        "gowanus"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c34",
+      "title": "Daylighters (A Comedy Show You Can Bring Your Kids To)",
+      "category": "family",
+      "start_date": "2026-10-04",
+      "end_date": null,
+      "time_text": "doors 2pm, show 3pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Littlefield",
+      "address": "635 Sackett St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://littlefieldnyc.com/event/?wfea_eb_id=1996820945200",
+      "source_url": "https://littlefieldnyc.com/all-shows/",
+      "summary": "Kurt Braunohler hosts an afternoon stand-up show at Littlefield explicitly built so you can bring your kids: doors 2pm, show 3pm, done by 4:30. No 21+ restriction on this one, unlike most of the venue's calendar.",
+      "fit": "A real comedy room, real comics, and a stroller is fine — the adults get something worth watching instead of a toddler-only activity. Sunday afternoon, home in time for the nap that matters.",
+      "confidence": "verified",
+      "who": "family",
+      "tags": [
+        "family",
+        "kid friendly",
+        "stand-up",
+        "sunday afternoon"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c35",
+      "title": "Lightscape at Brooklyn Botanic Garden — tickets on sale",
+      "category": "holiday",
+      "start_date": "2026-09-29",
+      "end_date": null,
+      "time_text": "tickets open 10am September 29; member presale began September 22",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Brooklyn Botanic Garden",
+      "address": "990 Washington Ave",
+      "neighborhood": "Prospect Heights",
+      "borough": "Brooklyn",
+      "price_text": "adult $29 to $44, child $15 to $28, fees included",
+      "url": "https://www.bbg.org/lightscape",
+      "source_url": "https://www.bbg.org/lightscape",
+      "summary": "BBG's winter light trail returns with a new route, and general ticket sales open Tuesday September 29 at 10am (members got a presale from September 22). Tickets are timed and dated, with peak, off-peak, value and 21+ adult-only nights offered in past years. Specific 2026 run dates and prices are on the garden's ticketing page.",
+      "fit": "He's already done Lightscape and rates it, and the good weekend slots and the 21+ nights sell out early — this is a calendar reminder, not a discovery. Book one adult slot with his wife and one stroller-friendly early slot for the kid.",
+      "confidence": "verified",
+      "who": "either",
+      "tags": [
+        "book now",
+        "lightscape",
+        "holiday",
+        "botanic garden",
+        "family"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c36",
+      "title": "New York City Ballet Fall 2026 season",
+      "category": "performance",
+      "start_date": "2026-09-22",
+      "end_date": null,
+      "time_text": "",
+      "recurring": true,
+      "anytime": false,
+      "venue": "David H. Koch Theater",
+      "address": "20 Lincoln Center Plaza",
+      "neighborhood": "Lincoln Square",
+      "borough": "Manhattan",
+      "price_text": "$30 rush tickets for 30-and-under via the company's $30 for 30 program",
+      "url": "https://www.nycballet.com/season-and-tickets/fall-2026",
+      "source_url": "https://www.nycballet.com/",
+      "summary": "NYCB's fall run began September 22 and the programs on offer include Jewels, Masters at Work I, Contemporary Choreography I, Eclectic NYCB I, All Balanchine I and Adrian Danchig-Waring's farewell, plus the October 1 Fall Fashion Gala with three world premieres. Individual program dates are on the company calendar.",
+      "fit": "If the Nutcracker is his favorite night of the year, Jewels or an All Balanchine bill is the same room and orchestra without waiting for December. Good Friday or Saturday date night; at 34 he just misses the under-30 rush price, so buy normally.",
+      "confidence": "likely",
+      "who": "wife",
+      "tags": [
+        "nycb",
+        "ballet",
+        "date night",
+        "lincoln center"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c37",
+      "title": "The Slipper Room",
+      "category": "performance",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "doors around 8pm Thursday through Saturday, plus Slippery Sundays",
+      "recurring": true,
+      "anytime": true,
+      "venue": "The Slipper Room",
+      "address": "167 Orchard St",
+      "neighborhood": "Lower East Side",
+      "borough": "Manhattan",
+      "price_text": "",
+      "url": "https://www.slipperroom.com/shows",
+      "source_url": "https://www.slipperroom.com/shows",
+      "summary": "The neo-burlesque and variety room that opened on Orchard Street in 1999, running its own house shows Thursday to Saturday plus Sunday nights and hosting guest events (comedy nights, film screenings, cabaret) midweek. Two lineups a night, sideshow and drag acts mixed in, hosted format.",
+      "fit": "Small Manhattan room, no reservation-bot nonsense, and the programming is the oddball variety register he likes rather than a polished theater show. Worth having on the list as the fallback when a Company XIV date is sold out.",
+      "confidence": "likely",
+      "who": "either",
+      "tags": [
+        "burlesque",
+        "variety",
+        "anytime",
+        "lower east side",
+        "small room"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c38",
+      "title": "Tootsie's Video Vault 7",
+      "category": "culture",
+      "start_date": "2026-10-03",
+      "end_date": null,
+      "time_text": "doors 6pm, show 7pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Littlefield",
+      "address": "635 Sackett St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://littlefieldnyc.com/event/?wfea_eb_id=1999618457635",
+      "source_url": "https://littlefieldnyc.com/all-shows/",
+      "summary": "A biannual short-film race: New York filmmakers make shorts over three months and the whole batch screens in one night at Littlefield. Saturday October 3, doors 6pm, show 7pm, 21+. Price not posted on the venue page.",
+      "fit": "This is the creative-scene event he likes — a room full of the people who made the work, closer to a friend's studio party than a film festival. Early enough to move on to a bar afterward.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "film",
+        "local scene",
+        "creative party",
+        "gowanus"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c39",
+      "title": "Brendan Scannell: The Abyss",
+      "category": "comedy",
+      "start_date": "2026-10-01",
+      "end_date": null,
+      "time_text": "7:30pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "The Bell House",
+      "address": "149 7th St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.ticketmaster.com/brendan-scannell-the-abyss-brooklyn-new-york-10-01-2026/event/300064EC4E15E471",
+      "source_url": "https://www.thebellhouseny.com/",
+      "summary": "Brendan Scannell plays The Bell House on Thursday October 1 at 7:30pm; Nate Varrone headlines the same room at 10pm the same night, so the night can be doubled up. Tickets through Ticketmaster.",
+      "fit": "A Thursday with two separate bills in one Gowanus room is the easiest version of his main weeknight slot — start at 7:30, stay for the 10pm if the group is still in.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "stand-up",
+        "thursday",
+        "double bill",
+        "gowanus"
+      ],
+      "lane": "culture",
+      "lanes": [
+        "culture"
+      ]
+    },
+    {
+      "id": "c40",
+      "title": "Twin Lights Ride",
+      "category": "outdoors",
+      "start_date": "2026-09-27",
+      "end_date": null,
+      "time_text": "breakfast from 6am; start times 7:00am (100mi), 7:15am (75mi), 8:30am (55mi), 8:45am (30mi), 9:00am (15mi); return ferries 2:30, 4:30, 6:30pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Huddy Park (ferry from Battery Maritime Building)",
+      "address": "10 South Street, New York, NY 10004 (ferry) to Huddy Park, Highlands, NJ",
+      "neighborhood": "Financial District / Highlands NJ",
+      "borough": "Manhattan",
+      "price_text": "round-trip chartered ferry with your bike is $65 plus fees; ride registration price not verified",
+      "url": "https://register.hakuapp.com/?event=c5cc2f5b3eea4286d3ba",
+      "source_url": "https://www.bike.nyc/events/twin-lights-ride/",
+      "summary": "Bike New York's end-of-season ride, now in its third decade: five routes from 15 to 100 miles along the Jersey shore and Monmouth County farm roads, all starting and finishing at Huddy Park in Highlands. Bike New York charters a ferry from the Battery Maritime Building at 10 South Street that takes you and your bike over at 5:30am or 7:30am and brings you back at 2:30, 4:30 or 6:30pm ($65 round trip, optional add-on). Finish festival with local restaurants feeding riders.",
+      "fit": "This is the Lower-Manhattan-to-the-GW-Bridge ride scaled up: a real distance day with the guys, a boat as the transport, and a party at the end. The 55-mile route leaves at 8:30am and gets you on a 2:30pm ferry, so you're home in Fort Greene for bedtime.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "bike",
+        "group ride",
+        "ferry",
+        "sunday",
+        "day trip by boat"
+      ],
+      "lane": "body",
+      "lanes": [
+        "body"
+      ]
+    },
+    {
+      "id": "c41",
+      "title": "Bathhouse Williamsburg after training",
+      "category": "wellness",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "open daily 10am to 10pm",
+      "recurring": false,
+      "anytime": true,
+      "venue": "Bathhouse Williamsburg",
+      "address": "103 N 10th St, Brooklyn, NY",
+      "neighborhood": "Williamsburg",
+      "borough": "Brooklyn",
+      "price_text": "day passes start at $39; weekend and peak slots run higher",
+      "url": "https://www.abathhouse.com/day-pass",
+      "source_url": "https://www.abathhouse.com/journal/williamsburg-sauna-expansion",
+      "summary": "The Williamsburg location added 10,000 square feet in 2026: a Russian-style banya, a large cold plunge, three more thermal pools, the biggest Aufguss-purpose sauna in the country, and an express elevator to the roof. Day passes start at $39 and it's open 10am to 10pm daily, with a restaurant and bar on site.",
+      "fit": "He trains Muay Thai at Kings Combat in Williamsburg, so this is the same trip: hit the gym, then sit in the banya and plunge with whoever came along. Ask about the Aufguss ritual times when you book; that's the part worth planning around.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "sauna",
+        "cold plunge",
+        "banya",
+        "post-training",
+        "williamsburg",
+        "aufguss",
+        "walkable",
+        "new"
+      ],
+      "lane": "body",
+      "lanes": [
+        "body"
+      ]
+    },
+    {
+      "id": "c42",
+      "title": "World Spa full-day banya session",
+      "category": "wellness",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "Sun to Thu 10am to 10pm; Fri and Sat 9am to 11pm",
+      "recurring": false,
+      "anytime": true,
+      "venue": "World Spa",
+      "address": "",
+      "neighborhood": "Borough Park",
+      "borough": "Brooklyn",
+      "price_text": "day passes from $99",
+      "url": "https://worldspa.com/plan-your-journey/",
+      "source_url": "https://worldspa.com/",
+      "summary": "A 50,000-square-foot Brooklyn bathhouse with 16 thermal rooms: the largest Grand Banya in the US (176 to 194F, constant venik thrashing), a Petite Banya, Moroccan and Turkish hammams, onsen pools, snow room, salt room, infrared and clay-and-hay saunas, plus a cold plunge and a restaurant. Day passes start at $99, and Friday and Saturday it's open until 11pm.",
+      "fit": "His Russian bathhouse day with a friend was a highlight; this is the maxed-out version of it, with venik platza and a Grand Banya that is loud and communal rather than a silent spa. Book the venik treatment so it's something you do, not something you sit in.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "banya",
+        "venik",
+        "cold plunge",
+        "all-day",
+        "splurge"
+      ],
+      "lane": "body",
+      "lanes": [
+        "body"
+      ]
+    },
+    {
+      "id": "c43",
+      "title": "Tour de Bronx (32nd annual)",
+      "category": "outdoors",
+      "start_date": "2026-10-04",
+      "end_date": null,
+      "time_text": "morning start, typically 10am",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Start at 161st Street and Grand Concourse, finish at New York Botanical Garden",
+      "address": "161st Street & Grand Concourse, Bronx, NY",
+      "neighborhood": "Concourse",
+      "borough": "Bronx",
+      "price_text": "free",
+      "url": "https://www.ilovethebronx.com/tour-de-bronx",
+      "source_url": "https://www.bronxmama.com/2026/09/08/tour-de-bronx-returns-this-october-heres-how-to-register/",
+      "summary": "New York State's largest free bike ride, run by the Bronx Tourism Council and the Borough President's office. Three routes this year, 10, 25 and 40 miles, all starting at 161st and the Grand Concourse and finishing inside the New York Botanical Garden, passing through the South Bronx, Riverdale, Orchard Beach and the waterfront parks. Free, but you register in advance.",
+      "fit": "Free, 40 miles, a borough he never rides, and a finish line inside a botanic garden. It's the natural follow-up to the GW Bridge ride, and it's a group thing where you can just tell two friends to sign up.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "bike",
+        "group ride",
+        "free",
+        "radar",
+        "bronx"
+      ],
+      "lane": "body",
+      "lanes": [
+        "body"
+      ]
+    },
+    {
+      "id": "c44",
+      "title": "QC NY spa day on Governors Island",
+      "category": "wellness",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "Sun to Thu 9am to 10pm; Fri and Sat 9am to 11pm; island ferries Sun to Thu until 10pm, Fri and Sat until 11pm",
+      "recurring": false,
+      "anytime": true,
+      "venue": "QC NY",
+      "address": "112 Andes Road, Governors Island, New York, NY 10004",
+      "neighborhood": "Governors Island",
+      "borough": "Manhattan",
+      "price_text": "not verified; check the admissions page before booking",
+      "url": "https://booking.qcny.com/guest?location=NYY",
+      "source_url": "https://www.qcny.com/",
+      "summary": "An Italian spa group's New York outpost in the restored officers' houses on Governors Island: thermal baths, saunas, steam rooms and 20-plus wellness stations, indoor and outdoor, open year-round. You get there by ferry, and the spa runs to 11pm on Friday and Saturday. QC also programs Aperitivo Evenings on site.",
+      "fit": "A ferry with an actual destination plus a bathhouse is two of his favorite formats stacked, and a Friday night session that runs to 11pm is a better date night than a restaurant. Price was the one thing not confirmable, so check before you book.",
+      "confidence": "likely",
+      "who": "wife",
+      "tags": [
+        "sauna",
+        "ferry",
+        "governors island",
+        "date night",
+        "thermal baths"
+      ],
+      "lane": "body",
+      "lanes": [
+        "body"
+      ]
+    },
+    {
+      "id": "c45",
+      "title": "Beat Drop: DJ Takeover sauna social",
+      "category": "wellness",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "evening, roughly two hours",
+      "recurring": true,
+      "anytime": true,
+      "venue": "Othership Williamsburg",
+      "address": "",
+      "neighborhood": "Williamsburg",
+      "borough": "Brooklyn",
+      "price_text": "not verified",
+      "url": "https://www.othership.us/events/beatdrop-dj-takeover-sauna-party-williamsburg",
+      "source_url": "https://www.othership.us/events",
+      "summary": "Othership's recurring two-hour evening social at its Williamsburg location, with a live DJ playing the sauna and ice-bath rotation instead of the usual guided soundtrack. It runs roughly every two weeks and is alcohol-free. Bookable through the Othership events and schedule pages.",
+      "fit": "Sauna with a DJ actually playing is the overlap of his two standing interests, and it's a two-hour Thursday-or-Friday plan he can invite two guys to without it turning into a bar night. The next specific date and the price need checking on the events page.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "sauna",
+        "cold plunge",
+        "dj",
+        "recurring",
+        "sober"
+      ],
+      "lane": "body",
+      "lanes": [
+        "body"
+      ]
+    },
+    {
+      "id": "c46",
+      "title": "TWA Hotel rooftop pool reservation",
+      "category": "outdoors",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "non-hotel guests 11am to 11pm, reservations are 1 hour 45 minutes; Pool Bar daily 11am to 11pm",
+      "recurring": false,
+      "anytime": true,
+      "venue": "TWA Hotel",
+      "address": "One Idlewild Drive, JFK Airport, Queens, NY",
+      "neighborhood": "JFK Airport",
+      "borough": "Queens",
+      "price_text": "non-hotel guests from $50 adults, $10 kids 5 to 12, under 5 free; shower and changing access is a separate $25 gym day pass",
+      "url": "https://www.twahotel.com/pool",
+      "source_url": "https://www.twahotel.com/pool",
+      "summary": "The rooftop infinity pool and observation deck over JFK runway 4L/22R, open year round and heated to 95 degrees in winter. Reservations are required May 1 to November 1, in 1 hour 45 minute blocks; non-hotel adult cover starts at $50, children 5 to 12 are $10 and under 5 are free. Note the rooftop is closed for a private event on September 29 from 6pm to 9pm.",
+      "fit": "He's done this one and loved it, and the reservation requirement ends November 1, so this is the last stretch to get a warm-weather slot. With the one-year-old free and planes taking off fifty feet away, it doubles as the weekend-daytime family outing.",
+      "confidence": "verified",
+      "who": "family",
+      "tags": [
+        "pool",
+        "planes",
+        "day pass",
+        "toddler ok",
+        "last chance"
+      ],
+      "lane": "body",
+      "lanes": [
+        "body"
+      ]
+    },
+    {
+      "id": "c47",
+      "title": "QC NY Aperitivo Evenings",
+      "category": "drink",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "evenings; schedule not verified",
+      "recurring": true,
+      "anytime": true,
+      "venue": "QC NY",
+      "address": "112 Andes Road, Governors Island, New York, NY 10004",
+      "neighborhood": "Governors Island",
+      "borough": "Manhattan",
+      "price_text": "not verified",
+      "url": "https://www.qcny.com/aperitivo-qc",
+      "source_url": "https://www.qcny.com/",
+      "summary": "QC's evening aperitivo program at its Governors Island spa, bolted onto a thermal-bath session, in the Casa QC bistro. Listed on QC's own site as a standing offering. Dates, seating times and price were not confirmable.",
+      "fit": "Spa first, drinks after, on an island you reach by boat and with no chance of running into a stroller. Good wife pick, but confirm the nights and cost by phone before promising anything.",
+      "confidence": "unverified",
+      "who": "wife",
+      "tags": [
+        "spa",
+        "aperitivo",
+        "ferry",
+        "date night"
+      ],
+      "lane": "body",
+      "lanes": [
+        "body"
+      ]
+    },
+    {
+      "id": "c48",
+      "title": "Shabbat Social Schvitz",
+      "category": "wellness",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "Friday evening, roughly 9pm to 11:30pm",
+      "recurring": true,
+      "anytime": true,
+      "venue": "Othership Williamsburg",
+      "address": "",
+      "neighborhood": "Williamsburg",
+      "borough": "Brooklyn",
+      "price_text": "not verified",
+      "url": "https://www.othership.us/events/nyc-shabbat-social-schvitz-sauna-ice-bath",
+      "source_url": "https://www.othership.us/events",
+      "summary": "A Friday night Shabbat-framed sauna and ice bath social at Othership Williamsburg, with guided sauna rituals, meditation and a DJ, running about 9pm to 11:30pm. The most recent listed edition was Friday September 18, 2026; it appears to repeat, but the next date was not confirmable.",
+      "fit": "Jewish cultural programming and a bathhouse in the same room, on a Friday night, twenty minutes from home. Worth watching the Othership events page for the next one rather than booking blind.",
+      "confidence": "unverified",
+      "who": "guys",
+      "tags": [
+        "sauna",
+        "jewish",
+        "friday night",
+        "recurring",
+        "dj"
+      ],
+      "lane": "body",
+      "lanes": [
+        "body"
+      ]
+    },
+    {
+      "id": "c49",
+      "title": "Kafka's Drawings: Images of the Grotesque and Arabesque",
+      "category": "talk",
+      "start_date": "2026-10-06",
+      "end_date": null,
+      "time_text": "6pm to 7:30pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Deutsches Haus at NYU",
+      "address": "42 Washington Mews",
+      "neighborhood": "Greenwich Village",
+      "borough": "Manhattan",
+      "price_text": "free, RSVP required (confirm on the event page)",
+      "url": "https://as.nyu.edu/research-centers/deutscheshaus/cultural-program/events.html",
+      "source_url": "https://as.nyu.edu/deutscheshaus.html",
+      "summary": "An evening at Deutsches Haus at NYU on Kafka's drawings, the pictures rather than the prose, on Tuesday, October 6, 2026, 6pm to 7:30pm at 42 Washington Mews. Free with RSVP through the Deutsches Haus events page. Speaker details are on the listing.",
+      "fit": "Small German-speaking room, subject nobody else is talking about, free. Tuesday, so radar rather than a headline pick.",
+      "confidence": "likely",
+      "who": "either",
+      "tags": [
+        "german",
+        "photography",
+        "exhibition",
+        "free",
+        "kafka",
+        "talk",
+        "small room",
+        "literature",
+        "berlin",
+        "politics"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c50",
+      "title": "\"A Thousand Times as Much Money as Now:\" An Evening with Juan Guse and Dorothee Elmiger",
+      "category": "talk",
+      "start_date": "2026-09-28",
+      "end_date": null,
+      "time_text": "6pm to 7:30pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Deutsches Haus at NYU",
+      "address": "42 Washington Mews",
+      "neighborhood": "Greenwich Village",
+      "borough": "Manhattan",
+      "price_text": "free, RSVP required (confirm on the event page)",
+      "url": "https://as.nyu.edu/research-centers/deutscheshaus/cultural-program/events.html",
+      "source_url": "https://as.nyu.edu/deutscheshaus.html",
+      "summary": "German novelist Juan Guse and Swiss writer Dorothee Elmiger in conversation at Deutsches Haus at NYU on Monday, September 28, 2026, 6pm to 7:30pm. Deutsches Haus events are held in a small townhouse room on Washington Mews and are free with advance RSVP. Confirm whether the evening is in German or English on the listing.",
+      "fit": "A Monday, so only worth it if he wants the German-language literary scene rather than a night out. Elmiger writes about money and extraction, which is closer to his commodities interest than most literary panels get.",
+      "confidence": "likely",
+      "who": "either",
+      "tags": [
+        "german",
+        "literature",
+        "talk",
+        "free",
+        "berlin",
+        "politics",
+        "small room"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c51",
+      "title": "Too Much Is Better Than Too Little: Alfred Hilsberg, ZickZack & the Invention of the German Underground",
+      "category": "culture",
+      "start_date": "2026-10-08",
+      "end_date": "2026-11-07",
+      "time_text": "",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Various/Artists",
+      "address": "",
+      "neighborhood": "",
+      "borough": "Manhattan",
+      "price_text": "free",
+      "url": "https://www.goethe.de/ins/us/en/sta/ney/ver.cfm?event_id=27324564",
+      "source_url": "https://www.goethe.de/ins/us/en/sta/ney/ver.cfm",
+      "summary": "A Goethe-Institut New York exhibition on Alfred Hilsberg and his ZickZack label, the people who effectively built the German post-punk and Neue Deutsche Welle underground. It runs October 8 to November 7, 2026, in English, and it is free. The Goethe listing gives the venue as Various/Artists rather than the institute itself, so confirm the address and opening hours before going.",
+      "fit": "He has a whole German lane in his library, from Seeed and Deichkind back through the weirder Berlin stuff, and this is the origin story of that scene told by the label that made it. Free, small, and the kind of thing you only hear about because you read the Goethe calendar.",
+      "confidence": "verified",
+      "who": "either",
+      "tags": [
+        "german",
+        "berlin",
+        "punk",
+        "music history",
+        "exhibition",
+        "free"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c52",
+      "title": "Di Yam Gazlonim (The Pirates of Penzance in Yiddish) in Concert",
+      "category": "performance",
+      "start_date": "2026-10-25",
+      "end_date": null,
+      "time_text": "",
+      "recurring": false,
+      "anytime": false,
+      "venue": "National Yiddish Theatre Folksbiene",
+      "address": "",
+      "neighborhood": "",
+      "borough": "Manhattan",
+      "price_text": "",
+      "url": "https://nytf.org/di-yam-gazlonim/",
+      "source_url": "https://nytf.org/",
+      "summary": "The National Yiddish Theatre Folksbiene presents its Yiddish Pirates of Penzance in concert on Sunday, October 25, 2026, as part of the company's 111th season. NYTF is resident at the Museum of Jewish Heritage at 36 Battery Place, but the concert venue and start time are not stated on the homepage listing, so check the production page. Ticket prices were not published at the time of writing.",
+      "fit": "Yiddish Gilbert and Sullivan with a live band is the Jewish-culture version of the spectacle nights he likes, and a Sunday show is easy on a babysitter. Folksbiene is a real company, not a listicle pick.",
+      "confidence": "likely",
+      "who": "wife",
+      "tags": [
+        "jewish",
+        "yiddish",
+        "theater",
+        "date night",
+        "music"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c53",
+      "title": "Slavic Soul Party! Tuesday residency",
+      "category": "music",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "Tuesday nights, typically 9pm",
+      "recurring": true,
+      "anytime": false,
+      "venue": "Barbès",
+      "address": "376 9th Street",
+      "neighborhood": "Park Slope",
+      "borough": "Brooklyn",
+      "price_text": "cash cover at the door, suggested donation",
+      "url": "https://www.barbesbrooklyn.com/events",
+      "source_url": "https://slavicsoulparty.com/calendar/",
+      "summary": "Nine-piece Balkan brass band with a long-running weekly Tuesday residency in the back room at Barbès, a bar on 9th Street in Park Slope that has presented live music nightly for 24 years. The room holds well under a hundred people and the band plays a foot from the front row. Cover is a cash door donation; check the Barbès calendar for the exact night and any schedule breaks.",
+      "fit": "This is the small-room, know-someone-to-know-about-it end of the klezmer and Balkan brass world he asked for, and Barbès is the one venue on his list where you can talk to the bartender mid-set. Weeknight, so it's a 'if you're free' rather than a headline plan.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "klezmer",
+        "balkan",
+        "brass",
+        "small room",
+        "park slope",
+        "recurring"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c54",
+      "title": "Tammam Azzam: A Horizon Remains",
+      "category": "culture",
+      "start_date": "2026-09-16",
+      "end_date": "2026-12-03",
+      "time_text": "",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Goethe-Institut New York",
+      "address": "",
+      "neighborhood": "",
+      "borough": "Manhattan",
+      "price_text": "free",
+      "url": "https://www.goethe.de/ins/us/en/sta/ney/ver.cfm?event_id=27328673",
+      "source_url": "https://www.goethe.de/ins/us/en/sta/ney/ver.cfm",
+      "summary": "First New York solo show and first US institutional presentation of Syrian-German artist Tammam Azzam, on view at Goethe-Institut New York from September 16 to December 3, 2026. Admission is free. Gallery hours are not listed on the calendar entry, so check before going.",
+      "fit": "A free, quiet, serious show at the German institute that takes twenty minutes and can be the front half of a date night rather than the whole plan.",
+      "confidence": "verified",
+      "who": "either",
+      "tags": [
+        "german",
+        "art",
+        "exhibition",
+        "free",
+        "date night"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c55",
+      "title": "Rabih Mroué & Lina Majdalanie: Four Walls and a Roof",
+      "category": "performance",
+      "start_date": "2026-10-24",
+      "end_date": "2026-10-26",
+      "time_text": "",
+      "recurring": false,
+      "anytime": false,
+      "venue": "NYU Skirball",
+      "address": "566 LaGuardia Place",
+      "neighborhood": "Greenwich Village",
+      "borough": "Manhattan",
+      "price_text": "",
+      "url": "https://www.goethe.de/ins/us/en/sta/ney/ver.cfm?event_id=27352990",
+      "source_url": "https://www.goethe.de/ins/us/en/sta/ney/ver.cfm",
+      "summary": "North American premiere of Four Walls and a Roof by Rabih Mroué and Lina Majdalanie, the Berlin-based Lebanese theater duo, at NYU Skirball October 24 to 26, 2026, listed on the Goethe-Institut New York calendar. Show times and ticket prices are on the Skirball page, not the Goethe listing.",
+      "fit": "Berlin-based artists, a mid-size house, and a premiere nobody in his group chat will have heard of. A date-night option that is genuinely not generic theater.",
+      "confidence": "likely",
+      "who": "wife",
+      "tags": [
+        "theater",
+        "berlin",
+        "premiere",
+        "date night"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c56",
+      "title": "The Rock and Roll Playhouse kids' concerts at Brooklyn Bowl",
+      "category": "family",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "Sunday late mornings",
+      "recurring": true,
+      "anytime": false,
+      "venue": "Brooklyn Bowl",
+      "address": "61 Wythe Avenue",
+      "neighborhood": "Williamsburg",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.therockandrollplayhouse.com/",
+      "source_url": "https://www.therockandrollplayhouse.com/",
+      "summary": "The Rock and Roll Playhouse runs a long-standing Sunday-morning series at Brooklyn Bowl where a full band plays the catalog of one real artist (Beatles, Bowie, Grateful Dead and so on) as a kids' show with room to crawl around. Specific dates, the featured band and ticket prices change weekly and must be checked on the calendar. Doors are late morning and it is done long before nap time.",
+      "fit": "A real venue with a real PA instead of a library singalong, and the setlists are dad rock he already likes, Beatles included. He trains in Williamsburg anyway, so the logistics are trivial.",
+      "confidence": "unverified",
+      "who": "family",
+      "tags": [
+        "kids concert",
+        "toddler",
+        "williamsburg",
+        "sunday",
+        "dad rock"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c57",
+      "title": "Governors Island ferry day",
+      "category": "family",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "daytime; check the ferry schedule",
+      "recurring": false,
+      "anytime": true,
+      "venue": "Governors Island",
+      "address": "",
+      "neighborhood": "",
+      "borough": "Manhattan",
+      "price_text": "",
+      "url": "https://www.govisland.com/",
+      "source_url": "https://www.govisland.com/",
+      "summary": "Car-free island a short ferry ride from Lower Manhattan and from Brooklyn's Atlantic Basin in Red Hook, with open lawns, art installations and food vendors. Ferry schedules, fares and the end of the main season vary, so check the official site the morning of. Weekday ferries and Brooklyn departures run on a limited schedule.",
+      "fit": "A ferry with a destination is his stated register for a family morning, the Brooklyn boat leaves from Red Hook which he likes anyway, and the stroller rolls straight on. Go while the weather still holds.",
+      "confidence": "unverified",
+      "who": "family",
+      "tags": [
+        "ferry",
+        "toddler",
+        "outdoors",
+        "red hook",
+        "stroller friendly"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c58",
+      "title": "Brooklyn Children's Museum weekend programming",
+      "category": "family",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "weekend daytime",
+      "recurring": false,
+      "anytime": true,
+      "venue": "Brooklyn Children's Museum",
+      "address": "145 Brooklyn Avenue",
+      "neighborhood": "Crown Heights",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.brooklynkids.org/",
+      "source_url": "https://www.brooklynkids.org/",
+      "summary": "The Crown Heights children's museum runs weekend drop-in programming aimed at the under-threes alongside its main galleries. Specific weekend events, timed-entry rules and admission prices are posted on their calendar. It is a fifteen-minute drive from Fort Greene and easy with a stroller.",
+      "fit": "A rain plan for the weekend daytime slot that is close to home and does not involve a playground. Check the calendar for the toddler-specific sessions rather than just showing up.",
+      "confidence": "unverified",
+      "who": "family",
+      "tags": [
+        "toddler",
+        "museum",
+        "crown heights",
+        "rain plan"
+      ],
+      "lane": "scenes",
+      "lanes": [
+        "scenes"
+      ]
+    },
+    {
+      "id": "c59",
+      "title": "Sasha & John Digweed: All Night Long",
+      "category": "music",
+      "start_date": "2026-09-25",
+      "end_date": null,
+      "time_text": "11pm to 5am, open to close",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Knockdown Center",
+      "address": "52-19 Flushing Ave",
+      "neighborhood": "Maspeth",
+      "borough": "Queens",
+      "price_text": "about $43",
+      "url": "https://link.dice.fm/SashaandJohnDigweed-KDC-2026",
+      "source_url": "https://ra.co/events/2426901",
+      "summary": "Sasha and John Digweed take the Main Hall at Knockdown Center for a special open-to-close set on Friday Sept 25, 11pm to 5am, 21+. RA and Dice both list it; tickets are running around $38.",
+      "fit": "This is the progressive-house source code that deadmau5, Prydz and Kx5 all grew out of, and it's an all-night set rather than a 75-minute festival slot. Closest thing this week to the big-room night he rates the Kx5 show against, and it's a Friday.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "progressive house",
+        "warehouse",
+        "late night",
+        "big night"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c60",
+      "title": "Takuya Nakamura presents: Cosmic Jungle",
+      "category": "music",
+      "start_date": "2026-09-25",
+      "end_date": null,
+      "time_text": "10:30pm to 4am",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Elsewhere",
+      "address": "599 Johnson Ave",
+      "neighborhood": "Bushwick",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://ra.co/events/2470640",
+      "source_url": "https://www.instagram.com/p/DdUuFBeJZCr/",
+      "summary": "Tokyo-born, New York-based DJ and multi-instrumentalist Takuya Nakamura curates a night of jungle and drum'n'bass at Elsewhere on Friday Sept 25, 10:30pm to 4am, with Aanandi, amita, Bereket, J. Albert and NIGELTHREETIMES. Nakamura has been in the city's jungle scene since the 90s cabaret-law days.",
+      "fit": "A curated one-off in a room where you can see the booth, run by someone who has been doing it since the Prohibited Beats era. The deep-scene, had-to-know-about-it version of a Friday, and a smaller alternative if Knockdown feels like too much.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "jungle",
+        "drum and bass",
+        "small room",
+        "late night"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c61",
+      "title": "Shelter: Timmy Regisford Open To Close",
+      "category": "music",
+      "start_date": "2026-09-27",
+      "end_date": null,
+      "time_text": "from 3pm, open to close",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Public Records",
+      "address": "233 Butler St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://link.dice.fm/a8bbb7e7fcac",
+      "source_url": "https://donyc.com/venues/public-records",
+      "summary": "Timmy Regisford brings his long-running Shelter party to Public Records for an open-to-close set starting 3pm Sunday Sept 27. Daytime into evening, outdoors in the garden space, tickets on Dice.",
+      "fit": "Sunday-afternoon house from a genuine New York institution, done by dinner. This is the grown-up version of the BQE day party he loved, and one of the last outdoor dance days of the year.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "house",
+        "day party",
+        "outdoors",
+        "sunday"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c62",
+      "title": "Mark Ernestus, Umfang / DJ Python, No Sir / Carl Luis",
+      "category": "music",
+      "start_date": "2026-09-25",
+      "end_date": null,
+      "time_text": "11pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Public Records",
+      "address": "233 Butler St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://link.dice.fm/Jc04ef61118e",
+      "source_url": "https://donyc.com/venues/public-records",
+      "summary": "Mark Ernestus of Basic Channel and Berlin's Hard Wax headlines the Public Records Sound Room on Friday Sept 25 at 11pm, with Umfang, DJ Python, No Sir and Carl Luis across the rooms. Tickets on Dice.",
+      "fit": "Berlin dub techno at the source, in a 200-capacity room built around its sound system. If he wants the serious-listener version of Friday instead of the warehouse, this is it.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "dub techno",
+        "berlin",
+        "small room",
+        "sound system"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c63",
+      "title": "Art History Happy Hour: Iris van Herpen, Sculpting the Senses",
+      "category": "culture",
+      "start_date": "2026-09-24",
+      "end_date": null,
+      "time_text": "7pm to 9pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Brooklyn Museum",
+      "address": "200 Eastern Parkway",
+      "neighborhood": "Prospect Heights",
+      "borough": "Brooklyn",
+      "price_text": "$30, $18 members, includes a drink and exhibition access",
+      "url": "https://www.brooklynmuseum.org/programs/art-history-happy-hour-iris-van-herpen-september-2026/09-24-2026",
+      "source_url": "https://www.instagram.com/p/DdY54l8lxFb/",
+      "summary": "Thursday Sept 24, 7 to 9pm: short talks on Iris van Herpen's couture from curator Matthew Yokobosky, mathematician Ingrid Daubechies, materials scientist Deborah Berhanu and art historian Lynn Gamwell, then run of the exhibition. $30, $18 for members, one specialty drink included.",
+      "fit": "A Thursday date night ten minutes from Fort Greene: a drink in hand, four smart people talking for fifteen minutes each, and a show worth looking at. Polished without being a Manhattan production.",
+      "confidence": "likely",
+      "who": "wife",
+      "tags": [
+        "date night",
+        "museum",
+        "talk",
+        "thursday"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c64",
+      "title": "OUTLINE: Flying Lotus, ∈Y∋, Olof Dreijer and more",
+      "category": "music",
+      "start_date": "2026-09-26",
+      "end_date": null,
+      "time_text": "from 5:30pm, day into night",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Knockdown Center",
+      "address": "52-19 Flushing Ave",
+      "neighborhood": "Maspeth",
+      "borough": "Queens",
+      "price_text": "",
+      "url": "https://link.dice.fm/x36b38dd6696",
+      "source_url": "https://www.instagram.com/p/DdW-26ZFFpp/",
+      "summary": "Knockdown Center's OUTLINE day-into-night event on Saturday Sept 26 starts at 5:30pm with Flying Lotus, ∈Y∋ of Boredoms, Olof Dreijer of The Knife and more across the yard and halls. Tickets on Dice.",
+      "fit": "Starts in daylight and runs into the night, so it works around a babysitter window. Left-field but danceable, and Knockdown's outdoor season is nearly over.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "day party",
+        "electronic",
+        "outdoors",
+        "saturday"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c65",
+      "title": "The Nursery: Haitian Vinyl Day",
+      "category": "music",
+      "start_date": "2026-09-26",
+      "end_date": null,
+      "time_text": "from 1pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Public Records",
+      "address": "233 Butler St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://link.dice.fm/e87b759aef3e",
+      "source_url": "https://donyc.com/venues/public-records",
+      "summary": "Patrice Espérant, modrums and Mr. Wildflower play Haitian records all afternoon in Public Records' outdoor Nursery from 1pm on Saturday Sept 26. Tickets on Dice; the Nursery season wraps in October.",
+      "fit": "Caribbean records outdoors in the afternoon, beer in hand, home before dinner. Exactly the Brooklyn Caribbean corner of the city that his Afrobeats and dancehall phase keeps pointing at, and it's a daytime plan.",
+      "confidence": "likely",
+      "who": "either",
+      "tags": [
+        "caribbean",
+        "day party",
+        "outdoors",
+        "vinyl"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c66",
+      "title": "MASC at the Movies: ZOOLANDER",
+      "category": "performance",
+      "start_date": "2026-09-23",
+      "end_date": null,
+      "time_text": "drag pre-show before the screening, evening show",
+      "recurring": true,
+      "anytime": false,
+      "venue": "Nitehawk Cinema Prospect Park",
+      "address": "188 Prospect Park West",
+      "neighborhood": "Windsor Terrace",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.instagram.com/p/DdjbiZFjJ2T/",
+      "source_url": "https://www.instagram.com/p/DdjbiZFjJ2T/",
+      "summary": "Nitehawk's king-centered drag series returns Wednesday Sept 23 at the Prospect Park location with a screening of Zoolander, hosted by Fappell Thee Bruce with Thee Suburbia, Julius Nicoy, Chad Rangoon and Kraven Strange. Dine-in theater, food and drinks at your seat.",
+      "fit": "Drag show with the guys, but attached to a film and a plate of food instead of a club. Same register as the Phoenix nights he likes, closer to home, and over at a reasonable hour on a school night.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "drag",
+        "cinema",
+        "weird programming"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c67",
+      "title": "Wits End with Jay Jurden and Chloe Radcliffe",
+      "category": "comedy",
+      "start_date": "2026-09-23",
+      "end_date": null,
+      "time_text": "evening show, doors before",
+      "recurring": true,
+      "anytime": false,
+      "venue": "littlefield",
+      "address": "635 Sackett St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "$15 early sale",
+      "url": "https://www.instagram.com/p/Ddg3pjhRdCD/",
+      "source_url": "https://www.instagram.com/p/Ddhm572kZjl/",
+      "summary": "Adam Kesner's live comedy trivia game show returns to littlefield on Wednesday Sept 23 with Jay Jurden and Chloe Radcliffe captaining teams of comedians in categories built around their own niches. Early tickets $15 via the link in the organizer's caption.",
+      "fit": "Audience shouts answers, teams heckle each other, 150 people in a back room in Gowanus. The interactive, small-room end of comedy he likes, not a theater full of people watching a Netflix name.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "comedy",
+        "game show",
+        "interactive",
+        "cheap"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c68",
+      "title": "The Rock and Roll Playhouse plays the Music of Dolly Parton for Kids",
+      "category": "family",
+      "start_date": "2026-09-27",
+      "end_date": null,
+      "time_text": "doors 12pm, show 12:30pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Brooklyn Bowl",
+      "address": "61 Wythe Ave",
+      "neighborhood": "Williamsburg",
+      "borough": "Brooklyn",
+      "price_text": "$20 to $23",
+      "url": "https://www.instagram.com/p/DdZprs-lLRm/",
+      "source_url": "https://www.instagram.com/p/DdT5yc0DPpj/",
+      "summary": "A live band plays Dolly Parton songs for toddlers and their adults at Brooklyn Bowl on Sunday Sept 27, part of the Rock and Roll Playhouse's family matinee series. Tickets via brooklynbowl.com.",
+      "fit": "A real venue with a real band instead of a playground, and the country streak in his library means he'll actually enjoy the set. Stroller-friendly, over by early afternoon.",
+      "confidence": "verified",
+      "who": "family",
+      "tags": [
+        "family",
+        "kids concert",
+        "country",
+        "sunday"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c69",
+      "title": "Daikoku NYC WOM meet",
+      "category": "cars",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "Saturday nights, meets announced day-of on Instagram",
+      "recurring": true,
+      "anytime": true,
+      "venue": "Daikoku NYC",
+      "address": "",
+      "neighborhood": "under the BQE, location changes",
+      "borough": "Brooklyn",
+      "price_text": "free",
+      "url": "https://tickets.thefoat.com/daikokunyc",
+      "source_url": "https://www.instagram.com/p/Ddgra8DoBOk/",
+      "summary": "Daikoku NYC is a nonprofit JDM and car-culture collective that runs 'WOM' meets on Saturday nights, most recently under the BQE on Sept 19 with photographers from across the scene posting all weekend. Locations and dates are posted on their Instagram, usually late in the week; free to attend, family friendly.",
+      "fit": "He named Daikoku himself as the kind of deep scene he wants more of, and the meets are literally under the BQE where he already likes being. Watch their stories Thursday or Friday for the drop; a toddler looking at R34s on a Saturday also solves the family pick.",
+      "confidence": "unverified",
+      "who": "either",
+      "tags": [
+        "cars",
+        "jdm",
+        "scene",
+        "free"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c70",
+      "title": "Oktoberfest steins of Hereafter at Threes",
+      "category": "drink",
+      "start_date": null,
+      "end_date": null,
+      "time_text": "taproom hours",
+      "recurring": false,
+      "anytime": true,
+      "venue": "Threes Brewing",
+      "address": "333 Douglass St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "$15 a stein",
+      "url": "https://www.instagram.com/p/DdZx-cQv86v/",
+      "source_url": "https://www.instagram.com/p/DdZx-cQv86v/",
+      "summary": "Threes brought back full steins of Hereafter, their Oktoberfest lager, for $15 at the Gowanus and Greenpoint taprooms starting Sept 18 and running through the season.",
+      "fit": "Oktoberfest without a frat-party tent or a rented dirndl. A stein at the Gowanus yard with one or two friends is a low-effort Thursday that still feels like the season.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "oktoberfest",
+        "beer",
+        "german",
+        "walk-in"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c71",
+      "title": "Honey Dijon: Day & Night",
+      "category": "music",
+      "start_date": "2026-10-10",
+      "end_date": null,
+      "time_text": "day into night",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Knockdown Center",
+      "address": "52-19 Flushing Ave",
+      "neighborhood": "Maspeth",
+      "borough": "Queens",
+      "price_text": "",
+      "url": "https://www.instagram.com/p/DdW-26ZFFpp/",
+      "source_url": "https://www.instagram.com/p/DdW-26ZFFpp/",
+      "summary": "Knockdown Center's October calendar has Honey Dijon playing a day-and-night session on Saturday Oct 10. Tickets through the venue's Dice page.",
+      "fit": "House from a Chicago-to-New-York heavyweight, starting in daylight so it isn't a 3am commitment. Good group-of-three Saturday.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "house",
+        "day party",
+        "saturday",
+        "melodic house",
+        "progressive",
+        "warehouse",
+        "book now"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c72",
+      "title": "Dreamland presents Armin van Buuren",
+      "category": "music",
+      "start_date": "2026-10-09",
+      "end_date": null,
+      "time_text": "extended set, night",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Brooklyn Storehouse",
+      "address": "",
+      "neighborhood": "Brooklyn Navy Yard",
+      "borough": "Brooklyn",
+      "price_text": "from about $75",
+      "url": "https://www.instagram.com/p/DdW4Q6kg2zJ/",
+      "source_url": "https://www.instagram.com/p/DdHiVdfgDBr/",
+      "summary": "Armin van Buuren returns to Brooklyn Storehouse for a special extended set on Friday Oct 9, billed as his last one there this closing season. Tickets went on general sale Sept 16 via the venue.",
+      "fit": "The big-spectacle slot he saves for a few nights a year, and a warehouse rather than an arena. If the Kx5 night is the benchmark, this is the closest scale booking in the window.",
+      "confidence": "verified",
+      "who": "guys",
+      "tags": [
+        "trance",
+        "big night",
+        "warehouse",
+        "book now"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c73",
+      "title": "Keznamdi: BLXXD & FYAH Live",
+      "category": "music",
+      "start_date": "2026-10-15",
+      "end_date": null,
+      "time_text": "",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Brooklyn Bowl",
+      "address": "61 Wythe Ave",
+      "neighborhood": "Williamsburg",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.reggaeville.com/artist-details/keznamdi/news/view/keznamdi-blxxd-fyah-us-tour-october-2026/",
+      "source_url": "https://www.yahoo.com/entertainment/music/articles/keznamdi-unveils-u-dates-blxxd-162208278.html",
+      "summary": "Jamaican artist Keznamdi closes his BLXXD & FYAH US tour at Brooklyn Bowl on Thursday Oct 15, the biggest US room he has played. Presale ran through his own site; tickets via Brooklyn Bowl.",
+      "fit": "Live reggae and dancehall in a 600-cap room on a Thursday, which is his main weeknight. Sits right in the Popcaan and Shenseea corner of his library without being an arena show.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "dancehall",
+        "reggae",
+        "thursday",
+        "live band"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c74",
+      "title": "Elsewhere Halloween at 99 Scott",
+      "category": "party",
+      "start_date": "2026-10-30",
+      "end_date": null,
+      "time_text": "night into late",
+      "recurring": false,
+      "anytime": false,
+      "venue": "99 Scott",
+      "address": "99 Scott Ave",
+      "neighborhood": "Bushwick",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.instagram.com/p/DdcIujhIIc8/",
+      "source_url": "https://www.instagram.com/p/DcRsh0OoJNe/",
+      "summary": "Elsewhere moves its Halloween party to the 99 Scott warehouse on Friday Oct 30, with The Hellp playing a DJ set on the just-announced bill. The earlier lineup drop also listed Major League DJz, Cannelle, SAIDAH and more across early and late rooms.",
+      "fit": "Costume party in a warehouse with amapiano on the bill, which is two of his boxes at once. He dressed up for Rocky Horror and for ABBA night; this is the dance-floor version.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "halloween",
+        "costume",
+        "amapiano",
+        "warehouse",
+        "book now"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c75",
+      "title": "Benwal + Diffrent + Kyle Starkey + Paige Tomlinson + Stüm",
+      "category": "music",
+      "start_date": "2026-11-07",
+      "end_date": null,
+      "time_text": "night, closing b2b2b2b2b set",
+      "recurring": false,
+      "anytime": false,
+      "venue": "99 Scott",
+      "address": "99 Scott Ave",
+      "neighborhood": "Bushwick",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.instagram.com/p/DdWqOZCJiD7/",
+      "source_url": "https://www.instagram.com/p/Ddeti3UoJT9/",
+      "summary": "Elsewhere brings five speed garage, trance and UK bass selectors to 99 Scott on Saturday Nov 7, closing the night with a five-way back to back. Tickets on sale now through Elsewhere.",
+      "fit": "UK bass and trance in a warehouse, the unglamorous end of the scene where the room matters more than the name. Saturday night, tickets already live.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "uk bass",
+        "trance",
+        "warehouse",
+        "saturday"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c76",
+      "title": "Petite Rouge by Company XIV",
+      "category": "performance",
+      "start_date": "2026-09-28",
+      "end_date": "2026-10-31",
+      "time_text": "evening performances, Wednesday through Sunday",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Théâtre XIV",
+      "address": "383 Troutman St",
+      "neighborhood": "Bushwick",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.todaytix.com/nyc/shows/46071-petite-rouge-by-company-xiv",
+      "source_url": "https://www.instagram.com/p/DdW_JDwCfoc/",
+      "summary": "Company XIV's Little Red Riding Hood burlesque closes Halloween night; the company confirmed the Oct 31 end date and remaining seats are on sale. Nutcracker Rouge takes over the theater from Nov 12.",
+      "fit": "Company XIV is already a favorite and their Halloween-season show is the one he liked best. Book a late-October date night now, because after Oct 31 it's gone until the Nutcracker version.",
+      "confidence": "likely",
+      "who": "wife",
+      "tags": [
+        "burlesque",
+        "date night",
+        "bushwick",
+        "book now"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ],
+      "date_conflict": [
+        "2026-09-21",
+        "2026-09-28"
+      ]
+    },
+    {
+      "id": "c77",
+      "title": "Too Much Is Better Than Too Little: Alfred Hilsberg, ZickZack and the Invention of the German Underground",
+      "category": "culture",
+      "start_date": "2026-10-08",
+      "end_date": "2026-11-07",
+      "time_text": "opening reception 6pm to 8pm on Oct 8, then gallery hours",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Various Artists",
+      "address": "19 Essex St",
+      "neighborhood": "Lower East Side",
+      "borough": "Manhattan",
+      "price_text": "free",
+      "url": "https://www.instagram.com/p/DdR1nyRCYPR/",
+      "source_url": "https://www.instagram.com/p/DdR1nyRCYPR/",
+      "summary": "The first exhibition outside Germany on music journalist and ZickZack label founder Alfred Hilsberg, with photography, Super-8 films and unseen material from the late-70s German punk underground. Opening reception Thursday Oct 8, 6 to 8pm at Various Artists on Essex Street, on view through Nov 7. Presented with Goethe-Institut New York.",
+      "fit": "German counterculture history in a small gallery with a beer in your hand, not a lecture. Thursday opening, free, and squarely in his Berlin lane.",
+      "confidence": "likely",
+      "who": "either",
+      "tags": [
+        "german",
+        "punk",
+        "art opening",
+        "free",
+        "thursday"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c78",
+      "title": "Meshuganah Mambo at Barbès",
+      "category": "music",
+      "start_date": "2026-10-09",
+      "end_date": null,
+      "time_text": "8pm to 9:30pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Barbès",
+      "address": "376 9th St",
+      "neighborhood": "Park Slope",
+      "borough": "Brooklyn",
+      "price_text": "suggested donation at the door",
+      "url": "https://www.instagram.com/p/DdRwafoGjnC/",
+      "source_url": "https://www.instagram.com/p/DdRwafoGjnC/",
+      "summary": "Meshuganah Mambo play their klezmer-meets-tropical-groove set in the back room at Barbès on Friday Oct 9, 8 to 9:30pm, billed as a high-holidays show. Barbès runs on a pass-the-hat door charge.",
+      "fit": "Klezmer in a 50-person back room is exactly the Jewish-culture pick he asked for, and it's done by 9:30 so it can be the front half of a night. Bring one friend, not five.",
+      "confidence": "likely",
+      "who": "either",
+      "tags": [
+        "klezmer",
+        "jewish",
+        "small room",
+        "friday"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c79",
+      "title": "Lobster Place takes over the Threes Gowanus Yard",
+      "category": "food",
+      "start_date": "2026-10-01",
+      "end_date": null,
+      "time_text": "5pm to 9pm",
+      "recurring": false,
+      "anytime": false,
+      "venue": "Threes Brewing",
+      "address": "333 Douglass St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "free entry, pay for food and drink",
+      "url": "https://www.instagram.com/p/DdUmjDDFAyt/",
+      "source_url": "https://www.instagram.com/p/DdUmjDDFAyt/",
+      "summary": "Lobster Place takes over the Threes Brewing yard in Gowanus on Thursday Oct 1, 5 to 9pm, with grilled and chilled seafood and drink specials. One night only, RSVP through the link in the brewery's bio.",
+      "fit": "One-night guest takeover, outdoor picnic tables, seafood and beer with two friends on a Thursday. Same energy as a Strong Rope afternoon, with a reason to be there.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "pop-up",
+        "seafood",
+        "beer",
+        "thursday",
+        "one night only"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c80",
+      "title": "Spirits & Screenplays: Brooklyn debut",
+      "category": "performance",
+      "start_date": "2026-10-08",
+      "end_date": null,
+      "time_text": "evening",
+      "recurring": false,
+      "anytime": false,
+      "venue": "The Tiny Cupboard",
+      "address": "",
+      "neighborhood": "Bushwick",
+      "borough": "Brooklyn",
+      "price_text": "",
+      "url": "https://www.instagram.com/p/DdfRFyTquKJ/",
+      "source_url": "https://www.instagram.com/p/DdfRFyTquKJ/",
+      "summary": "Karaoke but with film scripts: you grab a scene, get on stage and perform it. The series plays its first Brooklyn night at The Tiny Cupboard in Bushwick on Thursday Oct 8, hosted by The Martin Monster. Tickets via the organizer's link in bio.",
+      "fit": "Fully interactive, tiny room, no marketing budget, and you can either get up or heckle from a chair. The kind of thing you tell three friends about and look like the guy with the plan.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "interactive",
+        "comedy",
+        "tiny room",
+        "thursday"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c81",
+      "title": "Heel Toe Rodeo line dancing",
+      "category": "party",
+      "start_date": "2026-10-06",
+      "end_date": null,
+      "time_text": "evening, lessons then open floor",
+      "recurring": true,
+      "anytime": false,
+      "venue": "littlefield",
+      "address": "635 Sackett St",
+      "neighborhood": "Gowanus",
+      "borough": "Brooklyn",
+      "price_text": "$15 presale, $20 door",
+      "url": "https://www.instagram.com/p/DdhI8KVpACr/",
+      "source_url": "https://www.instagram.com/p/DdhI8KVpACr/",
+      "summary": "Heel Toe Rodeo returns to littlefield on Tuesday Oct 6 with taught line dances and a published song list so you can practice beforehand. $15 presale, $20 at the door.",
+      "fit": "His country streak is real and this is the participatory version: you learn the steps, you dance, you leave sweaty. Tuesday, so only worth it if the crew is up for something silly.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "line dancing",
+        "country",
+        "interactive",
+        "cheap"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "c82",
+      "title": "Womanology: a one-hour drag mix",
+      "category": "performance",
+      "start_date": "2026-09-29",
+      "end_date": null,
+      "time_text": "show at 8pm",
+      "recurring": true,
+      "anytime": false,
+      "venue": "All Night Skate",
+      "address": "",
+      "neighborhood": "Bed-Stuy",
+      "borough": "Brooklyn",
+      "price_text": "bring cash, price not posted",
+      "url": "https://www.instagram.com/p/DdUNZ77OPNR/",
+      "source_url": "https://www.instagram.com/p/DdUNZ77OPNR/",
+      "summary": "Mx. Ology and Miss Woman do a straight hour of drag with no breaks at All Night Skate on Tuesday Sept 29, show at 8pm. Cash for tips, no advance tickets mentioned.",
+      "fit": "His bar, his format: a tiny room, a bartender who'll talk to you, and a drag show with no interval. Tuesday keeps it short, and the cocktails there are the reason he already goes.",
+      "confidence": "likely",
+      "who": "guys",
+      "tags": [
+        "drag",
+        "bar",
+        "bed-stuy",
+        "cash only"
+      ],
+      "lane": "instagram",
+      "lanes": [
+        "instagram"
+      ]
+    }
+  ],
+  "laneReports": [
+    {
+      "lane": "music",
+      "ok": false,
+      "count": 0,
+      "error": "[research:music] exceeded its 30 minute budget mid-request",
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "searches": 0,
+        "fetches": 0,
+        "requests": 0
+      }
+    },
+    {
+      "lane": "fights",
+      "ok": true,
+      "count": 8,
+      "notes": "Budget note: my web tool allowance ran out mid-research, so a few threads are unfinished. What I verified by reading the source myself: ufc.com/events (UFC 334 at MSG, Nov 14, 9pm main card; no other UFC card is anywhere near New York in either window - Sep 26 is Vegas/Apex on CBS and Paramount+, Oct 3 Salt Lake, Oct 10 Vegas, Oct 17 Edmonton, Oct 24 Abu Dhabi, Oct 31 and Nov 7 Vegas), prucenter.com/events (BKFC 95 on Oct 17 is the only fight card at Prudential in the window), barclayscenter.com/events (no boxing or MMA at Barclays through late October - it is all concerts, Liberty and Nets), and the Church Street Boxing Eventbrite. UFC 334 lands six days past the radar window but I included it deliberately because presale registration is live at ufc.com/nyc now and Garden cards sell out; UFC's own page still lists the main event as TBD, so ignore the Gane vs Hokit and Harrison vs Nunez billing you see on resellers until UFC posts it. Could not verify: msg.com/calendar and boxingscene.com/schedule both render via JavaScript and returned empty shells, so I could not rule in or out a fall boxing card at the Garden or the Infosys Theater (the old Hulu Theater) beyond UFC 334 - worth one more look next week. Two of your trusted links are dead ends: kingscombat.com is now a parked GoDaddy domain for sale, and churchboxing.com is a family gym in Essex, England - the NYC gym is Church Street Boxing at 25 Park Place, which is where the Fall Brawl link points. ONE Championship has no North American card at all through the window; everything on their calendar is Lumpinee, Bangkok plus ONE Samurai in Japan and ONE: Qatar. Lion Fight's site did not get fetched before the budget ran out. Warriors Cup, the East Coast Muay Thai promotion that ran a card at the Theater at MSG in March and usually runs Melrose Ballroom in Queens, has no announced fall 2026 date I could confirm - that is the single best lead to chase for him and I would check their Instagram directly. Also unconfirmed and outside the windows: DiBella's Broadway Boxing is reported to return to New York City on November 22 (fightnews, June 6), venue not stated, so it is a heads-up rather than a pick. I found no verifiable bar watch party for a specific card or a big England match in either window - nothing bookable turned up before the tool budget ended, and I will not invent one. Prices are the weakest field here: Church Street's Eventbrite tier, BKFC 95, the Knicks opener and Haymakers all render prices in JavaScript, so treat every price line above as unconfirmed.",
+      "usage": {
+        "input": 2307,
+        "output": 19143,
+        "cacheRead": 1273111,
+        "cacheWrite": 72838,
+        "searches": 12,
+        "fetches": 10,
+        "requests": 1
+      },
+      "servedBy": "claude-opus-5"
+    },
+    {
+      "lane": "food",
+      "ok": true,
+      "count": 13,
+      "notes": "Straight talk on what happened: my page-fetch budget ran out partway through this pass, so several trusted sources never got read. What I did read directly on the organizer's own site: Resident's reservations calendar (all the Brooklyn Point and Meatpacking dinners, dates and venues confirmed there) and Strong Rope's events calendar (all Strong Rope items, including the fact that the Red Hook taproom is closed all day Sat Sep 26 for a private event). Those are marked verified. Note that the individual Resident event page for Sep 25 returned an error when I tried to open it directly; the date, venue and chef come from Resident's own listing page, and the $195 figure comes from a prior Brooklyn Point dinner of theirs, not from the Sep 25 page. Treat the price as unconfirmed.\n\nCould not verify at all, and should be chased next week: Other Half (their live page only showed the Burial & Friends collab run that ended Sep 6 and the June Green City festival, nothing current), Threes Brewing's public events page, KCBC's programming, Sunken Harbor Club's special nights, Maccabee Bar (Hanukkah is December this year, too far out for this radar window but worth a hold), Eater NY, The Infatuation, Grub Street, Punch and Brooklyn Magazine. Resy's and Tock's event pages are JavaScript-rendered and returned nothing usable.\n\nThin spots: (1) Big shared-table group meals. I found nothing verifiable this week for Korean BBQ, hot pot, banquet Chinese or a whole-animal dinner, so I left the category empty rather than pad it. (2) Weird bar programming. Choke Hole drag wrestling has no 2026 New York date posted that I could find; their last local run was at Pioneer Works in November 2025. No verified live wrestling at a bar, punk trivia or karaoke league date either. (3) The Lineup Dinner is the one item here with no confirmed date; it is included because the format and the $165 price are documented on its booking page, but the next seating needs checking before it goes in the email.\n\nDeliberately skipped: Watermark Pier 15 Oktoberfest (tourist pier, 6-week daily run, exactly the frat version he does not want), the Food Network NYC Wine & Food Festival Oct 15-18 (mass-market and heavily marketed), and the Industry City vendor market on Sep 26 (generic). Black Forest Brooklyn's Oktoberfest is real and reportedly in its twelfth year, but I could not find 2026 dates from a current source, so it is out.\n\nOne scheduling note for the write-up: Radegast's Oktoberfest Saturdays and Zum Schneider's Greenpoint run overlap on Sep 26, and Zum Schneider is the more authentically Bavarian of the two; Radegast is the one with the stein-holding contest.",
+      "usage": {
+        "input": 2552,
+        "output": 21661,
+        "cacheRead": 1027935,
+        "cacheWrite": 62399,
+        "searches": 14,
+        "fetches": 10,
+        "requests": 1
+      },
+      "servedBy": "claude-opus-5"
+    },
+    {
+      "lane": "culture",
+      "ok": true,
+      "count": 24,
+      "notes": "Budget problem, stated plainly: my web-fetch allowance ran out partway through and the search allowance ran out right after, so several planned threads are unfinished. What that means item by item:\n\nVERIFIED BY READING THE ORGANIZER PAGE: everything at Company XIV (companyxiv.com and the Petite Rouge page — Petite Rouge is 'now playing, extended through Halloween'; Nutcracker Rouge 'returns to Théâtre XIV November 12' for twelve weeks, on sale now), all Union Hall items (unionhallny.com calendar), all Littlefield items (littlefieldnyc.com/all-shows/, which lists dates, doors/show times and age limits), all Bell House items (thebellhouseny.com calendar with Ticketmaster links), and the Don't Tell Comedy Chelsea show (date, 8:30pm, BYOB, performance-arts space, address emailed by 8am day-of).\n\nPRICES: this is the big gap. None of the Union Hall, Littlefield, Bell House, Company XIV or Don't Tell Comedy pages exposed a dollar figure in the text I could read — Company XIV prices per seat in a JavaScript box office, and the Brooklyn venues push you to Eventbrite/Ticketmaster for the number. I left price_text empty rather than guess. Every one of those needs a price check on the ticket link before it goes in the email.\n\nLIKELY, NOT VERIFIED: Bushwig (date, 4pm–4am, and venue came from the 3 Dollar Bill RSVP page via search snippet; note the address is given as 260 Meserole St by the venue and 270 Meserole St by Time Out, so confirm the door). BBG Lightscape on-sale date of September 29 at 10am came from bbg.org/lightscape via snippet; I could not load the page to get run dates or 2026 prices. NYCB Nutcracker run of Nov 27–Jan 2 came from Ballet Herald, not NYCB itself — the NYCB homepage only confirmed the 26-27 season is on sale and performances begin September 22. Einstein on the Beach dates of Nov 19–21 are corroborated by Playbill, BrooklynVegan and the bam.org event page snippet, but I never read bam.org directly. NYCB Fall 2026 program list is from their own navigation, but I have no per-program dates, which is why that entry has no end date.\n\nOUTSIDE THE WINDOWS ON PURPOSE: Nutcracker Rouge (Nov 12), Einstein on the Beach (Nov 19–21) and NYCB's Nutcracker (Nov 27) all start after the radar window closes on Nov 8, but all three are on sale right now and the brief explicitly asks for the Nutcracker on-sale flag. Cut them if you want the window enforced strictly.\n\nNOT COVERED, WORTH CHASING NEXT WEEK: the Tiny Cupboard, Brooklyn Comedy Collective, House of Yes, Nitehawk and Alamo Drafthouse themed screenings, and Brooklyn Museum First Saturday all went unfetched. On First Saturdays specifically: the museum says the series runs 'the first Saturday of select months' and their 2026 season started in February, but I could not confirm whether October 3 is one of the active months — do not promise it without checking. The Slipper Room's own tickets page showed September 20–22 guest events but I could not pull the September 25–26 lineup, so that entry is written as an anytime place rather than a dated pick. There was also a live hint that New York Burlesque Festival tickets are on sale, which in most years lands in late September — that is the single loose end most likely to be a great pick, and I ran out of searches before I could date it.\n\nTHURSDAY SEP 24 IS THIN in this lane. Union Hall has a Rupi Kaur residency (wrong audience) and a cancelled late show; Bell House has a touring comic with no track record with him. Petite Rouge plays Thursdays and is the right answer for that slot.",
+      "usage": {
+        "input": 2686,
+        "output": 29444,
+        "cacheRead": 2831208,
+        "cacheWrite": 125910,
+        "searches": 12,
+        "fetches": 10,
+        "requests": 1
+      },
+      "servedBy": "claude-opus-5"
+    },
+    {
+      "lane": "body",
+      "ok": true,
+      "count": 10,
+      "notes": "Honest accounting: my web_fetch and web_search budget was cut off partway through this lane, so several threads are unfinished. What I actually read on organizer pages and can stand behind: the Bike New York Twin Lights Ride page (Sunday Sep 27, 2026, five routes, Huddy Park start, chartered ferry from 10 South Street at $65 round trip with bike, AM departures 5:30 and 7:30, returns 2:30/4:30/6:30) - the one gap is the ride registration fee, because the Haku registration page is JavaScript-only and would not render; the TWA Hotel pool page (prices, reservation window through Nov 1, the Sep 29 evening closure); the World Spa homepage (from $99, 16 thermal rooms, Grand Banya, hours); and the QC NY homepage (hours, 112 Andes Road, ferry timetable, booking link, Aperitivo Evenings exists). QC and Othership prices are not published on the pages I could reach, so both are flagged. What I could not finish: Transportation Alternatives' events page and NYRR's race page both failed to load and I ran out of fetches before I could retry, so I have nothing on group rides or races for Sep 26-27 (the Bronx 10 Mile normally lands this weekend - worth a 60-second check on nyrr.org). Bathhouse's own events calendar also went unread; the Czech 'Aufguss Mafia' residency I found was January 2026 and is past, and I could not confirm any Aufguss guest performance inside either window, though the Atlantic Avenue event sauna programs them regularly. Car and motorcycle culture came up nearly empty and that is the weakest part of this lane: Tokyo Meet 11.0 (RIX Magazine, the closest thing to a Daikoku-style JDM night here) was Sep 6 at the Palisades Center in West Nyack, so both past and out of the boroughs; Cars & Coffee NJ is last-Sunday-of-month April to September with an October year-end event but the meets are in New Jersey suburbs, not a PATH ride; the Coffee Project NY collector-car meetup in Long Island City has a 2026 series page but the only date I could see was in May; Classic Car Club Manhattan's event calendar sits behind a members-only PeopleVine login and its Eventbrite page returned no dated listings; Union Garage and Jane Motorcycles went unchecked. Two things outside the windows that are still worth flagging to him early: registration is already open for the TD Five Boro Bike Tour on May 2, 2027, and Culture of Bathe-ing is building a 17-sauna open-air bathing festival at Domino Park in Williamsburg from Feb 12 to Mar 1, with more than 1,000 guided sessions led by Aufguss world champions plus Bathhouse, Othership and the Russian & Turkish Baths - that one is squarely his thing and tickets will move.",
+      "usage": {
+        "input": 2474,
+        "output": 21510,
+        "cacheRead": 1620888,
+        "cacheWrite": 117338,
+        "searches": 13,
+        "fetches": 10,
+        "requests": 1
+      },
+      "servedBy": "claude-opus-5"
+    },
+    {
+      "lane": "scenes",
+      "ok": true,
+      "count": 13,
+      "notes": "Honest accounting: my web_fetch budget was exhausted early in this session and the web_search budget ran out shortly after, so this lane is thinner and less verified than it should be. What I did read directly on organizer pages: the Goethe-Institut New York events calendar (the Hilsberg/ZickZack exhibition Oct 8-Nov 7, the Tammam Azzam show Sep 16-Dec 3, and the Mroue/Majdalanie premiere Oct 24-26, all with dates and free/venue info as listed), the National Yiddish Theatre Folksbiene homepage (Di Yam Gazlonim in Concert, Sunday Oct 25), the Barbes site, and the German Consulate page (no public events listed at all). The Deutsches Haus at NYU dates came from the search index of their own events page, which reproduced the listing with dates, times and the Washington Mews address, but I could not open the page itself, so those are marked likely and the Thursday Oct 22 event is omitted because I never saw its title. WHAT I COULD NOT CHECK AT ALL, and what next week should hit first: 92NY, the Jewish Museum, Museum of Jewish Heritage, Center for Jewish History (all four failed to load or were never reached), Sukkot programming (Sukkot runs the evening of Fri Sep 25 through Oct 2 this year and Brooklyn sukkah events are almost certainly happening this window - that is the biggest gap here), Columbia Center on Global Energy Policy, Asia Society, Carnegie Council, Open to Debate, and open studios / zine fairs (Gowanus and Bushwick open studios usually land in this stretch). CFR's events page returned only their past-events archive, and most CFR meetings are members-only anyway, so treat that source as low-yield for him. On Oktoberfest: the German-American Steuben Parade and its Central Park Oktoberfest already happened on Sep 19, so that ship sailed; I found no ticketed event pages for Zum Stammtisch or Gottscheer Hall, which both just run their normal German beer-hall service rather than a promoted festival, so I left them out rather than invent a date. Prices are left blank wherever I could not see a real number - do not fill them in from memory. The CityKinder lantern walk 2026 date is genuinely not published yet; it is historically the Saturday nearest Nov 11 (Nov 11 falls on a Wednesday this year), which could land just outside the radar window, so the action item is joining CityKinder's list now.",
+      "usage": {
+        "input": 2823,
+        "output": 21045,
+        "cacheRead": 1338416,
+        "cacheWrite": 73617,
+        "searches": 14,
+        "fetches": 10,
+        "requests": 1
+      },
+      "servedBy": "claude-opus-5"
+    },
+    {
+      "lane": "instagram",
+      "ok": true,
+      "count": 25,
+      "notes": "Search and fetch budgets ran out partway through, so several items lean on the organizer's own Instagram caption as the source. Only Sasha & John Digweed (RA page read: Sept 25, Knockdown Main Hall, open to close) and Cosmic Jungle (RA page read: Sept 25, Elsewhere, 22:30-04:00) are marked verified. Public Records items were cross-checked on the venue's doNYC calendar, which gave the Dice ticket links used as URLs, but I could not open the Dice pages, so prices are left blank rather than guessed. Things I could not pin down and therefore left out: the Sean Sherman Indigenous dinner at Public Records (announced for Climate Week but no date or ticket link posted anywhere I could reach); the Sept 27 Mister Sunday lineup at Nowadays (the season runs to Nov 1 and it is a perfect Sunday-daytime option, but the guest for that date was not confirmed); Daikoku NYC's next meet date, which they only post day-of, so it is listed as a recurring/anytime scene item. Also flagged but out of window: Dax J plays his first US open-to-close at Knockdown Center on Nov 14 and tickets went live the week of Sept 24, so that is a book-now item even though the date falls past Nov 8; Company XIV's Nutcracker Rouge starts Nov 12; New York City Ballet's fall season and Nutcracker on-sale are both live now. Skipped deliberately: the Keznamdi ticket giveaway post, Smorgasburg's beerfest giveaway, the Harry Styles-themed Othership session, the Candy Crush-branded 2010s rave at Brooklyn Bowl, and the Feast of San Gennaro. No Muay Thai, kickboxing or boxing card in the five boroughs turned up in this batch of posts, and UFC Vegas 121 (Sept 26) and UFC 332 (Oct 3) are both out of town.",
+      "usage": {
+        "input": 60606,
+        "output": 36196,
+        "cacheRead": 2273773,
+        "cacheWrite": 102991,
+        "searches": 14,
+        "fetches": 12,
+        "requests": 1
+      },
+      "servedBy": "claude-opus-5"
+    }
+  ],
+  "dropped": [
+    {
+      "title": "Polymarket UFC 334",
+      "url": "https://www.ufc.com/event/ufc-334",
+      "lane": "fights",
+      "reasons": [
+        "beyond radar window"
+      ]
+    },
+    {
+      "title": "Zum Schneider Oktoberfest: Munich on the East River",
+      "url": "",
+      "lane": "food",
+      "reasons": [
+        "no url"
+      ]
+    },
+    {
+      "title": "Highball Ltd.",
+      "url": "",
+      "lane": "food",
+      "reasons": [
+        "no url"
+      ]
+    },
+    {
+      "title": "Nutcracker Rouge",
+      "url": "https://companyxiv.com/about/shows/nutcracker-rouge/",
+      "lane": "culture",
+      "reasons": [
+        "beyond radar window"
+      ]
+    },
+    {
+      "title": "George Balanchine's The Nutcracker — New York City Ballet",
+      "url": "https://www.nycballet.com/season-and-tickets/george-balanchines-the-nutcracker/george-balanchines-the-nutcracker",
+      "lane": "culture",
+      "reasons": [
+        "beyond radar window"
+      ]
+    },
+    {
+      "title": "Einstein on the Beach — 50th Anniversary Concert, The Philip Glass Ensemble",
+      "url": "https://www.bam.org/music/2026/einstein-on-the-beach-50",
+      "lane": "culture",
+      "reasons": [
+        "beyond radar window"
+      ]
+    },
+    {
+      "title": "CityKinder St. Martin's Lantern Walk in Prospect Park",
+      "url": "https://www.citykinder.com/event/st-martins-lantern-walk-in-prospect-park/",
+      "lane": "scenes",
+      "reasons": [
+        "dated item without a date"
+      ]
+    }
+  ],
+  "instagram": {
+    "ok": true,
+    "error": null,
+    "posts": 297,
+    "accounts": 66
+  },
+  "verification": {
+    "c59": {
+      "id": "c59",
+      "status": "corrected",
+      "start_date": null,
+      "time_text": null,
+      "price_text": "about $43",
+      "venue": null,
+      "reader_note": null,
+      "note": "Dice link would not fetch; RA event page (ra.co/events/2426901) states Fri, Sep 25, 2026, 23:00-05:00 at Knockdown Center, open-to-close set, so date/time/venue check out; Dice's own event and venue listings now show $43.32, not $38."
+    },
+    "c1": {
+      "id": "c1",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": null,
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "Eventbrite page loaded: Thursday, September 24, 2026, 6:30 PM-10 PM at Church Street Boxing Gym, 25 Park Place; ticket price tier still does not render, only the $2 water/soda note appears."
+    },
+    "c23": {
+      "id": "c23",
+      "status": "corrected",
+      "start_date": null,
+      "time_text": "doors 8pm, show 8:30pm",
+      "price_text": "$30",
+      "venue": null,
+      "reader_note": null,
+      "note": "Don't Tell Comedy page loaded: Manhattan (Chelsea) Saturday September 26th, 8:30 p.m. show with doors at 8 p.m., general admission $30, BYOB, 21+, address emailed at 8 a.m. day of show."
+    },
+    "c63": {
+      "id": "c63",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": null,
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "The program page itself returned an access error, but the Brooklyn Museum's own site calendar lists Art History Happy Hour on September 24, 7-9 pm, and the program URL is the Iris van Herpen 'Sculpting the Senses' edition; the $30/$18-member price is the series standard but I could not re-read it for this date."
+    },
+    "c61": {
+      "id": "c61",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": null,
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "Dice short link would not fetch; the Public Records venue calendar lists 'Presented by Public Records. Shelter: Timmy Regisford Open To Close' on Sunday, Sep 27 at 3:00PM with the same Dice link (a8bbb7e7fcac); price not shown."
+    },
+    "c21": {
+      "id": "c21",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": null,
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "3 Dollar Bill's own page (despite the 9/27 slug) states Bushwig Festival 2026 runs Saturday, September 26, 2026 4:00 PM to Sunday, September 27, 2026 4:00 AM at 3 Dollar Bill/9 Bob Note/The Yard, 260 Meserole St; tickets via Etix, price not listed."
+    },
+    "c10": {
+      "id": "c10",
+      "status": "corrected",
+      "start_date": null,
+      "time_text": "food pop-up 12pm-8pm; live music Friday evening",
+      "price_text": null,
+      "venue": "Strong Rope Brewery, Red Hook taproom (185 Van Dyke St)",
+      "reader_note": "It's the Red Hook taproom, and Jerry Pepper's serves only until 8pm, so come before then for burgers.",
+      "note": "Strong Rope's events calendar lists both 'Food Pop-Up: Jerry Pepper's' and 'Live Music: PK Drumz Presents' on September 25, 2026; the Jerry Pepper's event page gives 12:00 PM-8:00 PM at 185 Van Dyke Street (Red Hook); the PK Drumz page would not load, so no set music start time is published."
+    },
+    "c8": {
+      "id": "c8",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": null,
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "Resident's own reservations calendar settles the date conflict: Chef Andrew Sargent is Friday, September 25, 2026, 7:00-10:00 PM at Brooklyn Point (138 Willoughby St); Oct 8 is Chef Mackenzie Milone and Oct 9 is Chef Luis Lising; no price is shown on the calendar, so the ~$195 figure is still unverified."
+    },
+    "c65": {
+      "id": "c65",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": null,
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "Dice short link would not fetch; the Public Records calendar lists 'The Nursery: Haitian Vinyl Day with Patrice Espérant, modrums, Mr. Wildflower' on Saturday, Sep 26 at 1:00PM at Public Records; price not shown."
+    },
+    "c22": {
+      "id": "c22",
+      "status": "corrected",
+      "start_date": null,
+      "time_text": null,
+      "price_text": "$0 to $24",
+      "venue": null,
+      "reader_note": null,
+      "note": "Littlefield's own event page confirms Dancehall Forever, September 26, 2026, 11:00 pm-4:00 am, 21+, at littlefield, 635 Sackett St, listed at $0.00-$24.36 with door tickets if online sells out."
+    },
+    "c2": {
+      "id": "c2",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": "7pm tip-off",
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "Ticketmaster's Knicks home-schedule listing and ABC7's schedule story both state the October 20, 2026 opener vs the 76ers at Madison Square Garden with ring presentation and banner raising; tip is 7 p.m. ET; no price verified."
+    },
+    "c35": {
+      "id": "c35",
+      "status": "corrected",
+      "start_date": null,
+      "time_text": null,
+      "price_text": "adult $29 to $44, child $15 to $28, fees included",
+      "venue": null,
+      "reader_note": null,
+      "note": "bbg.org/lightscape confirms public tickets go on sale Tuesday, September 29 at 10 a.m. and publishes the price table; note the page itself is inconsistent on the member presale (says September 22 in the ticket section, September 17 in the FAQ)."
+    },
+    "c72": {
+      "id": "c72",
+      "status": "corrected",
+      "start_date": null,
+      "time_text": null,
+      "price_text": "from about $75",
+      "venue": null,
+      "reader_note": null,
+      "note": "Instagram posts are not fetchable, but Insomniac's own event page and Dice both list Armin van Buuren (extended set) at Brooklyn Storehouse on Friday, October 9, 2026, in partnership with Insomniac and Dreamland; Dice shows tickets from $74.78; no door time published."
+    },
+    "c20": {
+      "id": "c20",
+      "status": "corrected",
+      "start_date": null,
+      "time_text": null,
+      "price_text": "$15 advance, $20 day of",
+      "venue": null,
+      "reader_note": null,
+      "note": "Littlefield's event page confirms the 12th Annual Rocky Horror Live Band Karaoke on October 30, 2026, doors 6:00 pm, show 7:00 pm, 21+, at littlefield; the page quotes $15 advance/$20 day of (listed as $18.71 with fees) and says singer sign-up starts when doors open."
+    },
+    "c3": {
+      "id": "c3",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": "doors 7pm, first bout 8pm",
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "Prudential Center's own event page states BKFC 95 on Saturday, October 17, 2026, doors 7:00 PM, start 8:00 PM, with tickets via Ticketmaster; no prices listed on the arena page."
+    },
+    "c69": {
+      "id": "c69",
+      "status": "unverifiable",
+      "start_date": null,
+      "time_text": null,
+      "price_text": null,
+      "venue": null,
+      "reader_note": "Daikoku NYC runs specific, pre-approved meets rather than a drop-in spot, so check their channels for the next date before heading out.",
+      "note": "tickets.thefoat.com/daikokunyc would not fetch beyond its description; the club's own events page shows dated, application-approved meets with set times and locations, so neither 'anytime' nor 'free' could be verified."
+    },
+    "c42": {
+      "id": "c42",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": null,
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "World Spa's own site (plan-your-journey and home page) states day passes from $99 at the Brooklyn banya; resellers note weekday passes are all-day while weekend passes run four hours, so a 'full day' is a weekday plan."
+    },
+    "c17": {
+      "id": "c17",
+      "status": "confirmed",
+      "start_date": null,
+      "time_text": null,
+      "price_text": null,
+      "venue": null,
+      "reader_note": null,
+      "note": "Instagram is not fetchable, but The Infatuation's August 2026 review confirms Matches is open at 560 Manhattan Ave in Greenpoint (former Enid's space) serving steak frites, caesar and a burger with tallow fries, turning into a bar with DJs later; no menu prices verified."
+    },
+    "c68": {
+      "id": "c68",
+      "status": "corrected",
+      "start_date": null,
+      "time_text": "doors 12pm, show 12:30pm",
+      "price_text": "$20 to $23",
+      "venue": null,
+      "reader_note": "It's a 12:30pm show with noon doors, not a late-morning one.",
+      "note": "Brooklyn Bowl's own event page lists The Rock and Roll Playhouse Plays Music of Dolly Parton for Kids on Sunday, September 27, 2026, doors 12:00 PM / show 12:30 PM, all ages, at 61 Wythe Ave; Ticketmaster shows $20-$23 with fees included."
+    }
+  },
+  "corrections": [
+    "[c10] corrected: time, venue to Strong Rope Brewery, Red Hook taproom (185 Van Dyke St)",
+    "[c20] corrected: price",
+    "[c22] corrected: price",
+    "[c23] corrected: time, price",
+    "[c35] corrected: price",
+    "[c59] corrected: price",
+    "[c68] corrected: time, price",
+    "[c72] corrected: price"
+  ]
+}
