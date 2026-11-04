@@ -1,4 +1,5 @@
 import { runClaude, withRetry } from "./claude.js";
+import { repeatLedger, formatLedger, radarRuns, normVenue } from "./archive.js";
 import { calendarForMonths } from "./profile.js";
 import { weekdayOf, formatShort } from "./schedule.js";
 
@@ -88,6 +89,16 @@ Selection rules:
 - "Anytime" is only for places and open-ended offers: a bar that opened, a bathhouse, a venue that programs every night. A one-night event never goes there. If a candidate marked anytime is clearly a dated event, treat it as dated: pick it, put it on the radar, or leave it out.
 - If the pool is thin, say so in the notes rather than padding with weak picks. Five strong picks beat seven mediocre ones.
 
+Novelty rules (after eight issues his complaint is that the email got predictable: a DJ at Public Records, an obscure name at Knockdown, a UFC card on the radar for five weeks):
+- The repeat ledger in the message shows what he has already been sent. A venue with a main pick in either of the last two issues needs an exceptional reason to return (a Tier 1 artist, a once-a-year night). Otherwise prefer a room he has not been sent to. One pick per venue per issue; the system demotes a second to the bench.
+- Club nights and DJ sets count together whatever their category: at most two per issue, never the same promoter two weeks running. The rest of the issue is comedy, a name in conversation, food, a fight, film, theater, a scene, a day-long format, something he does rather than watches.
+- At least two picks every week come from a format or category that has not had a main pick in the last three issues. The ledger tells you which.
+- A name he would recognize in a room of a few hundred outranks an unknown DJ in a room he has already been sent to. If a famous comedian, musician, author or director is doing a one-off small-room date, that is the lead pick, not a bench item.
+- Ask of every pick: would he have found this himself by reading the Public Records calendar? If yes, it had better be special. The email earns its keep with the things he would not have found.
+- A name he ticked in his checklist (in this prompt) with a date in the window is a lead pick, even at an arena. He rated 483 names and ticked the famous ones; fame is the draw, the room is the bonus. An unknown DJ in a good room is the filler he complained about. The ticks are a taste profile, not a whitelist: find the same register off the list too. Names he rated and left blank are a soft no; do not lead with them.
+- Cooldown, in his words: Public Records club nights, Knockdown Center bookings, Company XIV runs and fight cards on the radar get one pick among all of them per four issues, unless a ticked name is on the bill. The ledger shows when each was last used; if it was inside the last four issues, leave it out.
+- Radar: an item may appear at most twice across issues, and the system retires it after that. If its booking situation changes later (on sale, nearly gone), say so in the opener or the notes instead.
+
 Writing rules:
 - Voice: a friend who knows the city and has the plan. Direct, a little irreverent, confident. Short sentences. Second person.
 - Explain why each pick fits him, not why it is popular. Reference his taste specifically (the artists, the rooms, the things he has loved) when it is true, and do not force it.
@@ -105,6 +116,7 @@ export function buildCuratorSystem(profile, windows) {
     "",
     "# MUSIC PROFILE",
     profile.music,
+    ...(profile.checklist ? ["", "# HIS OWN TICKS (profile/checklist.md; the newest word on his taste)", profile.checklist] : []),
     "",
     "# SEASON NOTES",
     calendarForMonths(profile.calendar, windows.months) || "(none)",
@@ -128,7 +140,8 @@ function compactCandidate(c) {
   ].join("\n");
 }
 
-export function buildCuratorUser({ candidates, windows, recent, laneReports, previous = null, corrections = [] }) {
+export function buildCuratorUser({ candidates, windows, recent, laneReports, previous = null, corrections = [], ledger = null }) {
+  const ledgerText = formatLedger(ledger ?? repeatLedger(recent));
   const inWindow = candidates.filter((c) => !c.anytime && c.start_date && c.start_date >= windows.thisWindow.start && c.start_date <= windows.thisWindow.end);
   const inRadar = candidates.filter((c) => !c.anytime && c.start_date && c.start_date > windows.thisWindow.end);
   const undatedOrRecurring = candidates.filter((c) => c.anytime || !c.start_date);
@@ -164,6 +177,7 @@ export function buildCuratorUser({ candidates, windows, recent, laneReports, pre
     "# RECENT ISSUES (do not repeat main picks)",
     recentBlock,
     "",
+    ...(ledgerText ? ["# REPEAT LEDGER (what he has already been sent; the novelty rules apply)", ledgerText, ""] : []),
     failed.length ? `# NOTE\nThese research lanes failed this week and returned nothing: ${failed.join(", ")}. Mention it in the notes if the email feels thin because of it.\n` : "",
     `# CANDIDATES IN THIS WINDOW (${inWindow.length})`,
     inWindow.map(compactCandidate).join("\n\n") || "(none)",
@@ -179,29 +193,76 @@ export function buildCuratorUser({ candidates, windows, recent, laneReports, pre
   ].join("\n");
 }
 
-/** Drop references to ids that do not exist and enforce list sizes. */
-export function sanitizeCuration(curated, candidates) {
-  const ids = new Set(candidates.map((c) => c.id));
-  const keep = (arr) => (Array.isArray(arr) ? arr.filter((x) => x && ids.has(x.candidate_id)) : []);
-  const picks = keep(curated.picks);
+/**
+ * Drop references to ids that do not exist, enforce list sizes, keep one main pick per venue
+ * (a second at the same room goes to the front of the bench) and retire radar items that
+ * have already had their mentions in recent issues.
+ */
+export function sanitizeCuration(curated, candidates, { ledger = null, maxRadarRuns = 2 } = {}) {
+  const byId = new Map(candidates.map((c) => [c.id, c]));
+  const keep = (arr) => (Array.isArray(arr) ? arr.filter((x) => x && byId.has(x.candidate_id)) : []);
+
+  const picks = [];
+  const demoted = [];
+  const venues = new Set();
+  for (const p of keep(curated.picks)) {
+    const v = normVenue(byId.get(p.candidate_id)?.venue);
+    if (v && venues.has(v)) {
+      demoted.push(p);
+      continue;
+    }
+    if (v) venues.add(v);
+    picks.push(p);
+  }
   const pickIds = new Set(picks.map((p) => p.candidate_id));
-  const bench = keep(curated.bench).filter((b) => !pickIds.has(b.candidate_id));
-  const family = curated.family && ids.has(curated.family.candidate_id) ? curated.family : null;
+  const bench = [];
+  const benchIds = new Set();
+  for (const b of [...demoted, ...keep(curated.bench)]) {
+    if (pickIds.has(b.candidate_id) || benchIds.has(b.candidate_id)) continue;
+    benchIds.add(b.candidate_id);
+    bench.push(b);
+  }
+
+  const radar = [];
+  for (const r of keep(curated.radar)) {
+    if (ledger && radarRuns(ledger, byId.get(r.candidate_id)) >= maxRadarRuns) continue;
+    radar.push(r);
+  }
+
+  const family = curated.family && byId.has(curated.family.candidate_id) ? curated.family : null;
   return {
     subject: String(curated.subject ?? "Shit To Do in NYC").slice(0, 120),
     opener: String(curated.opener ?? ""),
     picks: picks.slice(0, 7),
     bench: bench.slice(0, 3),
-    radar: keep(curated.radar).slice(0, 5),
+    radar: radar.slice(0, 5),
     anytime: keep(curated.anytime).slice(0, 3),
     family,
     notes: String(curated.notes ?? ""),
   };
 }
 
-export async function curate({ cfg, profile, windows, candidates, recent, laneReports, previous = null, corrections = [], log = console }) {
+/** One line per thing sanitizeCuration changed, for the log. */
+export function describeSanitize(raw, clean, candidates) {
+  const byId = new Map(candidates.map((c) => [c.id, c]));
+  const title = (id) => byId.get(id)?.title ?? id;
+  const ids = (arr) => new Set((Array.isArray(arr) ? arr : []).map((x) => x?.candidate_id));
+  const out = [];
+  const pickIds = ids(clean.picks);
+  const benchIds = ids(clean.bench);
+  for (const id of ids(raw.picks)) {
+    if (!byId.has(id)) out.push(`dropped unknown pick ${id}`);
+    else if (!pickIds.has(id)) out.push(`${benchIds.has(id) ? "benched" : "dropped"} "${title(id)}" (same venue as an earlier pick)`);
+  }
+  const radarIds = ids(clean.radar);
+  for (const id of ids(raw.radar)) if (byId.has(id) && !radarIds.has(id)) out.push(`retired from the radar "${title(id)}" (already ran twice)`);
+  return out;
+}
+
+export async function curate({ cfg, profile, windows, candidates, recent, laneReports, previous = null, corrections = [], ledger = null, log = console }) {
+  const effectiveLedger = ledger ?? repeatLedger(recent);
   const system = buildCuratorSystem(profile, windows);
-  const user = buildCuratorUser({ candidates, windows, recent, laneReports, previous, corrections });
+  const user = buildCuratorUser({ candidates, windows, recent, laneReports, previous, corrections, ledger: effectiveLedger });
   const result = await withRetry(
     () =>
       runClaude({
@@ -217,7 +278,9 @@ export async function curate({ cfg, profile, windows, candidates, recent, laneRe
       }),
     { attempts: 2, label: "curate", log },
   );
-  const curated = sanitizeCuration(JSON.parse(result.text), candidates);
+  const raw = JSON.parse(result.text);
+  const curated = sanitizeCuration(raw, candidates, { ledger: effectiveLedger });
+  for (const line of describeSanitize(raw, curated, candidates)) log.info(`[${previous ? "curate:second-pass" : "curate"}] ${line}`);
   log.info(`[${previous ? "curate:second-pass" : "curate"}] ${curated.picks.length} picks, ${curated.bench.length} bench, ${curated.radar.length} radar, ${curated.anytime.length} anytime, family: ${curated.family ? "yes" : "no"}`);
   return { curated, usage: result.usage, servedBy: result.servedBy };
 }

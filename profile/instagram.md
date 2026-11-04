@@ -32,8 +32,6 @@ These are starter guesses at the right handles. Check them against Instagram and
 
 ## Fights
 - @kingscombat | his Muay Thai gym
-- @churchstreetboxing | Church Street Boxing fight nights
-- @lionfight | Lion Fight Muay Thai
 - @ufc | UFC announcements for New York cards
 
 ## Food and bars
@@ -83,3 +81,29 @@ These are starter guesses at the right handles. Check them against Instagram and
 - @jalopytheatre | Jalopy
 - @therockandrollplayhouse | kids' concerts
 - @govisland | Governors Island
+
+## Names and rooms (added Nov 2026; starter guesses, fix any that are wrong)
+- @brooklynvegan | every show and comedy date, announced early
+- @bowerypresents | Bowery Ballroom, Music Hall of Williamsburg, Brooklyn Steel announcements
+- @warsawbrooklyn | Warsaw in Greenpoint
+- @babysallright | Baby's All Right; secret shows and side projects
+- @barlunatico | Bed-Stuy live music every night
+- @skinnydennisbk | Williamsburg honky-tonk
+- @comedycellarusa | the drop-in lineups
+- @thestandnyc | The Stand
+- @caveatnyc | Caveat
+- @joespub | Joe's Pub
+- @lprnyc | (le) poisson rouge
+- @thetownhallnyc | Town Hall
+- @greenlightbklyn | Greenlight Bookstore, Fort Greene
+- @strandbookstore | Strand events
+- @booksaremagicbk | Books Are Magic
+- @pioneerworks | Pioneer Works, Red Hook
+- @stannswarehouse | St. Ann's Warehouse
+- @bricbrooklyn | BRIC, Fort Greene
+- @tfanabrooklyn | Theatre for a New Audience
+- @metrograph | Metrograph
+- @filmforumnyc | Film Forum
+- @movingimagenyc | Museum of the Moving Image
+- @ifccenter | IFC Center
+- @greenwoodcemetery | Green-Wood night events

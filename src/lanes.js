@@ -16,7 +16,7 @@ Priorities, in order:
 4. German or Berlin artists touring New York (Kalkbrenner, Seeed, Deichkind, K.I.Z, Ski Aggu, any Berlin techno night).
 5. Daytime parties and outdoor sets (The Lot Radio, Nowadays yard, Under the K Bridge, Elsewhere rooftop), themed dance nights he would dress up for (ABBA, emo night, 2000s night, disco), Latin and reggaeton nights.
 
-Rules: small rooms with good sound beat big names in bad rooms. Big arena or warehouse shows for Tier 1 artists belong in the radar window even if they are weeks out. Skip generic bar DJs, bottle-service clubs, Meatpacking, and anything marketed as "vibes."`,
+Rules: the artists he ticked in his checklist (in your system prompt) are the names to check on Bandsintown, Songkick and the arena calendars every single week; a ticked artist with a New York date in either window goes in, whatever the room. The ticks are a taste profile, not a whitelist: headliner-level names in each of his lanes who are not on the list count just as much. He already reads the Public Records, Knockdown and Elsewhere calendars, and the email has sent him those rooms week after week. Treat them as a floor, not the lane: spend most of the searches on the Caribbean and West African party scene, hip-hop and 2000s rap nights, themed nights, German acts, live-band shows and rooms he has not been sent lately (the ledger below says which). Small rooms with good sound beat big names in bad rooms. Big arena or warehouse shows for Tier 1 artists belong in the radar window even if they are weeks out. Skip generic bar DJs, bottle-service clubs, Meatpacking, and anything marketed as "vibes."`,
     hints: [
       "Knockdown Center upcoming events",
       "Resident Advisor Brooklyn this week",
@@ -31,34 +31,8 @@ Rules: small rooms with good sound beat big names in bad rooms. Big arena or war
       "emo night OR ABBA night OR 2000s night Brooklyn",
       "Brooklyn Storehouse Under the K Bridge events",
     ],
-    maxSearches: 14,
-    maxFetches: 12,
-  },
-  {
-    id: "fights",
-    name: "Fights and sports",
-    brief: `Find professional fight cards and the sports moments that matter to him.
-
-Priorities, in order:
-1. Pro fight cards in the New York area: UFC, boxing, Muay Thai, kickboxing at Madison Square Garden, the Hulu Theater, Barclays Center, the Prudential Center in Newark, Sony Hall, or any real card in the five boroughs. Muay Thai and kickboxing cards are doubly interesting. Include cards inside the radar window because they need tickets early.
-2. Notable combat-sports community events: fighter meet-ups, gym showcases, open mats with a name attached, Kings Combat events. Routine amateur smokers do not count.
-3. Knicks: playoff games, big rivalry games, and proper watch parties with a crowd. Regular-season tickets are not a priority.
-4. Watch parties at good bars for a genuinely huge pay-per-view or a major football match (he has Three Lions in his library; a big England match counts).
-
-Rules: verify the venue and date on the promotion's own page or the arena calendar, not a ticket reseller. Note the ticket on-sale date when it is in the future.`,
-    hints: [
-      "UFC New York 2026 Madison Square Garden",
-      "boxing Madison Square Garden OR Barclays Center upcoming card",
-      "Muay Thai fight card New York 2026",
-      "kickboxing event New York Sony Hall OR Hulu Theater",
-      "Prudential Center UFC OR boxing 2026",
-      "Lion Fight OR ONE Championship New York",
-      "Kings Combat Williamsburg event",
-      "Knicks watch party Brooklyn bar",
-      "UFC watch party Brooklyn",
-    ],
-    maxSearches: 12,
-    maxFetches: 10,
+    maxSearches: 18,
+    maxFetches: 14,
   },
   {
     id: "food",
@@ -86,8 +60,8 @@ Rules: nothing with a two-hour line, nothing viral on TikTok, no brunch parties,
       "Korean BBQ group dinner Brooklyn private room",
       "bar bingo OR punk trivia OR karaoke league Bushwick",
     ],
-    maxSearches: 14,
-    maxFetches: 10,
+    maxSearches: 16,
+    maxFetches: 12,
   },
   {
     id: "culture",
@@ -96,12 +70,13 @@ Rules: nothing with a two-hour line, nothing viral on TikTok, no brunch parties,
 
 Priorities, in order:
 1. Company XIV in Bushwick: anything they are staging now or opening soon.
-2. Small-room stand-up and secret shows: Don't Tell Comedy secret-location shows, Union Hall, Littlefield, the Bell House, Brooklyn Comedy Collective, the Tiny Cupboard, bar back rooms, apartment shows.
+2. Small-room stand-up and secret shows: Don't Tell Comedy secret-location shows, Union Hall, Littlefield, the Bell House, Brooklyn Comedy Collective, the Tiny Cupboard, Caveat, Brooklyn Art Haus, bar back rooms, apartment shows. A name he would recognize working out an hour in one of these rooms is the best pick of the week; say how big the room is.
 3. Weird variety and immersive: burlesque, magic, live wrestling shows, immersive theater, oddball cabaret, costume screenings (Rocky Horror with a shadow cast, themed movie nights at Nitehawk, Alamo, Kings Theatre), drag shows with a real crowd.
 4. Big spectacle for date nights, a few times a year: New York City Ballet, ABT, Lincoln Center, Carnegie Hall, BAM's headline programming, Brooklyn Botanic Garden's light show. The Nutcracker at Lincoln Center is his favorite night in the city; flag its on-sale and run dates in season.
-5. Museum nights that are actually parties (Brooklyn Museum First Saturday) and art openings with a crowd.
+5. His front yard, which the email has barely used: BAM, BRIC, Theatre for a New Audience, Irondale, Mark Morris and Green-Wood Cemetery's night programs, plus St. Ann's Warehouse, Pioneer Works, Roulette and JACK. Ambitious theater, dance and performance in those rooms, not the generic kind.
+6. Museum nights that are actually parties (Brooklyn Museum First Saturday) and art openings with a crowd.
 
-Rules: no big-arena comedians, no generic Broadway, nothing that reads as a tourist attraction. Under 200 seats is the sweet spot for comedy and variety.`,
+Rules: fame is the draw and the room is the bonus. A comedian he ticked in his checklist is worth flagging at any room size; an unticked famous comedian is worth it in a small room; the Bell House always beats Barclays for the same person. No generic Broadway, nothing that reads as a tourist attraction. Under 200 seats is the sweet spot for comedy and variety. Do not hand in the same room two weeks running when another room has something as good.`,
     hints: [
       "Company XIV Bushwick current show",
       "Don't Tell Comedy New York upcoming",
@@ -114,9 +89,48 @@ Rules: no big-arena comedians, no generic Broadway, nothing that reads as a tour
       "BAM Brooklyn upcoming performances",
       "Brooklyn Museum First Saturday",
       "drag show Brooklyn Saturday",
+      "comedian work in progress hour Union Hall OR Bell House OR Littlefield",
+      "BRIC OR 'Theatre for a New Audience' OR 'St. Ann's Warehouse' upcoming",
+      "Green-Wood Cemetery night event OR concert",
     ],
-    maxSearches: 12,
-    maxFetches: 10,
+    maxSearches: 16,
+    maxFetches: 12,
+  },
+  {
+    id: "names",
+    name: "Who is in town",
+    brief: `Find named people doing one-off or short-run New York dates: the famous person in a small room. Fred Armisen played a club-sized room in the city and the email never said so, because every other lane hunts by venue and category and nobody was hunting by person. This lane exists so that never happens again.
+
+Priorities, in order:
+1. Comedians, famous or cult, in rooms under about 1,500 seats: a name working out a new hour at Union Hall, the Bell House, Littlefield, Music Hall of Williamsburg, Bowery Ballroom, Brooklyn Steel, Warsaw, Town Hall, (le) poisson rouge, Joe's Pub, Caveat, Brooklyn Art Haus; the Comedy Cellar and Stand drop-in lineups when a real name is on them; surprise sets, "comedy for musicians" style one-offs, live podcast tapings, roasts, storytelling shows with a name on the bill. The SNL, Portlandia, Documentary Now, I Think You Should Leave, Nathan For You, Tim and Eric and Adult Swim orbit is exactly his register.
+2. Musicians doing something intimate or off-format: a side project, a solo or acoustic one-off, an album listening party, a record-store set, a residency in a small room, a legend at Barbès or Jalopy, any Tier 1 or Tier 2 artist from the music profile in a room far smaller than they could fill.
+3. People in conversation: authors, directors, journalists, historians, athletes and fighters, chefs, founders, diplomats, traders, at Greenlight Bookstore (his neighborhood store), BRIC, BAM, the Strand, Books Are Magic, Symphony Space, 92NY, the Public, Pioneer Works, Caveat, Deutsches Haus, the New York Public Library, Town Hall. Only when the person is a genuine draw for him: international relations, energy and commodities, military history and combat sports, cars, German and Berlin culture, Jewish history, music, comedy, food.
+4. Film with the person in the room: premieres, previews and repertory screenings with a director, writer or star Q&A at BAM Rose Cinemas, Metrograph, Film Forum, IFC Center, Film at Lincoln Center, Museum of the Moving Image, Nitehawk, Anthology, Japan Society, Goethe-Institut. Festivals when a name is attached (DOC NYC, NYFF, the German film series, the Jewish film festival).
+5. German, Austrian, Swiss and Israeli names passing through: a Berlin DJ in an afternoon slot, a German author at Deutsches Haus, a Bundesliga legend at a bar, an Israeli chef cooking one night.
+6. The odd huge fight card and the Knicks: a UFC numbered card at Madison Square Garden, a championship boxing night at Barclays or the Garden, Knicks playoff games and the watch parties around them. Nothing smaller: he cut the weekly fights hunt in November 2026 because it kept padding the radar with distant cards and TV nights. Verify on the promotion's own page or the arena calendar, never a reseller.
+
+Rules: fame is the draw and the room is the bonus. His checklist ticks (in your system prompt) are a taste profile, not a whitelist: search every ticked person by name plus "New York" and the month, check Bandsintown and Songkick for the musicians, treat a ticked name with a date in either window as an automatic candidate even at an arena, and then spend at least as much effort on people of the same stature and flavor who are not on the list at all. For everyone else the room size is the filter: the famous person at the Bell House is the point, the unknown comic at the Bell House only when the show itself is remarkable. Report the exact date, the room and its rough capacity, and whether it is already sold out (a sold-out show with a real resale route still counts, with a heads-up). Search the aggregators that list every date in the city by name (Brooklyn Vegan, Oh My Rockness, Songkick, Bandsintown, JamBase, Dead Frog, the Comedy Bureau, Vulture) and the venue calendars, and search for people by name, not just rooms by calendar.`,
+    hints: [
+      "site:brooklynvegan.com comedy New York just announced",
+      "Brooklyn Vegan NYC comedy shows this week",
+      "comedian Union Hall OR 'Bell House' OR Littlefield OR 'Music Hall of Williamsburg' this week",
+      "live podcast taping Brooklyn OR New York this week",
+      "Bowery Ballroom OR 'Music Hall of Williamsburg' OR Warsaw Greenpoint this week",
+      "Town Hall NYC OR 'Le Poisson Rouge' OR 'Joe's Pub' upcoming",
+      "Comedy Cellar OR 'The Stand' special guest OR drop-in this week",
+      "secret show OR surprise set OR 'one night only' New York this weekend",
+      "Greenlight Bookstore OR Strand OR 'Books Are Magic' events in conversation this week",
+      "director Q&A screening New York this week in person",
+      "Metrograph OR 'Film Forum' OR 'Museum of the Moving Image' Q&A in person",
+      "92NY OR 'Town Hall' OR 'Symphony Space' talk this month",
+      "Pioneer Works OR 'St. Ann's Warehouse' OR BRIC Brooklyn upcoming",
+      "Caveat NYC upcoming shows",
+      "German author OR Berlin musician New York this week",
+      "UFC Madison Square Garden next card",
+      "Knicks playoff watch party Brooklyn bar",
+    ],
+    maxSearches: 18,
+    maxFetches: 14,
   },
   {
     id: "body",
@@ -145,7 +159,7 @@ Rules: everything must be in the five boroughs or a short ferry or PATH ride awa
       "Classic Car Club Manhattan events",
       "Union Garage OR Jane Motorcycles event",
     ],
-    maxSearches: 13,
+    maxSearches: 14,
     maxFetches: 10,
   },
   {
@@ -175,8 +189,8 @@ Rules: cite the organizer's page. Skip anything that is a generic "things to do 
       "kids concert Brooklyn this weekend toddler",
       "family event Brooklyn Saturday toddler",
     ],
-    maxSearches: 14,
-    maxFetches: 10,
+    maxSearches: 16,
+    maxFetches: 12,
   },
   {
     id: "instagram",

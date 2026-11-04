@@ -29,5 +29,5 @@ What this means for picks: big-name melodic house and techno bookings at Knockdo
 
 - Melodic house and techno, Afrobeats and dancehall, and hip-hop are the three lanes to search hardest every week.
 - German artists, Berlin techno, Latin nights, emo or 2000s nights, ABBA or disco nights, and classical spectacle are the "once in a while, and he'll love it" lanes.
-- He does not need the biggest name. He needs the right room and the right sound. A great DJ in a 150-person room beats a mediocre arena show.
+- The room matters, but the name matters more than this file used to say. When he rated hundreds of acts in November 2026 he ticked only the big names (deadmau5 and Kx5, Prydz, Kalkbrenner, Burna Boy, Wizkid, Sean Paul, Drake, Travis Scott, Ice Spice, Linkin Park, blink-182, Jimmy Eat World, Morgan Wallen, Seeed, Die Toten Hosen, Die Ärzte) plus Berlin-style club nights (Unter, Herrensauna, Bossa Nova Civic Club), and none of the deep-cut DJs. A ticked artist with a New York date goes in whatever the room. The unknown DJ in the good room is the filler he complained about, not the find.
 - When a Tier 1 artist plays a big NYC show, it belongs in the book-now radar as soon as tickets go on sale.

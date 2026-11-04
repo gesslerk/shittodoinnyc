@@ -17,14 +17,19 @@ Monday 06:00 New York
   │                            in parallel with the web lanes; only the Instagram lane waits for it
   │
   ├─ 1. Research               7 parallel Claude calls, one per lane, each with web search + web fetch
-  │      music · fights · food · culture · body · scenes · instagram
+  │      music · food · culture · names · body · scenes · instagram
+  │      Every lane gets the repeat ledger (which rooms and formats the last eight issues
+  │      already used) and its own notes from last week (what it ran out of budget before
+  │      covering), so it starts from the gaps instead of the same venue calendars
   │      → structured JSON candidates with ISO dates, URLs, confidence grades
   │
   ├─ 2. Filter + dedupe        code drops anything without a URL, outside the window, or duplicated
   │
   ├─ 3. Curate                 one Claude call chooses by candidate id and writes the copy;
   │                            dates, venues, prices and links are joined back from research in code,
-  │                            so the writer cannot invent a fact
+  │                            so the writer cannot invent a fact. Novelty rules: one pick per venue
+  │                            per issue, at most two club nights, two picks from formats not used
+  │                            in the last three issues; a radar item is retired after two mentions
   │
   ├─ 4. Verify                 one Claude call re-fetches every chosen page and confirms date/venue/price;
   │                            corrections are folded into the candidate pool, contradicted items removed,
@@ -101,13 +106,16 @@ Everything the engine knows about you is in `profile/`:
 | File | What it does |
 |---|---|
 | `konrad.md` | The taste profile: who, when, where, what, the non-negotiables, the voice |
+| `checklist.md` | 483 real names rated Netflix-style. `[x]` yes, `[-]` no, and once anything is ticked a blank means "saw it, not interested"; notes after an item are kept |
 | `music.md` | The Spotify-derived music profile, by tier |
 | `calendar.md` | Annual traditions by month, so the season shows up on time |
 | `sources.md` | Trusted pages each lane fetches first, grouped by lane |
 | `instagram.md` | Accounts the Instagram lane watches |
 | `feedback.md` | Your running notes. "Loved X", "never again Y". Read every week, newest first |
 
-Edit, commit, push. The next Monday uses it. `feedback.md` is the fastest lever: the curator treats it as the latest word on your taste.
+Edit, commit, push. The next Monday uses it. `checklist.md` and `feedback.md` are the fastest levers: ticks and notes there outrank the prose profile.
+
+The `names` lane hunts by person rather than by venue: a comedian working out an hour at the Bell House, a musician's side project at Baby's, an author at Greenlight, a director at a Q&A. It exists because Fred Armisen played a club-sized room and the venue-first lanes never saw it. The fights lane was cut in November 2026 after it kept padding the radar; a huge card at the Garden and the Knicks playoffs live inside the names lane now. Sources whose note says "search only" (Dice, Knockdown, Eater, Resy, Tock, the Garden's calendar) are searched by domain instead of fetched, because they block or hide their pages from the fetcher and used to eat the fetch budget every week.
 
 Lane briefs and search hints live in `src/lanes.js` if you want to change what a lane hunts for.
 
@@ -130,7 +138,7 @@ GitHub disables scheduled workflows in repos with no commits for 60 days. The we
 
 ## Cost
 
-Per issue, all stages on Claude Opus 5: the first dry run cost about $16 and took 40 minutes, dominated by the seven research lanes reading web pages. The run log prints the actual number (`~$` on the "built" line) and it is stored in `archive/<date>/run.json`. Levers, cheapest first: `RESEARCH_MODEL=claude-sonnet-5` (about 60% off research), `LANES=music,fights,food` to run fewer lanes, `MAX_SEARCHES_PER_LANE` / `MAX_FETCHES_PER_LANE`, `SKIP_VERIFY=1`.
+Per issue, all stages on Claude Opus 5: real runs through November 2026 cost $18 to $23 and took 30 to 45 minutes, dominated by the research lanes reading web pages; the eighth lane and the bigger search budgets added in November push that toward $25. The run log prints the actual number (`~$` on the "built" line) and it is stored in `archive/<date>/run.json`. Levers, cheapest first: `RESEARCH_MODEL=claude-sonnet-5` (about 60% off research), `LANES=music,fights,food` to run fewer lanes, `MAX_SEARCHES_PER_LANE` / `MAX_FETCHES_PER_LANE`, `SKIP_VERIFY=1`.
 
 ## Archive
 

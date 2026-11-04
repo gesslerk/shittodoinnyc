@@ -10,7 +10,7 @@ import { verify, applyVerification, itemsToVerify } from "./verify.js";
 import { assemble } from "./assemble.js";
 import { renderEmail } from "./render.js";
 import { sendEmail } from "./send.js";
-import { readRecent, nextIssueNumber, writeIssue, hasIssueInWeek } from "./archive.js";
+import { readRecent, nextIssueNumber, writeIssue, hasIssueInWeek, readLaneMemory, repeatLedger, formatLedger } from "./archive.js";
 import { mergeUsage, emptyUsage, estimateCost } from "./claude.js";
 
 const ts = () => new Date().toISOString().slice(11, 19);
@@ -53,6 +53,9 @@ async function main() {
 
   const profile = loadProfile();
   const recent = readRecent(8);
+  const ledger = repeatLedger(recent);
+  const ledgerText = formatLedger(ledger);
+  const laneMemory = readLaneMemory();
   const issueNumber = nextIssueNumber();
   setOutput("week_of", windows.today);
   log.info(
@@ -66,13 +69,13 @@ async function main() {
   });
 
   // 2. Research lanes in parallel
-  const research = await runResearch({ cfg, profile, windows, instagramPosts: instagramPromise.then((r) => r.posts), log });
+  const research = await runResearch({ cfg, profile, windows, instagramPosts: instagramPromise.then((r) => r.posts), ledgerText, laneMemory, log });
   const instagram = await instagramPromise;
   if (!research.candidates.length) throw new Error("research produced zero usable candidates; nothing to send");
 
   // 3. Curate
   let candidates = research.candidates;
-  let { curated, usage: curateUsage } = await curate({ cfg, profile, windows, candidates, recent, laneReports: research.laneReports, log });
+  let { curated, usage: curateUsage } = await curate({ cfg, profile, windows, candidates, recent, ledger, laneReports: research.laneReports, log });
 
   // 4. Fact-check what was chosen, fold corrections into the pool, and re-curate if anything material moved
   const verification = new Map();
@@ -90,7 +93,7 @@ async function main() {
 
     if (applied.material) {
       secondPass = true;
-      const again = await curate({ cfg, profile, windows, candidates, recent, laneReports: research.laneReports, previous: curated, corrections: changes, log });
+      const again = await curate({ cfg, profile, windows, candidates, recent, ledger, laneReports: research.laneReports, previous: curated, corrections: changes, log });
       curated = again.curated;
       curateUsage = mergeUsage(curateUsage, again.usage);
 

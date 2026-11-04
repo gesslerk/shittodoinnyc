@@ -7,7 +7,8 @@ import { parseHandles, formatPostsForPrompt } from "./instagram.js";
 const RESEARCH_SYSTEM_PREFIX = `You are the research desk for a private weekly email called "Shit To Do in NYC." It goes to exactly one reader. Your job in this call is to find real, current, bookable things in New York City that match him, and to report them as structured candidates with sources.
 
 You have web_search and web_fetch. Use them aggressively:
-- Fetch the trusted source pages you are given first. Then search for what they do not cover. Then fetch the organizer page for anything promising so you can read the real date, time, venue and price.
+- The trusted sources are a floor, not the job. Fetch only as many of them as the lane message allows, choosing the ones most likely to carry something new, then spend most of your searches on what they do not carry: specific names, formats and neighborhoods, the things that never make a venue calendar. Fetch the organizer page for anything promising so you can read the real date, time, venue and price.
+- After eight issues the reader's complaint is that the email got predictable. The rooms and formats he has been sent lately are listed in the lane message; look past them. The find he wants most is the one he would not have made by reading a venue calendar himself: a name he knows in a room he does not expect, a format he has never been sent.
 - Mark confidence honestly. "verified" only when you read the organizer's or ticketing page and the details match. Never mark a search snippet as verified.
 - Only report events inside the date windows you are given, or undated "anytime" places. Anything already past is worthless.
 - Never invent an event, a date, a price or a URL. If you cannot find a real page, leave the item out.
@@ -18,13 +19,30 @@ You have web_search and web_fetch. Use them aggressively:
 Reader profile follows. Read it closely; it is the whole point.`;
 
 export function buildResearchSystem(profile) {
-  return [RESEARCH_SYSTEM_PREFIX, "", "# PROFILE", profile.konrad, "", "# MUSIC PROFILE", profile.music].join("\n");
+  return [
+    RESEARCH_SYSTEM_PREFIX,
+    "",
+    "# PROFILE",
+    profile.konrad,
+    "",
+    "# MUSIC PROFILE",
+    profile.music,
+    ...(profile.checklist ? ["", "# HIS OWN TICKS (profile/checklist.md; the newest word on his taste)", profile.checklist] : []),
+  ].join("\n");
 }
 
-export function buildLaneUser({ lane, sources, windows, calendarExcerpt, feedback, instagramPosts = [], instagramHandles = [] }) {
-  const sourceLines = sources.length
-    ? sources.map((s) => `- ${s.name}: ${s.url}${s.note ? ` (${s.note})` : ""}`).join("\n")
-    : "- (no trusted sources listed for this lane; rely on search)";
+/** A source whose note says "search only" blocks or hides its page from the fetcher; search it instead of burning a fetch. */
+export const isSearchOnly = (s) => /\bsearch[- ]only\b/i.test(s?.note ?? "");
+
+export function buildLaneUser({ lane, sources, windows, calendarExcerpt, feedback, instagramPosts = [], instagramHandles = [], ledgerText = "", laneMemory = null }) {
+  const line = (s) => `- ${s.name}: ${s.url}${s.note ? ` (${s.note})` : ""}`;
+  const fetchable = sources.filter((s) => !isSearchOnly(s));
+  const searchOnly = sources.filter(isSearchOnly);
+  const trustedFetches = Math.max(4, Math.floor(lane.maxFetches / 2));
+  const sourceLines = fetchable.length ? fetchable.map(line).join("\n") : "- (no trusted sources listed for this lane; rely on search)";
+  const searchOnlyBlock = searchOnly.length
+    ? ["# SEARCH-ONLY SOURCES (these block or hide their pages from the fetcher; do not fetch them, search them with site:<domain>)", searchOnly.map(line).join("\n"), ""].join("\n")
+    : "";
 
   const instagramBlock =
     lane.id !== "instagram"
@@ -57,9 +75,12 @@ export function buildLaneUser({ lane, sources, windows, calendarExcerpt, feedbac
     calendarExcerpt || "(none for these months)",
     "",
     instagramBlock,
-    "# TRUSTED SOURCES TO FETCH FIRST",
+    `# TRUSTED SOURCES (fetch at most ${trustedFetches} of these, the ones most likely to carry something new; search the rest by name)`,
     sourceLines,
     "",
+    searchOnlyBlock,
+    ledgerText ? `# ROOMS AND FORMATS HE HAS ALREADY BEEN SENT (look beyond these; a repeat needs a reason)\n${ledgerText}\n` : "",
+    laneMemory?.notes ? `# WHAT THIS LANE COULD NOT COVER LAST WEEK (${laneMemory.date}); start from these gaps\n${laneMemory.notes.slice(0, 1500)}\n` : "",
     "# SEARCH IDEAS (adapt the wording to the actual dates; add your own)",
     lane.hints.map((h) => `- ${h}`).join("\n"),
     "",
@@ -141,7 +162,7 @@ export function flagDateConflicts(list) {
   return flagged;
 }
 
-export async function runLane({ lane, cfg, profile, windows, instagramPosts, log }) {
+export async function runLane({ lane, cfg, profile, windows, instagramPosts, ledgerText = "", laneMemory = null, log }) {
   const system = buildResearchSystem(profile);
   const user = buildLaneUser({
     lane,
@@ -151,6 +172,8 @@ export async function runLane({ lane, cfg, profile, windows, instagramPosts, log
     feedback: profile.feedback,
     instagramPosts,
     instagramHandles: parseHandles(profile.instagram ?? ""),
+    ledgerText,
+    laneMemory,
   });
   const started = Date.now();
   const result = await withRetry(
@@ -184,7 +207,7 @@ export async function runLane({ lane, cfg, profile, windows, instagramPosts, log
  * Run every lane in parallel. A failed lane is logged and skipped; the run continues
  * with whatever the other lanes found, and the failure is recorded for the email footer.
  */
-export async function runResearch({ cfg, profile, windows, instagramPosts = [], log = console }) {
+export async function runResearch({ cfg, profile, windows, instagramPosts = [], ledgerText = "", laneMemory = {}, log = console }) {
   const lanes = LANES.filter((l) => !cfg.lanes || cfg.lanes.includes(l.id));
   // instagramPosts may be a promise: the six web lanes start immediately and only the
   // Instagram lane waits for the scrape to finish.
@@ -192,8 +215,8 @@ export async function runResearch({ cfg, profile, windows, instagramPosts = [], 
   const settled = await Promise.allSettled(
     lanes.map((lane) =>
       lane.id === "instagram"
-        ? posts.then((p) => runLane({ lane, cfg, profile, windows, instagramPosts: p, log }))
-        : runLane({ lane, cfg, profile, windows, instagramPosts: [], log }),
+        ? posts.then((p) => runLane({ lane, cfg, profile, windows, instagramPosts: p, ledgerText, laneMemory: laneMemory[lane.id] ?? null, log }))
+        : runLane({ lane, cfg, profile, windows, instagramPosts: [], ledgerText, laneMemory: laneMemory[lane.id] ?? null, log }),
     ),
   );
 

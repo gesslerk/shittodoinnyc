@@ -1,0 +1,533 @@
+# Taste checklist
+
+Netflix-style. Real names, not categories. Tick what is cool, skip what is not, and the pipeline reads this file directly: every tick is in the next research brief and in the curator's hands.
+
+- `- [x]` = cool, more of this
+- `- [-]` = no, never
+- blank = you saw it and you're not interested (your call, Nov 2026); the pipeline reads blanks as a no once anything is ticked
+- A note after any item is kept, e.g. `- [x] 12. Nathan Fielder (would fly for this)`
+- Or reply in chat with numbers: "yes 1, 4, 12-15; no 37"
+
+## A. Comedians who play rooms you could actually get into
+- [x] 1. Fred Armisen (the one you missed: drummer comedy, Portlandia, "comedy for musicians")
+- [x] 2. Bill Hader (SNL, Barry)
+- [x] 3. Tim Robinson (I Think You Should Leave)
+- [ ] 4. Sam Richardson (Detroiters, Veep)
+- [ ] 5. Conner O'Malley (unhinged character comedy, livestream guy)
+- [x] 6. Nathan Fielder (The Rehearsal)
+- [ ] 7. Eric André (chaos, The Eric Andre Show)
+- [ ] 8. John Mulaney
+- [x] 9. Bill Burr
+- [ ] 10. Nate Bargatze (clean, arena-sized now)
+- [ ] 11. Shane Gillis
+- [ ] 12. Mark Normand (Comedy Cellar regular)
+- [ ] 13. Sam Morril (Comedy Cellar regular)
+- [ ] 14. Dave Attell (Cellar lifer, filthy, fast)
+- [ ] 15. Michael Che (SNL Weekend Update, Cellar drop-ins)
+- [ ] 16. Pete Davidson (Staten Island, small-room drop-ins)
+- [x] 17. Dave Chappelle and Chris Rock surprise drop-ins at the Cellar
+- [ ] 18. Jerrod Carmichael
+- [ ] 19. Hannibal Buress (also plays music as Eshu Tune)
+- [ ] 20. Hasan Minhaj
+- [ ] 21. Ronny Chieng
+- [ ] 22. Roy Wood Jr.
+- [ ] 23. Josh Johnson (Daily Show, long viral sets)
+- [x] 24. Nikki Glaser
+- [ ] 25. Taylor Tomlinson
+- [ ] 26. Ilana Glazer (Broad City)
+- [ ] 27. Chris Gethard (Brooklyn, oddball, audience participation)
+- [ ] 28. Joe Pera (slow, gentle, very weird)
+- [ ] 29. Kate Berlant and John Early (art-school alt comedy)
+- [ ] 30. Catherine Cohen (cabaret comedy at Joe's Pub)
+- [ ] 31. Jo Firestone (Bell House and Littlefield regular)
+- [ ] 32. Ziwe
+- [ ] 33. Mike Birbiglia (long-form stories, works out new hours at Union Hall)
+- [ ] 34. Marc Maron
+- [ ] 35. Neal Brennan
+- [ ] 36. Andrew Schulz
+- [ ] 37. Theo Von
+- [ ] 38. Tom Segura and Bert Kreischer (boundary test: arena bro comedy)
+- [ ] 39. Matt Rife (boundary test)
+- [x] 40. Stavros Halkias (Astoria, Cum Town alum)
+- [ ] 41. Nick Mullen and the Adam Friedland Show live
+- [ ] 42. Tim Dillon
+- [ ] 43. Anthony Jeselnik
+- [ ] 44. Jim Gaffigan
+- [x] 45. Sebastian Maniscalco (boundary test: arena, Italian-American family stuff)
+- [ ] 46. Ali Wong
+- [ ] 47. Maria Bamford
+- [ ] 48. Patton Oswalt
+- [x] 49. Jon Stewart
+- [ ] 50. Reggie Watts (looped music comedy)
+- [ ] 51. Tenacious D (Jack Black, rock comedy)
+- [ ] 52. Flight of the Conchords, if they ever reunite
+- [ ] 53. Demetri Martin
+- [ ] 54. Jon Glaser and H. Jon Benjamin (Bob's Burgers, Archer, weird Brooklyn shows)
+- [ ] 55. Todd Barry (deadpan, Brooklyn)
+- [ ] 56. Dave Hill (Brooklyn, metal guitar, absurd)
+- [ ] 57. Gary Gulman
+- [ ] 58. Mo Amer and Ramy Youssef
+- [ ] 59. Alex Edelman (Just for Us, Jewish, London-to-NYC)
+- [ ] 60. Modi (Jewish comedy, big with the Orthodox crowd)
+- [ ] 61. Elon Gold (Jewish comedy)
+- [ ] 62. Michael Mittermeier (German, does English-language shows in New York)
+- [ ] 63. Felix Lobrecht (German, if he ever does an English set here)
+- [ ] 64. Daniel Sloss (Scottish, dark)
+- [ ] 65. Jimmy Carr (British, Beacon-sized)
+- [ ] 66. James Acaster and Nish Kumar (British alt)
+- [x] 67. Ricky Gervais (boundary test: arena)
+- [ ] 68. Tracy Morgan (Brooklyn)
+- [x] 69. Druski (sketch, skits, big crowd)
+- [ ] 70. Desus Nice and The Kid Mero (the Bronx, separately now)
+- [ ] 71. Big Jay Oakerson and Legion of Skanks (filthy, New York)
+- [ ] 72. Ari Shaffir
+- [ ] 73. Bobby Lee and Andrew Santino (Bad Friends live)
+- [ ] 74. Brett Goldstein (Ted Lasso; played the Bell House)
+- [ ] 75. Rory Scovel
+- [ ] 76. Jerry Seinfeld's Beacon residency (boundary test)
+- [ ] 77. Trevor Noah
+
+## B. Live podcasts and stage shows
+- [ ] 78. Odd Lots live (Bloomberg's Joe Weisenthal and Tracy Alloway on markets, commodities, shipping)
+- [ ] 79. Acquired live (business history; they did Radio City)
+- [x] 80. Pivot live (Kara Swisher and Scott Galloway at Town Hall)
+- [ ] 81. The Free Press and Honestly live debates (Bari Weiss)
+- [x] 82. Pod Save America live (boundary test)
+- [ ] 83. Chapo Trap House live (boundary test, Brooklyn)
+- [ ] 84. The Rest Is History live (British history duo, US tour dates)
+- [ ] 85. Radiolab, Freakonomics, 99% Invisible live shows
+- [ ] 86. Search Engine live (PJ Vogt)
+- [ ] 87. Las Culturistas live (Bowen Yang and Matt Rogers)
+- [ ] 88. How Did This Get Made live (bad movies, Scheer and Mantzoukas)
+- [x] 89. Comedy Bang! Bang! live
+- [ ] 90. Doughboys live (chain restaurants, deadly serious)
+- [ ] 91. The Dollop live (American history, comedy)
+- [ ] 92. The George Lucas Talk Show (Littlefield; sent once)
+- [ ] 93. Hot Tub with Kurt and Kristen (Littlefield Mondays)
+- [ ] 94. Butterboy (Jo Firestone, Aparna Nancherla, Maeve Higgins; Littlefield Mondays)
+- [ ] 95. Tinder Live with Lane Moore (swiping on a big screen)
+- [ ] 96. Ariel Helwani's MMA Hour live
+- [ ] 97. Pardon My Take live (Barstool, boundary test)
+- [ ] 98. Throwing Fits live (New York menswear podcast)
+- [ ] 99. The Moth Mainstage and StorySLAMs
+- [ ] 100. Welcome to Night Vale live
+- [ ] 101. Secret Loft (secret-location comedy and music in Manhattan)
+- [ ] 102. Sofar Sounds (boundary test: living-room concerts for strangers)
+
+## C. House, techno, melodic: the core and the edges
+- [x] 103. deadmau5 and Kx5
+- [x] 104. Eric Prydz, HOLO and Cirez D
+- [x] 105. Paul Kalkbrenner
+- [ ] 106. Rebūke, Tinlicker, Marsh (the melodic names from your library)
+- [ ] 107. Lane 8, Yotto, Ben Böhmer (Anjunadeep lane)
+- [ ] 108. Above & Beyond
+- [ ] 109. Fred again..
+- [ ] 110. John Summit
+- [ ] 111. Disclosure
+- [ ] 112. Anyma and Tale of Us (Afterlife, giant screens)
+- [ ] 113. Adriatique, Artbat, Mind Against
+- [ ] 114. Stephan Bodzin and Boris Brejcha (live melodic techno)
+- [ ] 115. Monolink and Jan Blomqvist (sung live electronic, Berlin)
+- [ ] 116. RÜFÜS DU SOL
+- [ ] 117. Bicep (live)
+- [ ] 118. Four Tet, Jamie xx, Floating Points
+- [ ] 119. Bonobo and Caribou
+- [ ] 120. Nicolas Jaar
+- [ ] 121. Jon Hopkins
+- [ ] 122. Moderat, Apparat, Modeselektor
+- [ ] 123. Nils Frahm, Ólafur Arnalds, Kiasmos (neoclassical to dance floor)
+- [ ] 124. Peggy Gou
+- [ ] 125. The Blessed Madonna
+- [ ] 126. Dixon, Âme, Solomun (Innervisions and Diynamic)
+- [ ] 127. Keinemusik (&ME, Rampa, Adam Port)
+- [ ] 128. Black Coffee
+- [ ] 129. Chris Lake, Fisher, Dom Dolla (boundary test: tech-house festival crowd)
+- [ ] 130. Skrillex
+- [ ] 131. Overmono, Barry Can't Swim, Mall Grab
+- [ ] 132. Charlotte de Witte and Amelie Lens (hard, dark)
+- [ ] 133. Nina Kraviz
+- [ ] 134. Ben Klock, Marcel Dettmann, DVS1 (Berghain lineage)
+- [ ] 135. Ellen Allien and Sven Väth
+- [ ] 136. Richie Hawtin, Carl Cox, Jeff Mills (the elders)
+- [ ] 137. Seth Troxler and Jackmaster
+- [ ] 138. Marco Carola, Loco Dice, The Martinez Brothers (boundary test: Ibiza tech-house)
+- [ ] 139. Carl Craig, Moodymann, Theo Parrish (Detroit)
+- [ ] 140. Kerri Chandler, Louie Vega, Masters at Work (New York house royalty)
+- [ ] 141. Danny Krivit, François K, Joe Claussell (the 718 Sessions and Body & Soul generation)
+- [ ] 142. DJ Harvey
+- [ ] 143. Gerd Janson, Hunee, Antal, Palms Trax (disco-adjacent selectors)
+- [ ] 144. Horse Meat Disco
+- [ ] 145. Justice, Gesaffelstein, Kavinsky (French, loud)
+- [ ] 146. Chase & Status, Sub Focus, Andy C (drum and bass)
+- [ ] 147. Sammy Virji, Interplanetary Criminal, Salute (UK garage revival)
+- [ ] 148. DJ Seinfeld, Ross From Friends, TSHA
+
+## D. Afrobeats, dancehall, amapiano, Latin
+- [x] 149. Burna Boy
+-  [x] 150. Wizkid
+- [ ] 151. Davido
+- [ ] 152. Rema
+- [ ] 153. Asake
+- [ ] 154. Tems
+- [ ] 155. Ayra Starr
+- [ ] 156. Tyla
+- [ ] 157. Omah Lay, Fireboy DML, CKay, Oxlade, Victony
+- [ ] 158. Odumodublvck and the Nigerian drill side
+- [ ] 159. Uncle Waffles
+- [ ] 160. Major League DJz (sent once)
+- [ ] 161. Kabza De Small, DBN Gogo, Focalistic (amapiano proper)
+- [ ] 162. Popcaan
+- [x] 163. Sean Paul
+- [ ] 164. Shenseea and Spice
+- [ ] 165. Vybz Kartel (out and touring; played Barclays)
+- [ ] 166. Koffee, Chronixx, Protoje (reggae revival)
+- [ ] 167. Skillibeng, Masicka, Byron Messia (newer dancehall)
+- [ ] 168. Machel Montano, Kes, Bunji Garlin (soca)
+- [ ] 169. Bad Bunny
+- [ ] 170. J Balvin, Feid, Rauw Alejandro
+- [ ] 171. Karol G
+- [ ] 172. Peso Pluma, Fuerza Regida (corridos tumbados; boundary test)
+- [ ] 173. Bomba Estéreo and Café Tacvba (Latin alternative)
+
+## E. Hip-hop
+- [x] 174. Drake
+- [x] 175. Travis Scott
+- [ ] 176. Don Toliver
+- [ ] 177. Gunna and Lil Baby
+- [ ] 178. Future and Metro Boomin
+- [ ] 179. 21 Savage
+- [ ] 180. Kendrick Lamar
+- [ ] 181. Tyler, the Creator
+- [ ] 182. A$AP Rocky
+- [ ] 183. Playboi Carti, Yeat, Ken Carson (rage; boundary test)
+- [ ] 184. JID and Denzel Curry
+- [ ] 185. Freddie Gibbs
+- [ ] 186. Westside Gunn and Griselda
+- [ ] 187. Joey Bada$$
+- [ ] 188. Cam'ron, Jim Jones, a Dipset reunion
+- [ ] 189. Jadakiss and The LOX, Fabolous (Brooklyn and Yonkers 2000s)
+- [ ] 190. Nas, Wu-Tang, Ghostface (the legends, usually at a big room)
+- [ ] 191. Clipse (Pusha T and Malice, reunited)
+- [ ] 192. Fivio Foreign, Sheff G, Cash Cobain (Brooklyn drill and sexy drill)
+- [x] 193. Ice Spice
+- [ ] 194. Kid Cudi
+- [ ] 195. Jack Harlow and Post Malone
+- [ ] 196. Doja Cat
+
+## F. Bands, rock, country, pop
+- [x] 197. Linkin Park (Emily Armstrong era)
+- [x]  198. blink-182
+- [ ] 199. Paramore
+- [ ] 200. Green Day, Fall Out Boy, My Chemical Romance (arena nostalgia)
+- [x] 201. Jimmy Eat World
+- [ ] 202. The Strokes, Interpol, Yeah Yeah Yeahs (New York 2000s)
+- [ ] 203. LCD Soundsystem (on the radar now; Knockdown residency)
+- [ ] 204. Arctic Monkeys and The Killers
+- [ ] 205. Vampire Weekend and The National
+- [ ] 206. Tame Impala and MGMT
+- [ ] 207. Phoenix
+- [ ] 208. Empire of the Sun, Polo & Pan, Djo (the live-electronic streak in your library)
+- [ ] 209. Glass Animals
+- [ ] 210. Alabama Shakes and Brittany Howard
+- [ ] 211. Thundercat
+- [ ] 212. Khruangbin
+- [ ] 213. Anderson .Paak, Leon Bridges, Black Pumas
+- [ ] 214. Luke Combs
+- [ ] 215. Zach Bryan
+- [x] 216. Morgan Wallen (boundary test)
+- [ ] 217. Tyler Childers, Sturgill Simpson, Chris Stapleton (the good side of country)
+- [ ] 218. Shaboozey
+- [ ] 219. Billy Strings (bluegrass, jam crowd)
+- [ ] 220. Phish at the Garden and Dead & Company (boundary test: jam bands)
+- [ ] 221. Pigeons Playing Ping Pong and Goose
+- [ ] 222. Sofi Tukker
+- [ ] 223. Hans Zimmer Live (boundary test: orchestral film music in an arena)
+
+## G. German and Berlin acts
+- [x] 224. Seeed
+- [ ] 225. Peter Fox solo
+- [ ] 226. Deichkind
+- [ ] 227. K.I.Z
+- [ ] 228. Marteria and Casper
+- [ ] 229. Kraftklub
+- [ ] 230. Ski Aggu and Ikkimel
+- [ ] 231. Nina Chuba
+- [ ] 232. Apache 207 and Shirin David (boundary test: German chart pop)
+- [x] 233. Die Toten Hosen and Die Ärzte
+- [ ] 234. Rammstein (arena; boundary test)
+- [ ] 235. Kraftwerk (3-D show)
+- [ ] 236. Boys Noize
+- [ ] 237. DJ Koze
+- [ ] 238. Helena Hauff
+- [ ] 239. Paul van Dyk and ATB (2000s German trance; boundary test)
+- [ ] 240. Scooter (boundary test; you know why)
+- [ ] 241. Electric Callboy
+- [ ] 242. Milky Chance and Alligatoah
+- [ ] 243. Bonaparte (Berlin art-party band)
+
+## H. Jazz, classical, world, Jewish music
+- [ ] 244. Kamasi Washington
+- [ ] 245. Robert Glasper's Blue Note residency
+- [ ] 246. Ezra Collective, Nubya Garcia, Yussef Dayes (London jazz)
+- [ ] 247. BadBadNotGood
+- [ ] 248. Snarky Puppy and Vulfpeck
+- [ ] 249. Domi & JD Beck, Louis Cole, Jacob Collier (virtuoso nerd jazz)
+- [ ] 250. Samara Joy and Cécile McLorin Salvant (vocal jazz)
+- [ ] 251. Jon Batiste
+- [ ] 252. Wynton Marsalis at Jazz at Lincoln Center
+- [ ] 253. A late set at Smalls or the Village Vanguard, whoever is playing
+- [ ] 254. Ornithology Jazz Club in Bushwick and Bar Bayeux in Prospect Lefferts (tiny, cheap, serious)
+- [ ] 255. New York City Ballet beyond the Nutcracker (Balanchine nights; sent once)
+- [ ] 256. American Ballet Theatre at the Met
+- [ ] 257. The Met Opera (Carmen, Aida, the big ones)
+- [ ] 258. New York Philharmonic
+- [ ] 259. Vienna Philharmonic and Berlin Philharmonic at Carnegie Hall
+- [ ] 260. Igor Levit (German pianist, political, plays Carnegie)
+- [ ] 261. Yuja Wang, Víkingur Ólafsson, Daniil Trifonov (pianists worth a Carnegie night)
+- [ ] 262. Philip Glass and Einstein on the Beach at BAM (on the radar)
+- [ ] 263. Max Richter and Ludovico Einaudi
+- [ ] 264. Candlelight Concerts (boundary test: string quartet plays Coldplay by candle)
+- [ ] 265. Death of Classical: concerts in the Green-Wood catacombs and a Harlem church crypt
+- [ ] 266. Slavic Soul Party at Barbès on Tuesdays (Balkan brass)
+- [ ] 267. Frank London, the Klezmatics, Daniel Kahn (klezmer with teeth)
+- [ ] 268. Golem and Zion80 (punk klezmer, Afrobeat-Jewish)
+- [ ] 269. Balkan Beat Box and Gogol Bordello
+- [ ] 270. Idan Raichel, Noga Erez, Hadag Nahash, A-WA (Israeli acts touring)
+- [ ] 271. Femi Kuti, Seun Kuti, Antibalas (Afrobeat with a live band)
+- [ ] 272. Mdou Moctar, Tinariwen, Bombino (desert blues)
+- [ ] 273. Altın Gün and Omar Souleyman
+
+## I. Parties, promoters and series
+- [ ] 274. Teksupport warehouse shows
+- [ ] 275. Zero and Cityfox (the other big warehouse promoters)
+- [ ] 276. Mister Sunday and Mister Saturday Night at Nowadays (sent once)
+- [ ] 277. Nowadays Nonstop (the 24-hour-plus parties)
+- [x] 278. Unter and Herrensauna at Basement (Berlin-style, queer, all night)
+- [x] 279. Bossa Nova Civic Club (tiny Bushwick techno bar)
+- [ ] 280. Mood Ring, Jupiter Disco, Nightmoves, Paragon, Rash, TBA (the small Bushwick and Ridgewood rooms)
+- [ ] 281. The Sultan Room
+- [ ] 282. Elsewhere Zone One and the rooftop
+- [ ] 283. Dope Jams parties (sent once)
+- [ ] 284. Everyday People (Afrobeats and diaspora day party)
+- [ ] 285. Rockers NYC (dancehall and Afrobeats parties)
+- [ ] 286. Soul Summit in Fort Greene Park (free house music in your park, summer Sundays)
+- [ ] 287. Afropunk Brooklyn, whenever it returns
+- [ ] 288. J'Ouvert and the West Indian Day Parade weekend
+- [ ] 289. Dancehall vs Soca at Littlefield (sent once)
+- [ ] 290. Bushwig (sent once)
+- [ ] 291. Emo Night Brooklyn at Brooklyn Bowl
+- [ ] 292. Gimme Gimme Disco (the ABBA-adjacent dance party)
+- [ ] 293. Y2K and 2000s nights
+- [ ] 294. Baile funk nights (Brazilian)
+- [ ] 295. Perreo and reggaeton parties
+- [ ] 296. Warm Up at MoMA PS1 (summer Saturdays)
+- [ ] 297. Celebrate Brooklyn at the Prospect Park Bandshell (free summer shows)
+- [ ] 298. Lincoln Center Summer for the City (silent disco, dance nights on the plaza)
+- [ ] 299. SummerStage in Central Park
+- [ ] 300. Governors Ball and Electric Zoo (boundary test: festivals)
+- [ ] 301. Daybreaker (boundary test: sober morning rave)
+- [ ] 302. Sauna raves at Othership (on the radar)
+- [ ] 303. Record fairs (Brooklyn Record Riot, the 233 fair)
+
+## J. Rooms, bars, listening spots
+- [ ] 304. Eavesdrop (Greenpoint listening bar)
+- [ ] 305. Tokyo Record Bar (Village, omakase with a vinyl set list)
+- [ ] 306. The Atrium at Public Records as a dinner, not a club night
+- [ ] 307. Sunny's Bar in Red Hook (Saturday bluegrass jam, 130 years old)
+- [ ] 308. Skinny Dennis (Williamsburg honky-tonk, free country nightly)
+- [ ] 309. Bar Lunàtico (Bed-Stuy, live music every night in 60 seats)
+- [ ] 310. Pete's Candy Store (Williamsburg back room)
+- [ ] 311. Union Pool (and the taco truck)
+- [ ] 312. Saint Vitus (metal and punk, Greenpoint)
+- [ ] 313. Montero's (Brooklyn Heights dive karaoke)
+- [ ] 314. Farrell's in Windsor Terrace (styrofoam cups of beer, cops and firemen)
+- [ ] 315. Otto's Shrunken Head (East Village tiki dive)
+- [ ] 316. Sid Gold's Request Room and Marie's Crisis (piano bars)
+- [ ] 317. Insa (Korean BBQ with private karaoke rooms, Gowanus)
+- [ ] 318. Attaboy and Double Chicken Please (Lower East Side cocktail rooms)
+- [ ] 319. Death & Co, PDT, Katana Kitten (the Manhattan cocktail canon)
+- [ ] 320. Clover Club, Maison Premiere, Long Island Bar (Brooklyn cocktail canon)
+- [ ] 321. Le Boudoir (Brooklyn Heights speakeasy behind a restaurant)
+- [ ] 322. Martiny's and Sip & Guzzle (new-wave Japanese-run cocktail bars)
+- [ ] 323. Superbueno and Mister Paradise (loud, fun cocktail bars)
+- [ ] 324. Wild East, Finback, Grimm, Torst (the beer rooms beyond the ones you know)
+- [ ] 325. Spuyten Duyvil and Brooklyn Cider House
+- [ ] 326. Loreley, Zum Schneider, Paulaner (Manhattan German beer)
+- [ ] 327. Black Forest Brooklyn (German restaurant on Fulton in Fort Greene)
+- [ ] 328. Killmeyer's Old Bavaria Inn (Staten Island, since 1855)
+- [ ] 329. Rhodora (Fort Greene natural wine bar)
+- [ ] 330. The Four Horsemen (James Murphy's wine bar; boundary test: the line)
+- [ ] 331. Lise & Vito, Ruffian, Wildair (natural wine with food)
+
+## K. Food: places and dinners worth a night
+- [x] 332. The Lineup Dinner (sous chefs get one night; sent once)
+- [ ] 333. Dept of Culture (Nigerian tasting menu in Bed-Stuy, communal table)
+- [ ] 334. Buka (Nigerian on Fulton in Clinton Hill)
+- [ ] 335. Le Baobab and Teranga (Senegalese, Harlem)
+- [ ] 336. Bunna Cafe (Ethiopian, Bushwick, hands only)
+- [ ] 337. Peppa's and Gloria's (Flatbush jerk and Trini roti)
+- [ ] 338. Gage & Tollner (Downtown Brooklyn chophouse, Sunken Harbor upstairs)
+- [ ] 339. Cote (Korean steakhouse, bougie)
+- [ ] 340. Baekjeong and Jongro (Koreatown BBQ, loud, group tables)
+- [ ] 341. Haenyeo (Park Slope Korean)
+- [ ] 342. Bonnie's (Williamsburg Cantonese-American)
+- [ ] 343. Potluck Club (Chinatown, Cantonese-American, fun)
+- [ ] 344. Golden Unicorn dim sum and Peking Duck House (Chinatown banquet energy)
+- [ ] 345. Hometown Bar-B-Que in Red Hook
+- [ ] 346. Fette Sau
+- [x] 347. Peter Luger (boundary test)
+- [ ] 348. 4 Charles Prime Rib and St. Anselm (the other steak nights)
+- [ ] 349. L&B Spumoni Gardens and Di Fara (deep Brooklyn pizza)
+- [ ] 350. Ops, Roberta's, Una Pizza Napoletana
+- [x] 351. Lucali (boundary test: the line)
+- [ ] 352. Sripraphai and Ugly Baby (Thai that hurts)
+- [ ] 353. Fish Cheeks and Thai Diner
+- [ ] 354. Dhamaka, Semma, Adda (the Unapologetic Foods Indian group)
+- [ ] 355. Chama Mama and Oda House (Georgian beyond Cheeseboat)
+- [ ] 356. Nargis Cafe and Kashkar Cafe (Uzbek and Uyghur in Brighton Beach)
+- [ ] 357. Tanoreen and Yemen Cafe (Bay Ridge)
+- [ ] 358. Taqueria Ramirez, For All Things Good, Casa Enrique (real Mexican)
+- [ ] 359. Mariscos El Submarino (Jackson Heights aguachile)
+- [x] 360. Russ & Daughters Cafe, Frankel's, Gertie, Mile End (Jewish deli lane)
+- [ ] 361. Laser Wolf, Miriam, Shuka (Israeli)
+- [ ] 362. Roman's, Evelina, LaRina, Aita (Fort Greene and Clinton Hill Italian)
+- [ ] 363. Mekelburg's and The Fly (Clinton Hill bar food done well)
+- [ ] 364. Saraghina, Hart's, Cervo's (the Bed-Stuy and Lower East Side group)
+- [ ] 365. Chez Ma Tante and Bernie's (Greenpoint)
+- [ ] 366. Atomix, Jua, Jungsik (Korean tasting menus, splurge)
+- [ ] 367. Crown Shy, Torrisi, Le Bernardin (big-night Manhattan)
+- [ ] 368. Carbone (boundary test)
+- [ ] 369. Chef's Table at Brooklyn Fare
+- [ ] 370. Blue Hill at Stone Barns (tick if a day trip is fine for this)
+- [ ] 371. Queens Night Market (spring to fall, Saturdays)
+- [ ] 372. Sushi Nakazawa, Shion 69 Leonard, Sushi Sho, Rosella (omakase beyond Noz)
+
+## L. Talks, festivals, series of ideas
+- [ ] 373. Secret Science Club (free monthly science lectures at the Bell House, with a bar)
+- [ ] 374. Nerd Nite and the Caveat science-comedy shows
+- [x] 375. Council on Foreign Relations public events
+- [x] 376. Columbia's Center on Global Energy Policy (oil, gas, LNG, the grid)
+- [x] 377. Asia Society and Carnegie Council evenings
+- [ ] 378. Munk Debates and Open to Debate (sent once)
+- [ ] 379. Grant's Interest Rate Observer conference (Jim Grant, old-school finance, New York)
+- [ ] 380. Sohn Investment Conference (hedge fund pitches, May)
+- [ ] 381. 92NY talks
+- [ ] 382. The New Yorker Festival (October)
+- [ ] 383. Brooklyn Book Festival (September)
+- [ ] 384. NYPL Live and Cooper Union Great Hall lectures
+- [ ] 385. Brooklyn Institute for Social Research (evening seminars, philosophy and politics)
+- [ ] 386. Leo Baeck Institute (German-Jewish history, at the Center for Jewish History)
+- [ ] 387. YIVO and the Center for Jewish History lectures
+- [ ] 388. Tikvah events (conservative Jewish ideas)
+- [ ] 389. Lab/Shul and Romemu (experimental Jewish services that are more like a show)
+- [ ] 390. OneTable and Base BKLYN Shabbat dinners
+- [ ] 391. Yiddish New York (late December festival)
+- [ ] 392. New York Jewish Film Festival (January, Lincoln Center)
+- [ ] 393. KINO! Festival of German Films New York
+- [ ] 394. DOC NYC (November) and the New York Film Festival
+- [ ] 395. Tribeca Festival (June)
+- [ ] 396. Margaret Mead Film Festival at the Natural History Museum
+- [ ] 397. Open House New York (sent once) and Jane's Walk (May)
+- [ ] 398. Bowery Boys and Turnstile Tours (New York history on foot, the Navy Yard)
+- [ ] 399. Atlas Obscura and Untapped New York events
+- [ ] 400. Pioneer Works Second Sundays
+
+## M. Fights and sports
+- [ ] 401. UFC at the Garden
+- [ ] 402. PFL cards
+- [ ] 403. Bare Knuckle (BKFC)
+- [ ] 404. ONE Championship and Lion Fight Muay Thai, when they come east
+- [ ] 405. Karate Combat (pit fighting, lights, boundary test)
+- [ ] 406. Dirty Boxing (Mike Perry's promotion, boundary test)
+- [ ] 407. Boxing at Barclays and the Hulu Theater
+- [ ] 408. Friday Night Fights and Church Street's smokers (sent once)
+- [ ] 409. GCW and indie wrestling (hardcore, 300 people, insane)
+- [ ] 410. Kaiju Big Battel (monster-suit wrestling)
+- [ ] 411. WWE at the Garden
+- [ ] 412. Jake Paul and Netflix fight nights at a bar (boundary test)
+- [ ] 413. Power Slap (boundary test)
+- [x] 414. Knicks playoffs in bars (automatic)
+- [ ] 415. Rangers at the Garden
+- [ ] 416. New York Liberty
+- [ ] 417. Yankees bleachers and Mets at Citi Field
+- [ ] 418. Brooklyn Cyclones at Coney Island (minor league, cheap, fireworks)
+- [ ] 419. NYCFC, Red Bulls, Gotham FC
+- [ ] 420. Bundesliga and DFB watch parties (FC Bayern NYC fan club, Zum Schneider)
+- [ ] 421. Premier League mornings at a proper pub
+- [ ] 422. Big East Tournament at the Garden
+- [ ] 423. US Open night session
+- [ ] 424. Rucker Park and Dyckman summer basketball
+- [ ] 425. Gotham Girls Roller Derby
+- [ ] 426. PDC darts at the Hulu Theater (the walk-ons, the beer)
+- [ ] 427. PBR bull riding at the Garden (January, boundary test)
+- [ ] 428. The Marathon, the Brooklyn Half, the Five Boro Bike Tour, NYC Century (sent once)
+- [ ] 429. Hyrox and Spartan at Citi Field
+- [ ] 430. Coney Island Polar Bear Plunge on New Year's Day
+- [ ] 431. Jiu-jitsu and grappling tournaments, to watch or enter
+
+## N. Theater, performance, shows
+- [ ] 432. Life and Trust (the Sleep No More people's new immersive show, FiDi)
+- [ ] 433. Oh, Mary! (Cole Escola, Broadway, filthy and short)
+- [ ] 434. Cats: The Jellicle Ball (ballroom-culture Cats)
+- [ ] 435. Drunk Shakespeare
+- [ ] 436. Monday Night Magic
+- [ ] 437. Speakeasy Magick (close-up magic at your table)
+- [ ] 438. Bindlestiff Family Cirkus
+- [ ] 439. Big Apple Circus at Lincoln Center (winter)
+- [x] 440. Company XIV (yours already)
+- [ ] 441. The Slipper Room (sent once)
+- [x] 442. House of Yes (sent twice)
+- [ ] 443. St. Ann's Warehouse (whatever is on)
+- [ ] 444. BAM Next Wave
+- [ ] 445. Park Avenue Armory
+- [ ] 446. Theatre for a New Audience (Fort Greene)
+- [ ] 447. Irondale (Fort Greene)
+- [x] 448. BRIC House (Fort Greene)
+- [ ] 449. The Public Theater and Shakespeare in the Park
+- [x] 450. Schaubühne Berlin and Thomas Ostermeier, when they tour to BAM or St. Ann's
+- [ ] 451. National Yiddish Theatre Folksbiene
+- [ ] 452. Alvin Ailey (December at City Center)
+- [ ] 453. Mark Morris Dance Group (Fort Greene)
+- [ ] 454. Rocky Horror with a shadow cast (sent twice)
+- [x] 455. Nitehawk and Alamo themed screenings
+- [ ] 456. Metrograph, Film Forum, Museum of the Moving Image repertory nights
+
+## O. With the kid
+- [ ] 457. Transit Museum nostalgia train rides and the vintage holiday trains
+- [x] 458. Holiday Train Show at the New York Botanical Garden
+- [ ] 459. Big Apple Circus
+- [ ] 460. Brooklyn Cyclones game
+- [ ] 461. Prospect Park Zoo and the New York Aquarium
+- [ ] 462. Bronx Zoo Holiday Lights
+- [ ] 463. CityKinder (the German family network in New York)
+- [x] 464. German School Brooklyn's Laternenfest and German playgroups
+- [ ] 465. PJ Library and tot Shabbat events
+-  [x] 466. Jewish Children's Museum (Crown Heights)
+- [ ] 467. Rock and Roll Playhouse and Jalopy kids' shows (the ones sent so far)
+- [ ] 468. Puppetworks in Park Slope and the Swedish Cottage marionettes
+- [ ] 469. Queens County Farm (pumpkins, apples, animals)
+- [ ] 470. DanceAfrica at BAM (Memorial Day weekend) and Atlantic Antic (September)
+- [ ] 471. Tompkins Square Halloween Dog Parade and the Mermaid Parade
+- [ ] 472. Macy's balloon inflation the night before Thanksgiving
+- [ ] 473. Fleet Week ship tours and the Intrepid
+- [ ] 474. Monster Jam at MetLife (boundary test: trucks)
+- [x] 475. Governors Island and the Rockaway ferry
+
+## P. The usual suspects
+`[-]` means cut back, `[x]` means keep it coming.
+
+- [ ] 476. DJ nights at Public Records
+- [ ] 477. DJ nights at Knockdown Center
+- [x] 478. Drag and burlesque variety shows
+- [x] 479. Sauna socials
+-  [x] 480. Brewery events
+- [ ] 481. Fight cards on the radar when there is no card in the city
+- [ ] 482. Company XIV every run
+- [ ] 483. Anything that starts after midnight on a Thursday
+
+## Open questions (answer in chat)
+1. The Fred Armisen show: where did you hear about it, which room, did you go? Instagram -- yes I went
+2. Five names not on this list you would see in a 300-seat room. Stavros Heliakis (comedian), Tim and Eric
+3. Three things you went to in the last six months that this email did not send you to. I really like Ferraris and Lamborghini, I'm interested in mountaineering, I like Muay Thai, I love foreign policy, I really like energy politics, I really like commodities and geopolitical discussions, especially about physical infrastructure
+4. Which of the eight issues' picks did you actually go to, and which were filler?
+5. Which newsletters, accounts or group chats feed your plans today? 

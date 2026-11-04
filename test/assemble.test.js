@@ -168,3 +168,86 @@ test("the subject's date comes from code, the hook from the curator", () => {
   assert.equal(composeSubject("Kalkbrenner, a fight, a banya", w), "Shit To Do in NYC (Sep 15): Kalkbrenner, a fight, a banya");
   assert.equal(composeSubject("", w), "Shit To Do in NYC (Sep 15)");
 });
+
+// --- repeat ledger, radar retirement, one pick per venue -----------------------------------
+
+import { repeatLedger, formatLedger, radarRuns } from "../src/archive.js";
+import { buildLaneUser } from "../src/research.js";
+
+const issueFixture = (date, picks, radar) => ({
+  date,
+  picks: picks.map((p) => p.title),
+  radar: radar.map((r) => r.title),
+  anytime: [],
+  family: null,
+  items: { picks, radar, anytime: [], family: [] },
+});
+const recentFixture = [
+  issueFixture(
+    "2026-11-02",
+    [
+      { headline: "Mousse T. in the Atrium", title: "Mousse T.", url: "https://x/1", venue: "Public Records", category: "music" },
+      { headline: "B3K", title: "Brutalismus 3000", url: "https://x/2", venue: "Knockdown Center", category: "music" },
+    ],
+    [{ headline: "UFC 334 at the Garden", title: "UFC 334", url: "https://www.ufc.com/event/ufc-334?utm=1", venue: "MSG", category: "fight" }],
+  ),
+  issueFixture(
+    "2026-10-26",
+    [{ headline: "Dope Jams", title: "Dope Jams Halloween Ball", url: "https://x/3", venue: "Public Records (Sound Room)", category: "party" }],
+    [{ headline: "UFC 334, two title fights", title: "UFC 334: Gane vs Hokit", url: "https://ufc.com/event/ufc-334/", venue: "MSG", category: "fight" }],
+  ),
+];
+
+test("repeatLedger counts venues across issues and radar runs by url", () => {
+  const ledger = repeatLedger(recentFixture);
+  const pr = ledger.venues.find((v) => v.key === "public records");
+  assert.equal(pr.picks, 2);
+  assert.equal(pr.issues, 2);
+  assert.equal(pr.last, "2026-11-02");
+  assert.equal(ledger.venues.find((v) => v.key === "knockdown center").issues, 1);
+  assert.deepEqual(ledger.categories, [{ category: "music", picks: 2 }, { category: "party", picks: 1 }]);
+  assert.equal(radarRuns(ledger, { url: "https://www.ufc.com/event/ufc-334", title: "UFC 334 at MSG" }), 2);
+  assert.equal(radarRuns(ledger, { url: "https://other", title: "ufc 334" }), 1);
+  assert.equal(radarRuns(ledger, { url: "https://other", title: "nothing" }), 0);
+  const text = formatLedger(ledger);
+  assert.match(text, /Public Records: 2 picks in 2 issues, last 2026-11-02/);
+  assert.match(text, /Venues used once: Knockdown Center/);
+  assert.match(text, /retired: UFC 334/);
+  assert.equal(formatLedger(repeatLedger([])), "");
+});
+
+test("sanitizeCuration keeps one pick per venue, benches the second, and retires a radar item that ran twice", () => {
+  const candidates = [
+    cand("c1", { venue: "Public Records" }),
+    cand("c2", { venue: "Public Records (Sound Room)" }),
+    cand("c3", { venue: "Union Hall" }),
+    cand("c4", { url: "https://www.ufc.com/event/ufc-334", title: "UFC 334", start_date: "2026-11-14" }),
+    cand("c5", { start_date: "2026-11-20" }),
+  ];
+  const pick = (id) => ({ candidate_id: id, headline: "h", why: "w", heads_up: null, who: "guys", invite_text: "t", splurge: false });
+  const radar = (id) => ({ candidate_id: id, headline: "h", why: "w", book_by: null, who: "guys" });
+  const raw = { subject: "s", opener: "o", picks: [pick("c1"), pick("c2"), pick("c3")], bench: [pick("c2"), pick("c5")], radar: [radar("c4"), radar("c5")], anytime: [], family: null, notes: "" };
+  const out = sanitizeCuration(raw, candidates, { ledger: repeatLedger(recentFixture) });
+  assert.deepEqual(out.picks.map((p) => p.candidate_id), ["c1", "c3"]);
+  assert.deepEqual(out.bench.map((p) => p.candidate_id), ["c2", "c5"]);
+  assert.deepEqual(out.radar.map((r) => r.candidate_id), ["c5"]);
+  // without a ledger the radar is left alone
+  assert.deepEqual(sanitizeCuration(raw, candidates).radar.map((r) => r.candidate_id), ["c4", "c5"]);
+});
+
+test("buildLaneUser separates search-only sources, caps trusted fetches, and carries the ledger and lane memory", () => {
+  const lane = { id: "music", name: "Music", brief: "Find shows.", hints: ["x"], maxSearches: 18, maxFetches: 14 };
+  const sources = [
+    { name: "RA", url: "https://ra.co/x", note: "listings" },
+    { name: "Knockdown", url: "https://knockdown.center/", note: "warehouse; search only, page will not load" },
+  ];
+  const w = { ...windows, days: ["Mon Sep 14 (2026-09-14)"] };
+  const text = buildLaneUser({ lane, sources, windows: w, calendarExcerpt: "", feedback: "", ledgerText: "Public Records: 7 picks", laneMemory: { date: "2026-11-02", notes: "hip-hop nights: unsearched" } });
+  assert.match(text, /fetch at most 7 of these/);
+  assert.match(text, /# SEARCH-ONLY SOURCES[\s\S]*Knockdown/);
+  assert.doesNotMatch(text, /# TRUSTED SOURCES[^#]*Knockdown/);
+  assert.match(text, /ALREADY BEEN SENT[\s\S]*Public Records: 7 picks/);
+  assert.match(text, /COULD NOT COVER LAST WEEK \(2026-11-02\)[\s\S]*hip-hop nights: unsearched/);
+  const bare = buildLaneUser({ lane, sources: [], windows: w, calendarExcerpt: "", feedback: "" });
+  assert.doesNotMatch(bare, /ALREADY BEEN SENT|COULD NOT COVER|SEARCH-ONLY/);
+});
